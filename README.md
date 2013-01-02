@@ -13,6 +13,7 @@ suuoh.com
 [Bootswatch](http://bootswatch.com/)  
 [BootstrapCDN](http://www.bootstrapcdn.com/)  
 [Font Awesome](http://fortawesome.github.com/Font-Awesome/)  
+[Improving 404](http://webdesign.tutsplus.com/articles/user-experience-articles/improving-404-page-design/)
 
 ````Javascript
 // Callback without arguments
