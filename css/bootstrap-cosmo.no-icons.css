@@ -206,11 +206,12 @@ textarea {
 }
 body {
   margin: 0;
+  color: #555555;
+  background-color: #ffffff;
+  padding: 40px;
   font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #555555;
-  background-color: #ffffff;
 }
 a {
   color: #007fff;
@@ -3195,7 +3196,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 15px 20px 15px;
+  padding: 15px 20px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
