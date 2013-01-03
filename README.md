@@ -29,7 +29,7 @@ $.get( "myhtmlpage.html", function() {
     myCallBack( param1, param2 );
 });
 ````
-Source: <http://learn.jquery.com/about-jquery/how-jquery-works/>
+Source: <http://learn.jquery.com/about-jquery/how-jquery-works/>  
 
 ````Javascript
 var stuffToDo = {
@@ -52,7 +52,7 @@ if ( stuffToDo[foo] ) {
     stuffToDo["default"]();
 }
 ````
-Source: <http://learn.jquery.com/javascript-101/conditional-code/>
+Source: <http://learn.jquery.com/javascript-101/conditional-code/>  
 
 ````Javascript
 if ( Object.prototype.toString.call( myArray ) === "[object Array]" ) {
@@ -61,4 +61,4 @@ if ( Object.prototype.toString.call( myArray ) === "[object Array]" ) {
     // to determine if a specific value is an Array.
 }
 ````
-Source: <http://learn.jquery.com/javascript-101/testing-type/>
+Source: <http://learn.jquery.com/javascript-101/testing-type/>  
