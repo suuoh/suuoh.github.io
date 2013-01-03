@@ -17,6 +17,7 @@ Resources
 [mojombo.github.com](http://github.com/mojombo/mojombo.github.com)  
 [jekyll](http://github.com/mojombo/jekyll)  
 [Markdown](http://daringfireball.net/projects/markdown/)  
+[GitHub Styleguide](https://github.com/styleguide)
 
 Snippets
 --------
