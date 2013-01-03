@@ -16,6 +16,7 @@ Resources
 [Improving 404](http://webdesign.tutsplus.com/articles/user-experience-articles/improving-404-page-design/)  
 [mojombo.github.com](http://github.com/mojombo/mojombo.github.com)  
 [jekyll](http://github.com/mojombo/jekyll)  
+[Markdown](http://daringfireball.net/projects/markdown/)  
 
 Snippets
 --------
