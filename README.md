@@ -1,4 +1,4 @@
-# <http://suuoh.com>
+suuoh.com
 =========
 
 ### [Twitter](http://twitter.com/suuoh) / [GitHub](http://github.com/melvinchien)
@@ -10,10 +10,13 @@
 [Node.js](http://nodejs.org)  
 [Google Chrome Developer Tools](http://developers.google.com/chrome-developer-tools/)  
 [Carousel](http://twitter.github.com/bootstrap/examples/carousel.html)  
+[Bootstrap](http://twitter.github.com/bootstrap/)  
 [Bootswatch](http://bootswatch.com/)  
 [BootstrapCDN](http://www.bootstrapcdn.com/)  
 [Font Awesome](http://fortawesome.github.com/Font-Awesome/)  
-[Improving 404](http://webdesign.tutsplus.com/articles/user-experience-articles/improving-404-page-design/)
+[Improving 404](http://webdesign.tutsplus.com/articles/user-experience-articles/improving-404-page-design/)  
+[mojombo.github.com](http://github.com/mojombo/mojombo.github.com)  
+[jekyll](http://github.com/mojombo/jekyll)  
 
 ````Javascript
 // Callback without arguments
