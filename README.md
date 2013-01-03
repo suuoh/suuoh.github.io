@@ -1,9 +1,8 @@
 suuoh.com
 =========
 
-### [Twitter](http://twitter.com/suuoh) / [GitHub](http://github.com/melvinchien)
-
-## Resources
+Resources
+---------
 [jQuery API](http://api.jquery.com)  
 [jQuery UI API](http://api.jqueryui.com/category/all/)  
 [Learn jQuery](http://learn.jquery.com)  
@@ -17,6 +16,9 @@ suuoh.com
 [Improving 404](http://webdesign.tutsplus.com/articles/user-experience-articles/improving-404-page-design/)  
 [mojombo.github.com](http://github.com/mojombo/mojombo.github.com)  
 [jekyll](http://github.com/mojombo/jekyll)  
+
+Snippets
+--------
 
 ````Javascript
 // Callback without arguments
