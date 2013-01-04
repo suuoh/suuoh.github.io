@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
 /*!
  * Bootstrap v2.2.2
  *
- * Copyright 2013 Twitter, Inc
+ * Copyright 2012 Twitter, Inc
  * Licensed under the Apache License v2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -206,12 +206,11 @@ textarea {
 }
 body {
   margin: 0;
-  color: #555555;
-  background-color: #ffffff;
-  padding-top: 60px;
   font-family: "Open Sans", Calibri, Candara, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
+  color: #555555;
+  background-color: #ffffff;
 }
 a {
   color: #007fff;
@@ -5170,21 +5169,4 @@ a.thumbnail:hover {
 }
 .affix {
   position: fixed;
-}
-.footer {
-  font-size: 14px;
-  margin-top: 8px;
-  border-top: 1px solid #e5e5e5;
-  padding-top: 10px;
-}
-.footer i {
-  font-size: 24px;
-}
-.footer a {
-  color: #000000;
-  padding-right: 8px;
-}
-.footer a:hover {
-  color: #bbbbbb;
-  text-decoration: none;
 }
