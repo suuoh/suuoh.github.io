@@ -4,10 +4,15 @@
 */
 
 body {
-  padding-top: 57px;
+  padding-top: 70px;
 }
-.container {
-  margin-left: 20px;
+.navbar .container {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.container-fluid {
+  padding-right: 10%;
+  padding-left: 10%;
 }
 footer {
   font-size: 14px;
