@@ -4,7 +4,7 @@
 */
 
 body {
-  padding-top: 50px;
+  padding-top: 57px;
 }
 .container {
   margin-left: 20px;
@@ -12,15 +12,16 @@ body {
 footer {
   font-size: 14px;
   border-top: 1px solid #e5e5e5;
-  margin-top: 11px;
+  margin-top: 9px;
   padding-top: 10px;
 }
 footer i {
   font-size: 24px;
+  padding-right: 8px;
 }
 footer a {
   color: #000000;
-  padding-right: 8px;
+
 }
 footer a:hover {
   color: #bbbbbb;
