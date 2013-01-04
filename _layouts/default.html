@@ -14,18 +14,7 @@
 
 </head>
 <body>
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="brand" href="/">suuoh</a>
-        <ul class="nav">
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/portfolio.html">Portfolio</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-        </div>
-    </div>
-  </div>
+  {% include header.html %}
   <div class="container-fluid">
     <div class="alert">
       Heavy construction ahead! Please excuse the (lack of a) mess!
@@ -34,13 +23,7 @@
       <h1>{{ page.head }} <small>{{ page.subhead }}</small></h1>
     </div>
     {{ content }}
-    <footer>
-        <a href="http://twitter.com/suuoh/"><i class="icon-twitter"></i></a>
-        <a href="http://www.linkedin.com/pub/melvin-chien/62/397/28b"><i class="icon-linkedin"></i></a>
-        <a href="http://github.com/melvinchien"><i class="icon-github"></i></a>
-        <a href="mailto:hello@suuoh.com"><i class="icon-envelope-alt"></i></a>
-        &copy; 2013 Melvin Chien. Hosted on <a href="http://pages.github.com/">GitHub</a>. Built with <a href="http://jekyllrb.com/">jekyll</a>. Theme by <a href="http://bootswatch.com/cosmo/">Bootswatch</a>. Icons by <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>.
-    </footer>
+    {% include footer.html %}
   </div>
 
 
