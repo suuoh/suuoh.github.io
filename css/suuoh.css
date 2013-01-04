@@ -17,8 +17,9 @@ body {
 footer {
   font-size: 14px;
   border-top: 1px solid #e5e5e5;
-  margin-top: 9px;
-  padding-top: 10px;
+  margin-top: 40px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 }
 footer i {
   font-size: 24px;
