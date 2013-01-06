@@ -64,3 +64,12 @@ if ( Object.prototype.toString.call( myArray ) === "[object Array]" ) {
 }
 ````
 Source: <http://learn.jquery.com/javascript-101/testing-type/>  
+
+License
+-------
+
+All files and their content in the following directories are Copyright 2013 Melvin Chien:
+* _posts/
+* images/
+
+All other files and their content are licensed under the [Creative Commons Attribution-NonCommercial 3.0 license](http://creativecommons.org/licenses/by-nc/3.0/), unless otherwise stated.
