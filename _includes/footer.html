@@ -1,3 +1,8 @@
+{% if page.updated %}
+<br /><br />
+<i class="icon-pencil"></i>  Last updated on {{ page.updated | date_to_long_string }}.
+{% endif %}
+
 <footer>
     <a href="http://twitter.com/suuoh/"><i class="icon-twitter"></i></a>
     <a href="http://www.linkedin.com/pub/melvin-chien/62/397/28b"><i class="icon-linkedin"></i></a>
