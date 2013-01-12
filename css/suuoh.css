@@ -1,19 +1,60 @@
 /*
  * suuoh.com
  * Melvin Chien 2013
+ * 
 */
 
 body {
   padding-top: 70px;
 }
+
+a {
+  color: #008CE2
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .navbar .container {
   margin-right: 10%;
   margin-left: 10%;
 }
+
+.nav [class^="icon-"],
+.nav [class*=" icon-"] {
+  line-height: 0.7em;
+}
+
+.navbar .brand {
+  padding-top: 14px;
+}
+
+.navbar .brand:hover {
+  color: #008CE2;
+}
+
+.navbar .nav > li > a:hover {
+  color: #008CE2;
+}
+
 .container-fluid {
   padding-right: 10%;
   padding-left: 10%;
 }
+
+.row-fluid {
+  margin-top: 15px;
+}
+
+.row-fluid .span6 {
+  width: 47.93617021276595%;
+}
+
+.row-fluid [class*="span"] {
+  margin-left: 4.127659574468085%;
+}
+
 footer {
   font-size: 14px;
   border-top: 1px solid #e5e5e5;
@@ -21,30 +62,19 @@ footer {
   padding-top: 11px;
   padding-bottom: 30px;
 }
-footer a {
+
+footer > a {
   color: #000000;
 }
-footer a:hover {
+
+footer > a:hover {
   color: #bbbbbb;
   text-decoration: none;
 }
-.nav [class^="icon-"],
-.nav [class*=" icon-"] {
-  line-height: 0.7em;
-  color: #007FFF;
-}
+
 footer [class^="icon-"],
 footer [class^="icon-"],
 footer [class*=" icon-"] {
   padding-right: 8px;
   font-size: 1.5em;
-}
-.row-fluid {
-  margin-top: 15px;
-}
-.row-fluid .span6 {
-  width: 47.93617021276595%;
-}
-.row-fluid [class*="span"] {
-  margin-left: 4.127659574468085%;
 }
