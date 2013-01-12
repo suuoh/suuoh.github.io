@@ -41,7 +41,19 @@
 
 </head>
 <body>
-  {% include header.html %}
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="/">suuoh</a>
+        <ul class="nav">
+          <li><a href="/about/"><i class="icon-comments"></i> About</a></li>
+          <li><a href="/portfolio/"><i class="icon-suitcase"></i> Portfolio</a></li>
+          <li><a href="/blog/"><i class="icon-coffee"></i> Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <div class="container-fluid">
     <div class="alert">
       Heavy construction ahead! Please excuse the (lack of a) mess!
@@ -51,8 +63,21 @@
       <h1>{{ page.head }} <small>{{ page.subhead }}</small></h1>
     </div>
     {% endif %}
+
     {{ content }}
-    {% include footer.html %}
+    
+    {% if page.updated %}
+    <br /><br />
+    <i class="icon-pencil"></i>  Last updated on {{ page.updated | date_to_long_string }}.
+    {% endif %}
+
+    <footer>
+      <a href="http://twitter.com/suuoh/"><i class="icon-twitter"></i></a>
+      <a href="http://www.linkedin.com/in/melvinchien"><i class="icon-linkedin"></i></a>
+      <a href="http://github.com/melvinchien"><i class="icon-github"></i></a>
+      <a href="mailto:hello@suuoh.com"><i class="icon-envelope-alt"></i></a>
+      &copy; 2013 Melvin Chien. Hosted on <a href="http://pages.github.com/">GitHub</a>. Built with <a href="http://jekyllrb.com/">jekyll</a>. Theme by <a href="http://bootswatch.com/cosmo/">Bootswatch</a>. Icons by <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>.
+    </footer>
   </div>
 
   <!-- Google Analytics -->
