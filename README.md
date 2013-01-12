@@ -9,8 +9,10 @@ License
 -------
 
 All files and their content in the following directories are Copyright 2013 Melvin Chien:
-* _posts/
+* blog/
 * images/
+* about.html
+* portfolio.html
 
 All other files and their content are licensed under the [Creative Commons Attribution-NonCommercial 3.0 license](http://creativecommons.org/licenses/by-nc/3.0/), unless otherwise stated.
 
@@ -31,8 +33,8 @@ Resources
 [Markdown](http://daringfireball.net/projects/markdown/)  
 [GitHub Styleguide](http://github.com/styleguide)  
 [fancyBox](http://fancyapps.com/fancybox/)  
-[adamralph](http://github.com/adamralph/adamralph.github.com)
-[Mike West's My Jekyll Fork](http://mikewest.org/2009/11/my-jekyll-fork)
+[adamralph](http://github.com/adamralph/adamralph.github.com)  
+[Mike West's My Jekyll Fork](http://mikewest.org/2009/11/my-jekyll-fork)  
 
 Snippets
 --------
