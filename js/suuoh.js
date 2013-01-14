@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $(".tooltiplink").tooltip();
   $("a[href$='.jpg'],a[href$='.png']").fancybox({
     padding: 10,
     margin: 50,
