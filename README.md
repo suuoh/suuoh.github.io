@@ -35,6 +35,8 @@ Resources
 [fancyBox](http://fancyapps.com/fancybox/)  
 [adamralph](http://github.com/adamralph/adamralph.github.com)  
 [Mike West's My Jekyll Fork](http://mikewest.org/2009/11/my-jekyll-fork)  
+[tha](http://tha.jp/)  
+[Why Informatics](http://www.soic.indiana.edu/prospective/_doc/why-info-groth.pdf)  
 
 Snippets
 --------
