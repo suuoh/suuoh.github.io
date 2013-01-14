@@ -55,6 +55,11 @@ a:hover {
   margin-left: 4.127659574468085%;
 }
 
+a > img {
+  margin-bottom: 8px;
+  margin-right: 4px;
+}
+
 footer {
   font-size: 14px;
   border-top: 1px solid #e5e5e5;

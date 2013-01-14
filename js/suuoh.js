@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  $(".fancybox").fancybox({
+  $("a[href$='.jpg'],a[href$='.png']").fancybox({
+    padding : 10,
+    margin: 50,
     helpers : {
       overlay : {
         css : {
