@@ -13,6 +13,7 @@ a {
 }
 
 a:hover {
+  color: #BBBBBB;
   text-decoration: none;
 }
 
@@ -60,6 +61,14 @@ a > img {
   margin-right: 6px;
 }
 
+h2 > a {
+  color: #555555;
+}
+
+h2 > a:hover {
+  color: #008CE2;
+}
+
 footer {
   font-size: 14px;
   border-top: 1px solid #e5e5e5;
@@ -73,7 +82,7 @@ footer > a {
 }
 
 footer > a:hover {
-  color: #bbbbbb;
+  color: #BBBBBB;
   text-decoration: none;
 }
 
