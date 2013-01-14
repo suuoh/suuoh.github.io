@@ -16,14 +16,14 @@ a:hover {
   text-decoration: none;
 }
 
-.navbar .container {
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
 .nav [class^="icon-"],
 .nav [class*=" icon-"] {
   line-height: 0.7em;
+}
+
+.navbar .container {
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 .navbar .brand {
