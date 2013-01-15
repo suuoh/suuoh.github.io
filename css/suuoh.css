@@ -48,11 +48,11 @@ a:hover {
   margin-top: 15px;
 }
 
-.row-fluid .span6 {
+.row-fluid > .twocolumn {
   width: 47.93617021276595%;
 }
 
-.row-fluid [class*="span"] {
+.row-fluid > .twocolumn {
   margin-left: 4.127659574468085%;
 }
 
