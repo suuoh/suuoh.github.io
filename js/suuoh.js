@@ -16,4 +16,21 @@ $(document).ready(function() {
       }
     }
   });
+  $(".fancybox-media").fancybox({
+    padding: 10,
+    margin: 50,
+    loop: false,
+    helpers : {
+      media : {},
+      title : {
+        type: "float"
+      },
+      overlay : {
+        showEarly: false,
+        css : {
+          "background" : "rgba(25, 25, 25, 0.80)"
+        }
+      }
+    }
+  });
 });
