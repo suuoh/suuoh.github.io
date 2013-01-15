@@ -45,7 +45,7 @@ a:hover {
 }
 
 .row-fluid {
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .row-fluid > .twocolumn {
@@ -54,11 +54,6 @@ a:hover {
 
 .row-fluid > .twocolumn {
   margin-left: 4.127659574468085%;
-}
-
-a > img {
-  margin-bottom: 10px;
-  margin-right: 6px;
 }
 
 h2 > a {

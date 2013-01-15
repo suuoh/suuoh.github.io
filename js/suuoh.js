@@ -1,4 +1,14 @@
 $(document).ready(function() {
+  $("#splash").hide();
+  $("footer").hide();
+  if ($("#splash").length > 0) {
+    $("#splash").bind("load", function () {
+      $("#splash").fadeIn(2000);
+      $("footer").delay(2000).fadeIn(2000);
+    });
+  } else {
+    $("footer").delay(500).fadeIn(1000);
+  }
   $(".tooltiplink").tooltip();
   $("a[href$='.jpg'],a[href$='.png']").fancybox({
     padding: 10,
