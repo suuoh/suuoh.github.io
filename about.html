@@ -39,7 +39,7 @@ updated: 2013-01-14
   </div>
   <div class="span6 twocolumn" id="education">
     <h2>Education & Languages</h2>
-    <strong>University of California, Irvine</strong>, <a class="tooltiplink" href="#" rel="tooltip" title="The study of the relationship between information, computers that use this information, and the people who use that technology, driven by the constant need to solve contextual problems outside of computer science.">Informatics</a> 2013, Bachelor of Science.
+    <strong>University of California, Irvine</strong>, <a id="tooltip-informatics" rel="tooltip" title="The study of the relationship between information, computers that use this information, and the people who use that technology, driven by the constant need to solve contextual problems outside of computer science.">Informatics</a> 2013, Bachelor of Science.
     <br /><br /><br />
     Melvin is fluent in English, Cantonese, Mandarin, and Shanghainese and has limited working knowledge of Japanese.
   </div>
@@ -90,23 +90,28 @@ updated: 2013-01-14
 <div class="row-fluid">
   <div class="span6" id="experience">
     <h2>Experience</h2>
-    <strong>University of California, Irvine</strong>, Residential Network Services<br />
+    <strong>University of California, Irvine</strong>, Residential Network Services <a id="tooltip-uci-resnet" title="test"><i class="icon-info-sign"></i></a><br />
     Technical Consultant, January 2010 to June 2012
     <br /><br />
-    <strong>Tricific Enterprises Inc.</strong><br />
+    <strong>Tricific Enterprises Inc.</strong> <a id="tooltip-tricific-webdesigner" title="test"><i class="icon-info-sign"></i></a><br />
     Assistant Web Designer, June 2007 to September 2011
     <br /><br />
-    <strong>University of California, Irvine</strong>, Anthology Yearbook<br />
+    <strong>University of California, Irvine</strong>, Anthology Yearbook <a id="tooltip-uci-yearbook" title="test"><i class="icon-info-sign"></i></a><br />
     Section Graphic Designer, September 2009 to September 2010
     <br /><br />
-    <strong>Holy Trinity School</strong>, Yearbook Committee<br />
+    <strong>Holy Trinity School</strong>, Yearbook Committee <a id="tooltip-hts-yearbook" title="test"><i class="icon-info-sign"></i></a><br />
     Head Graphic Designer, September 2004 to June 2009
     <br /><br />
-    <strong>Tricific Enterprises Inc.</strong><br />
+    <strong>Tricific Enterprises Inc.</strong> <a id="tooltip-tricific-inventory" title="test"><i class="icon-info-sign"></i></a><br />
     Inventory Management Assistant, June 2005 to August 2005
   </div>
   <div class="span6" id="projects">
     <h2>Projects</h2>
-    Please see my <a href="/portfolio.html">portfolio</a>.
+    Please see my <a href="/portfolio/">portfolio</a>.
   </div>
 </div>
+<script>
+  $(document).ready(function() {
+    $("#about").addClass("active");
+  });
+</script>

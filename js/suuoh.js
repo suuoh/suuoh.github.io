@@ -9,7 +9,10 @@ $(document).ready(function() {
   } else {
     $("footer").delay(500).fadeIn(1000);
   }
-  $(".tooltiplink").tooltip();
+  $("a[id^='tooltip-']").tooltip({
+    trigger: "click"
+  });
+  $("a[id^='tooltip-']").attr("href", "javascript:void(0)");
   $("a[href$='.jpg'],a[href$='.png']").fancybox({
     padding: 10,
     margin: 50,
