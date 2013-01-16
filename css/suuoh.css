@@ -29,54 +29,16 @@ ul.features > li > [class^="icon-"] {
   margin-left: -25px;
 }
 
-.nav [class^="icon-"],
-.nav [class*=" icon-"] {
-  line-height: 0.7em;
-}
-
-.navbar .container {
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
-.navbar .brand {
-  padding-top: 14px;
-}
-
-.navbar .brand:hover {
-  color: #008CE2;
-}
-
-.navbar .nav > li > a:hover {
-  color: #008CE2;
-}
-
-.container-fluid {
-  padding-right: 10%;
-  padding-left: 10%;
-}
-
-.row-fluid {
-  margin-bottom: 20px;
-}
-
-.row-fluid .span6 {
-  width: 47.93617021276595%;
-  margin-left: 4.127659574468085%;
-}
-
-h2 > a {
-  color: #555555;
-}
-
-h2 > a:hover {
-  color: #008CE2;
+h1 small,
+h2 small,
+h3 small, {
+  color: #C8C8C8;
 }
 
 h3 {
   font-weight: normal;
   line-height: 1em;
-  color: #dfdfdf;
+  color: #C8C8C8;
   font-size: 17.5px;
   margin-bottom: 15px;
 }
@@ -99,10 +61,42 @@ footer > a:hover {
 }
 
 footer [class^="icon-"],
-footer [class^="icon-"],
 footer [class*=" icon-"] {
   padding-right: 8px;
   font-size: 1.5em;
+}
+
+.nav [class^="icon-"],
+.nav [class*=" icon-"] {
+  line-height: 0.7em;
+}
+
+.navbar .container,
+.container-fluid {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.row-fluid {
+  margin-bottom: 20px;
+}
+
+.row-fluid .span6 {
+  width: 47.93617021276595%;
+  margin-left: 4.127659574468085%;
+}
+
+.navbar .brand:hover {
+  color: #008CE2;
+}
+
+.navbar .nav > li > a:hover {
+  color: #008CE2;
+}
+
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover {
+  background-color: rgba(0, 140, 226, 0.25);
 }
 
 .fancybox-title-float-wrap {
