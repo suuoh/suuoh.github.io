@@ -110,3 +110,7 @@ footer [class*=" icon-"] {
   margin-right: 0px;
   padding: 10px 10px;
 }
+
+.lazy {
+  display: none;
+}

@@ -1,14 +1,17 @@
 $(document).ready(function() {
-  $("#splash").hide();
+  $("img#splash").hide();
   $("footer").hide();
-  if ($("#splash").length > 0) {
-    $("#splash").bind("load", function () {
-      $("#splash").fadeIn(3000);
+  if ($("img#splash").length > 0) {
+    $("img#splash").bind("load", function () {
+      $("img#splash").fadeIn(3000);
       $("footer").delay(1500).fadeIn(3000);
     });
   } else {
     $("footer").delay(1500).fadeIn(3000);
   }
+  $("img.lazy").show().lazyload({
+    effect: "fadeIn"
+  });
   $("a[class='tooltip-hover']").tooltip();
   $("a[class='tooltip-click']").tooltip({
     trigger: "click"
