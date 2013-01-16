@@ -6,8 +6,6 @@ $(document).ready(function() {
       $("#splash").fadeIn(3000);
       $("footer").delay(1500).fadeIn(3000);
     });
-    $("#splash").fadeIn(3000);
-    $("footer").delay(1500).fadeIn(3000);
   } else {
     $("footer").delay(1500).fadeIn(3000);
   }
