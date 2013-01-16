@@ -17,6 +17,10 @@ a:hover {
   text-decoration: none;
 }
 
+a[class="tooltip-hover"] {
+  border-bottom: 1px dotted;
+}
+
 ul.features > li {
   list-style: none;
 }
