@@ -3,16 +3,17 @@ $(document).ready(function() {
   $("footer").hide();
   if ($("#splash").length > 0) {
     $("#splash").bind("load", function () {
-      $("#splash").fadeIn(2000);
-      $("footer").delay(2000).fadeIn(2000);
+      $("#splash").fadeIn(3000);
+      $("footer").delay(1500).fadeIn(3000);
     });
   } else {
-    $("footer").delay(500).fadeIn(1000);
+    $("footer").delay(1500).fadeIn(3000);
   }
-  $("a[id^='tooltip-']").tooltip({
+  $("a[class='tooltip-hover']").tooltip();
+  $("a[class='tooltip-click']").tooltip({
     trigger: "click"
   });
-  $("a[id^='tooltip-']").attr("href", "javascript:void(0)");
+  $("a[class^='tooltip-']").attr("href", "javascript:void(0)");
   $("a[href$='.jpg'],a[href$='.png']").fancybox({
     padding: 10,
     margin: 50,
