@@ -62,7 +62,7 @@ footer > a:hover {
 
 footer [class^="icon-"],
 footer [class*=" icon-"] {
-  padding-right: 8px;
+  padding-right: 5px;
   font-size: 1.5em;
 }
 
