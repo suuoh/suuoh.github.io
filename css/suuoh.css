@@ -2,7 +2,7 @@
  * suuoh.com
  * Melvin Chien 2013
  *
-*/
+ */
 
 body {
   padding-top: 70px;
@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: #BBBBBB;
+  color: #C8C8C8;
   text-decoration: none;
 }
 
@@ -113,4 +113,9 @@ footer [class*=" icon-"] {
 
 .lazy {
   display: none;
+}
+
+.lastUpdated {
+  color: #C8C8C8;
+  margin-top: 20px;
 }
