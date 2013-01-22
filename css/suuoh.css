@@ -21,11 +21,11 @@ a[class="tooltip-hover"] {
   border-bottom: 1px dotted;
 }
 
-ul.features > li {
+ul.no-bullets > li {
   list-style: none;
 }
 
-ul.features > li > [class^="icon-"] {
+ul.no-bullets > li > [class^="icon-"] {
   margin-left: -25px;
 }
 
@@ -97,6 +97,11 @@ footer [class*=" icon-"] {
 .navbar .nav > .active > a, 
 .navbar .nav > .active > a:hover {
   background-color: rgba(0, 140, 226, 0.25);
+}
+
+.collapse {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .fancybox-title-float-wrap {
