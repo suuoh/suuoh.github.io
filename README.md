@@ -37,7 +37,8 @@ Resources
 [Mike West's My Jekyll Fork](http://mikewest.org/2009/11/my-jekyll-fork)  
 [tha](http://tha.jp/)  
 [Why Informatics](http://www.soic.indiana.edu/prospective/_doc/why-info-groth.pdf)  
-[Lazy Load](http://www.appelsiini.net/projects/lazyload)
+[Lazy Load](http://www.appelsiini.net/projects/lazyload)  
+[10 JavaScript MVC Frameworks](http://codebrief.com/2012/01/the-top-10-javascript-mvc-frameworks-reviewed/)
 
 Snippets
 --------
