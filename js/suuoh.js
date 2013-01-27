@@ -2,7 +2,7 @@ $(document).ready(function() {
   $("footer").hide();
   $("footer").delay(1500).fadeIn(3000);
   $("a[class='tooltip-hover']").tooltip();
-  $("a[class^='tooltip-']").attr("href", "javascript:void(0)");
+  $("a[class^='tooltip-']").attr("href", "");
   $("img.lazy").show().lazyload({
     effect: "fadeIn"
   });

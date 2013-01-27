@@ -66,6 +66,14 @@ footer [class*=" icon-"] {
   font-size: 1.3em;
 }
 
+section {
+  padding-top: 40px;
+}
+
+.nav {
+  margin-bottom: 0px;
+}
+
 .nav [class^="icon-"],
 .nav [class*=" icon-"] {
   line-height: 0.7em;
@@ -77,10 +85,6 @@ footer [class*=" icon-"] {
   margin-left: 10%;
   padding-right: 0px;
   padding-left: 0px;
-}
-
-.row-fluid {
-  margin-bottom: 20px;
 }
 
 .row-fluid .span6 {

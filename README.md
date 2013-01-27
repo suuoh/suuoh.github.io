@@ -38,7 +38,14 @@ Resources
 [tha](http://tha.jp/)  
 [Why Informatics](http://www.soic.indiana.edu/prospective/_doc/why-info-groth.pdf)  
 [Lazy Load](http://www.appelsiini.net/projects/lazyload)  
-[10 JavaScript MVC Frameworks](http://codebrief.com/2012/01/the-top-10-javascript-mvc-frameworks-reviewed/)
+[10 JavaScript MVC Frameworks](http://codebrief.com/2012/01/the-top-10-javascript-mvc-frameworks-reviewed/)  
+[Bootstrap Tour](http://sorich87.github.com/bootstrap-tour/)  
+[cdnjs](http://cdnjs.com/)  
+[CoffeeScript](http://coffeescript.org/)  
+[LESS](http://lesscss.org/)  
+[Node](http://nodejs.org/)  
+[AngularJS](http://angularjs.org/)  
+
 
 Snippets
 --------
