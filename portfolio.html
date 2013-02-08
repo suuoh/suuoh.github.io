@@ -3,12 +3,15 @@ layout: default
 title: Portfolio
 description: Portfolio of Melvin Chien
 permalink: /portfolio/
-updated: 2013-01-26
+updated: 2013-02-08
 ---
 
 <ul class="nav nav-pills">
   <li>
-    <a href="#anteaternetwork">Anteater Network</a>
+    <a href="#antnet">Anteater Network</a>
+  </li>
+  <li>
+    <a href="#jmmp">JMMP</a>
   </li>
   <li>
     <a href="#alienescape">Alien Escape</a>
@@ -17,49 +20,65 @@ updated: 2013-01-26
     <a href="#terris">Terris</a>
   </li>
 </ul>
-<section id="anteaternetwork">
+<section id="antnet">
   <h2>Anteater Network</h2>
   <div class="row-fluid">
     <div class="span6">
       <h3>Description</h3>
-      <p>Anteater Network is a new, clean, and expandable system created for the <a class="tooltip-hover" title="University of California, Irvine">UCI</a> Alumni Association as my senior design project for the informatics undergraduate program.</p>
+      <p><a href="http://instdav.ics.uci.edu/~191grp10/AnteaterNetwork-Testing/" target="_blank">Anteater Network</a> is a new, clean, and expandable system created by <a href="#jmmp">JMMP</a> for the <a href="http://alumni.uci.edu/" target="_blank">University of California, Irvine Alumni Association</a> as my senior design project for the informatics undergraduate program.</p>
       <p>The system helps connect current and past students and faculty with other alumni who have started their own businesses by displaying these businesses on a map. This allows for a highly effective visual representation of the spread of UCI's alumni network.</p>
-      <p>The project was developed in an agile environment with continuous, iterative cycles of development, presentations, and feedback. The design process involved creating prototypes, wireframes, use case diagrams, architectural diagrams, project plans, test plans, and requirements documents. Testing included JavaScript unit testing, execution tests, code reviews, user testing, heuristic evaluations, and expert reviews.</p>
     </div>
     <div class="span6">
       <h3>Features</h3>
       <ul class="no-bullets">      
         <li><i class="icon-angle-right"></i> Displays all UCI alumni owned businesses</li>
         <li><i class="icon-angle-right"></i> Supports <a class="tooltip-hover" title="Companies without a physical address.">online</a> businesses</li>
-        <li><i class="icon-angle-right"></i> Filter by city, business name, and zip code</li>
-        <li><i class="icon-angle-right"></i> <a class="tooltip-hover" title="Map and results list instantly update on each keystroke.">Instantly search</a> by business name and zip code</li>
+        <li><i class="icon-angle-right"></i> Search by city, business name, zip code, class year, or school</li>
         <li><i class="icon-angle-right"></i> Auto focusing map on search, with <a class="tooltip-hover" title="Prevents pins from appearing on the edge of the map.">buffer zones</a> around pins</li>
         <li><i class="icon-angle-right"></i> Auto populating menus</li>      
         <li><i class="icon-angle-right"></i> Hide-able results list</li>
         <li><i class="icon-angle-right"></i> Marker clustering</li>
+        <li><i class="icon-angle-right"></i>Geocoding and caching addresses</li>
       </ul>
     </div>
   </div>
   <h3>Gallery</h3>
   <div class="row-fluid">
-    <a class="span2" title="Default view of the Anteater Network." rel="anteaternetwork" href="/images/anteaternetwork_main.png">
-      <img class="lazy" src="/images/pixel.gif" data-original="/images/anteaternetwork_main_small.png" alt="Main View"/>
+    <a class="span2" title="Default view of the Anteater Network." rel="antnet" href="/images/antnet_main.png">
+      <img class="lazy" src="/images/pixel.gif" data-original="/images/antnet_main_small.png" alt="Main View"/>
     </a>
-    <a class="span2" title="Turn on the clusters!" rel="anteaternetwork" href="/images/anteaternetwork_clusters.png">
-      <img class="lazy" src="/images/pixel.gif" data-original="/images/anteaternetwork_clusters_small.png" alt="Marker Clusters"/>
+    <a class="span2" title="Turn on the clusters!" rel="antnet" href="/images/antnet_clusters.png">
+      <img class="lazy" src="/images/pixel.gif" data-original="/images/antnet_clusters_small.png" alt="Marker Clusters"/>
     </a>
-    <a class="span2" title="Look through business using the results list." rel="anteaternetwork" href="/images/anteaternetwork_results.png">
-      <img class="lazy" src="/images/pixel.gif" data-original="/images/anteaternetwork_results_small.png" alt="Results List"/>
+    <a class="span2" title="Look through business using the results list." rel="antnet" href="/images/antnet_results.png">
+      <img class="lazy" src="/images/pixel.gif" data-original="/images/antnet_results_small.png" alt="Results List"/>
     </a>
-    <a class="span2" title="Various filters are available." rel="anteaternetwork" href="/images/anteaternetwork_bustype.png">
-      <img class="lazy" src="/images/pixel.gif" data-original="/images/anteaternetwork_bustype_small.png" alt="Business Type Filter"/>
+    <a class="span2" title="Various filters are available." rel="antnet" href="/images/antnet_bustype.png">
+      <img class="lazy" src="/images/pixel.gif" data-original="/images/antnet_bustype_small.png" alt="Business Type Filter"/>
     </a>
-    <a class="span2" title="Find businesses by name with the instant search!" rel="anteaternetwork" href="/images/anteaternetwork_busname.png">
-      <img class="lazy" src="/images/pixel.gif" data-original="/images/anteaternetwork_busname_small.png" alt="Business Name Filter"/>
+    <a class="span2" title="Find businesses by name with the instant search!" rel="antnet" href="/images/antnet_busname.png">
+      <img class="lazy" src="/images/pixel.gif" data-original="/images/antnet_busname_small.png" alt="Business Name Filter"/>
     </a>
-    <a class="span2" title="Is that zip code even real?" rel="anteaternetwork" href="/images/anteaternetwork_noresults.png">
-      <img class="lazy" src="/images/pixel.gif" data-original="/images/anteaternetwork_noresults_small.png" alt="Business Zipcode Filter and No Results"/>
+    <a class="span2" title="Is that zip code even real?" rel="antnet" href="/images/antnet_noresults.png">
+      <img class="lazy" src="/images/pixel.gif" data-original="/images/antnet_noresults_small.png" alt="Business Zipcode Filter and No Results"/>
     </a>
+  </div>
+</section>
+<section id="jmmp">
+  <h2>JMMP</h2>
+  <div class="row-fluid">
+    <div class="span6">
+      <h3>Description</h3>
+      <p><a href="http://github.com/jmmp/" target="_blank">JMMP</a> is my team that was formed for the Informatics 191 course at UCI. Our main focus is to work on the <a href="#antnet">Anteater Network</a> system in collaboration with the course instructors as well as our sponsors, the UC Irvine Alumni Association.</p>
+      <p>The team developed the Anteater Network in an agile environment with continuous, iterative cycles of development, presentations, and feedback. The design process involved creating project plans, business cases, requirements documents, progress reports, test plans, prototypes, wireframes, use case diagrams, architectural diagrams, and deployment plans. Testing included JavaScript unit testing, execution tests, code reviews, user testing, heuristic evaluations, and expert reviews.</p>
+    </div>
+    <div class="span6">
+      <h3>Features</h3>
+    </div>
+  </div>
+  <h3>Gallery</h3>
+  <div class="row-fluid">
+    Coming soon!
   </div>
 </section>
 <section id="alienescape">
@@ -67,7 +86,7 @@ updated: 2013-01-26
   <div class="row-fluid">
     <div class="span6">
       <h3>Description</h3>
-      <p>Alien Escape is a short, unique video game as part of a 7 week project involving creating prototypes, presentations, and documentation. It is an original, tile based, adventure game built on the melonJS HTML5 game library and Tiled map format. It features custom artwork and sprites, sounds, and artificial intelligence and field of view algorithms.</p>
+      <p><a href="http://suuoh.com/AlienEscape/" target="_blank">Alien Escape</a> is a short, unique video game as part of a 7 week project involving creating prototypes, presentations, and documentation. It is an original, tile based, adventure game built on the melonJS HTML5 game library and Tiled map format. It features custom artwork and sprites, sounds, and artificial intelligence and field of view algorithms.</p>
     </div>
     <div class="span6">
       <h3>Features</h3>
@@ -106,7 +125,7 @@ updated: 2013-01-26
   <div class="row-fluid">
     <div class="span6">
       <h3>Description</h3>
-      <p>Terris is a gaming community that I co-founded in <a class="tooltip-hover" title="Terris was created from merging two smaller successful communities: The Dark Pinnacle of Inspiration, founded in March 2011 by myself, and Terracraft, founded in April 2011 by my partner.">December 2011</a>. The community is largely focused on playing Minecraft, though it has been steadily expanding to other games such as Team Fortress 2. I resigned from my role as a staff member in September 2012 to focus on other hobbies, though I occasionally help out when needed.</p>
+      <p><a href="http://terrismc.info" target="_blank">Terris</a> is a gaming community that I co-founded in <a class="tooltip-hover" title="Terris was created from merging two smaller successful communities: The Dark Pinnacle of Inspiration, founded in March 2011 by myself, and Terracraft, founded in April 2011 by my partner.">December 2011</a>. The community is largely focused on playing Minecraft, though it has been steadily expanding to other games such as Team Fortress 2. I resigned from my role as a staff member in September 2012 to focus on other hobbies, though I occasionally help out when needed.</p>
       <p>At that time, I managed a team of twenty staff along with a community of a few hundred registered users and actively created, managed, and led new projects for the community. Managed and maintained all aspects of the community including the finances, social media presence, graphical identity, technical support, and in game operations.</p>
     </div>
     <div class="span6">
