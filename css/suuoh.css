@@ -70,41 +70,6 @@ section {
   padding-top: 40px;
 }
 
-.nav {
-  margin-bottom: 0px;
-}
-
-.nav [class^="icon-"],
-.nav [class*=" icon-"] {
-  line-height: 0.7em;
-}
-
-.navbar .container,
-.container-fluid {
-  margin-right: 10%;
-  margin-left: 10%;
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
-.row-fluid .span6 {
-  width: 47.93617021276595%;
-  margin-left: 4.127659574468085%;
-}
-
-.navbar .brand:hover {
-  color: #008CE2;
-}
-
-.navbar .nav > li > a:hover {
-  color: #008CE2;
-}
-
-.navbar .nav > .active > a, 
-.navbar .nav > .active > a:hover {
-  background-color: rgba(0, 140, 226, 0.25);
-}
-
 .collapse {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -122,6 +87,40 @@ section {
   padding: 10px 10px;
 }
 
+.gallery {
+  margin-top: 1em;
+}
+
+.nav {
+  margin-bottom: 0px;
+}
+
+.nav [class^="icon-"],
+.nav [class*=" icon-"] {
+  line-height: 0.7em;
+}
+
+.navbar .container,
+.container-fluid {
+  margin-right: 10%;
+  margin-left: 10%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.navbar .brand:hover {
+  color: #008CE2;
+}
+
+.navbar .nav > li > a:hover {
+  color: #008CE2;
+}
+
+.navbar .nav > .active > a, 
+.navbar .nav > .active > a:hover {
+  background-color: rgba(0, 140, 226, 0.25);
+}
+
 .lazy {
   display: none;
 }
@@ -129,4 +128,9 @@ section {
 .lastUpdated {
   color: #C8C8C8;
   margin-top: 20px;
+}
+
+.row-fluid .span6 {
+  width: 47.93617021276595%;
+  margin-left: 4.127659574468085%;
 }
