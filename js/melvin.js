@@ -1,3 +1,8 @@
+/*
+ * suuoh.com
+ * Melvin Chien 2013
+ */
+
 $(document).ready(function() {
   $("footer").hide();
   $("footer").delay(1500).fadeIn(3000);

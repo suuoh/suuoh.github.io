@@ -3,11 +3,11 @@ layout: default
 description: Melvin Chien
 ---
 
-<img id="splash" src="images/leaves.png" title="Welcome!" alt="splash"/>
+<img id="splash" title="Welcome!" alt="splash" style="display: none;"/>
 
 <script>
 $(document).ready(function() {
-  $("img#splash").hide();
+  $("img#splash").attr("src", "images/leaves.png");
   $("img#splash").bind("load", function () {
     $("img#splash").fadeIn(6000);
   });
