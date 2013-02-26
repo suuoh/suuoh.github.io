@@ -3,10 +3,6 @@
  * Melvin Chien 2013
  */
 
-body {
-  padding-top: 70px;
-}
-
 a {
   color: #008CE2
 }
@@ -94,11 +90,6 @@ section {
   margin-bottom: 0px;
 }
 
-.nav [class^="icon-"],
-.nav [class*=" icon-"] {
-  line-height: 0.7em;
-}
-
 .navbar .container,
 .container-fluid {
   margin-right: 10%;
@@ -129,7 +120,15 @@ section {
   margin-top: 20px;
 }
 
-.row-fluid .span6 {
-  width: 47.93617021276595%;
-  margin-left: 4.127659574468085%;
+@media (min-width: 979px) {
+  #body {
+    padding-top: 65px;
+  }  
 }
+
+@media (max-width: 979px) {
+  .navbar-fixed-top .navbar-inner {
+    padding: 0px;
+  }  
+}
+

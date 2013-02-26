@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} · {% endif %}melvin</title>
   <meta name="author" content="Melvin Chien">
   <meta name="description" content="{{ page.description }}">
 
   <!-- Bootstrap Cosmo -->
   <link href="/css/bootstrap-cosmo.no-icons.css" rel="stylesheet" media="screen">
+
+  <!-- Bootstrap Responsive -->
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/css/bootstrap-responsive.min.css" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
@@ -25,25 +29,25 @@
 <body>
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
-      <div class="container">
+      <div class="container-fluid">
         <a class="brand" href="/">melvin</a>
         <ul class="nav">
-          <li id="about"><a href="/about/"><i class="icon-comments"></i> About</a></li>
-          <li id="portfolio"><a href="/portfolio/"><i class="icon-suitcase"></i> Portfolio</a></li>
-          <li id="blog"><a href="/blog/"><i class="icon-coffee"></i> Blog</a></li>
+          <li id="about"><a href="/about/"><i class="icon-comments"></i><span class="hidden-phone"> About</span></a></li>
+          <li id="portfolio"><a href="/portfolio/"><i class="icon-suitcase"></i><span class="hidden-phone"> Portfolio</span></a></li>
+          <li id="blog"><a href="/blog/"><i class="icon-coffee"></i><span class="hidden-phone"> Blog</span></a></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid">
+  <div id="body" class="container-fluid">
     <!--<div class="alert">
       Heavy construction ahead! Please excuse the (lack of a) mess!
     </div>-->
 
     {% if page.title %}
     <div class="page-header">
-      <h1>{{ page.title }} <small>{{ page.subhead }}</small></h1>
+      <h1>{{ page.title }} <small class="hidden-phone">{{ page.subhead }}</small></h1>
     </div>
     {% endif %}
 
