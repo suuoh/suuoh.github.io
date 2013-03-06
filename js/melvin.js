@@ -1,7 +1,7 @@
-/*
- * suuoh.com
- * Melvin Chien 2013
- */
+//
+// suuoh.com
+// Melvin Chien 2013
+//
 
 $(document).ready(function() {
   $("a[class='tooltip-hover']").tooltip();
