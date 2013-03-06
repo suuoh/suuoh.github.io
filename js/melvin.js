@@ -9,7 +9,7 @@ $(document).ready(function() {
   $("img.lazy").show().lazyload({
     effect: "fadeIn"
   });
-  $("a[href$='.jpg'],a[href$='.png']").fancybox({
+  $("a[href$='.gif'],a[href$='.jpg'],a[href$='.png']").fancybox({
     padding: 10,
     margin: 50,
     loop: false,
