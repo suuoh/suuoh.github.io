@@ -4,8 +4,8 @@
 //
 
 $(document).ready(function() {
+  $("a[href^='http']").attr("target", "_blank");
   $("a[class='tooltip-hover']").tooltip();
-  $("a[class^='tooltip-']").attr("href", "");
   $("img.lazy").show().lazyload({
     effect: "fadeIn"
   });
