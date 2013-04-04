@@ -4,7 +4,8 @@
 //
 
 $(document).ready(function() {
-  $("a[href^='#']").click(function(){  
+  $("a[href^='#']").click(function(e){
+    e.preventDefault();
     var id = $(this).attr("href");
     var posTop = $(id).position().top;
     if ($(".hidden-phone").is(":visible"))
