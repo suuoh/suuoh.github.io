@@ -4,6 +4,15 @@
 //
 
 $(document).ready(function() {
+  $("a[href^='#']").click(function(){  
+    var id = $(this).attr("href");
+    var posTop = $(id).position().top;
+    if ($(".hidden-phone").is(":visible"))
+      posTop -= 50;
+    $("html, body").animate({
+      scrollTop: posTop
+    }, 1000);
+  });
   $("a[href^='http']").attr("target", "_blank");
   $("a[class='tooltip-hover']").tooltip();
   $("img.lazy").show().lazyload({
