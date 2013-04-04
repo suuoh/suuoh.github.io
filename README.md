@@ -14,7 +14,7 @@ All files and their content in the following directories are Copyright 2013 Melv
 * about.html
 * portfolio.html
 
-Licenses for all other files can be found in the [/LICENSES.md](LICENSES.md) file.
+Licenses for all other files can be found in the [LICENSES](/LICENSES.md) file.
 
 Resources
 ---------
