@@ -1,4 +1,4 @@
-suuoh.com
+melvin.io
 =========
 
 About
@@ -14,7 +14,7 @@ All files and their content in the following directories are Copyright 2013 Melv
 * about.html
 * portfolio.html
 
-All other files and their content are licensed under the [Creative Commons Attribution-NonCommercial 3.0 license](http://creativecommons.org/licenses/by-nc/3.0/), unless otherwise stated.
+Licenses for all other files can be found in the [/LICENSES.md](LICENSES.md) file.
 
 Resources
 ---------
