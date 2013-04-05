@@ -7,14 +7,13 @@ Welcome to the GitHub project for my website! I love learning as I go, so this R
 
 License
 -------
-
-All files and their content in the following directories are Copyright 2013 Melvin Chien:
+All following files, directories, and their contents are Copyright 2013 Melvin Chien with all rights reserved:
 * blog/
 * images/
 * about.html
 * portfolio.html
 
-Licenses for all other files can be found in the [LICENSES](/LICENSES.md) file.
+Licenses for all files can be found in the [LICENSES](/LICENSES.md) file.
 
 Resources
 ---------

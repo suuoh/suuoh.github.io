@@ -3,14 +3,13 @@ melvin.io
 
 Licenses
 --------
-
-All files and their content in the following directories are Copyright 2013 Melvin Chien:
+All following files, directories, and their contents are Copyright 2013 Melvin Chien with all rights reserved:
 * blog/
 * images/
 * about.html
 * portfolio.html
 
-All other files and their content are licensed under the [Creative Commons Attribution-NonCommercial 3.0](http://creativecommons.org/licenses/by-nc/3.0/) license unless otherwise stated.
+All other files are Copyright 2013 Melvin Chien and licensed under the [Creative Commons Attribution-NonCommercial 3.0](http://creativecommons.org/licenses/by-nc/3.0/) license unless otherwise stated.  
 
 #### jQuery
 **Author:** jQuery Foundation  
@@ -20,10 +19,7 @@ All other files and their content are licensed under the [Creative Commons Attri
 #### Bootstrap
 **Author:** Mark Otto and Jacob Thornton  
 **Website:** <http://twitter.github.com/bootstrap/>  
-**License:** [Apache License](http://www.apache.org/licenses/LICENSE-2.0)  
-
-#### Bootswatch
-**Author:** Thomas Park  
+**License:** [Apache License](http://www.apache.org/licenses/LIC following files, directories, and their contentsor:** Thomas Park  
 **Website:** <http://bootswatch.com/>  
 **License:** [Apache License](http://www.apache.org/licenses/LICENSE-2.0)  
 
