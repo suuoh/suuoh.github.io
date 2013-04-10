@@ -53,7 +53,9 @@
 
     {{ content }}
 
-    
+    {% if page.lastupdated %}
+    <p class="last-updated"><i class="icon-pencil"></i> {{ page.updated | date_to_long_string }}</p>
+    {% endif %}
 
     <footer>
       <a href="http://twitter.com/suuoh/"><i class="icon-twitter"></i></a>
