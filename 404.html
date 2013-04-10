@@ -1,0 +1,22 @@
+---
+layout: default
+title: Page not found
+description: 404 Page Not Found
+subhead: <i class="icon-ambulance"></i>
+---
+
+<div class="row-fluid">
+  <div class="span12">
+    <p>I couldn't find what you were looking for!</p>
+    <p>Kindly report this broken link to me.</p>
+    <p><a class="btn btn-primary btn-small" id="js-button-twitter" style="margin: 5px 0px; margin-right: 5px"><i class="icon-twitter"></i> Tweet me</a><a class="btn btn-primary btn-small" id="js-button-github" style="margin: 5px 0px; margin-left: 5px"><i class="icon-github-alt"></i> Submit issue</a></p>
+    <p><a href="" onclick="history.back();">Back to previous page</a></p>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+  $("#js-button-github").attr("href", "https://github.com/melvinchien/melvinchien.github.com/issues/new?title=Broken%20link%3A%20" + document.URL);
+  $("#js-button-twitter").attr("href", "https://twitter.com/intent/tweet?screen_name=suuoh&text=I%20found%20a%20broken%20link%20on%20your%20site!%20" + document.URL);
+});
+</script>
