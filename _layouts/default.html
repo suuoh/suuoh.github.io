@@ -54,7 +54,7 @@
     {{ content }}
 
     {% if page.updated %}
-    <p class="last-updated"><i class="icon-pencil"></i> {{ page.updated | date_to_string }}</p>
+    <p class="last-updated"><i class="icon-pencil"></i> {{ page.updated | date: "%B %e, %Y" }}</p>
     {% endif %}
 
     <footer>
