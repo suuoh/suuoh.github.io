@@ -44,7 +44,6 @@ Resources
 [LESS](http://lesscss.org/)  
 [Node](http://nodejs.org/)  
 [AngularJS](http://angularjs.org/)  
-[How I built my blog in one day](http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/)  
 
 
 Snippets
@@ -83,12 +82,3 @@ if ( stuffToDo[foo] ) {
 }
 ````
 Source: <http://learn.jquery.com/javascript-101/conditional-code/>  
-
-````Javascript
-<div>
-  <h3>Related Posts</h3>
-  {% for post in site.related_posts limit:3 %}
-  <h4><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></h4>
-  {% endfor %}
-</div>
-````
