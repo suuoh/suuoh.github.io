@@ -1,0 +1,23 @@
+{
+  "name": "melvin.io",
+  "description": "Personal site of Melvin Chien, an upcoming UI designer and avid gamer.",
+  "version": "1.6.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/melvinchien/melvinchien.github.com.git"
+  },
+  "keywords": [
+    "melvin",
+    "portfolio",
+    "blog"
+  ],
+  "author": "Melvin Chien <hello@melvin.io> (http://melvin.io/)",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/melvinchien/melvinchien.github.com/blob/master/LICENSE"
+  },
+  "bugs": {
+    "url": "https://github.com/melvinchien/melvinchien.github.com/issues",
+    "email": "hello@melvin.io"
+  }
+}
