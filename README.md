@@ -3,11 +3,11 @@ melvin.io
 
 About
 -----
-Welcome to the GitHub project for my website! I love learning as I go, so this README is where I save cool or interesting resources that I find for future use!
+Welcome to the GitHub project for my personal website!
 
 License
 -------
-All following files, directories, and their contents are Copyright 2013 Melvin Chien with all rights reserved:
+All following files, directories, and their contents are Copyright 2013 Melvin Chien:
 * blog/
 * images/
 * about.html
@@ -45,50 +45,3 @@ Resources
 [Node](http://nodejs.org/)  
 [AngularJS](http://angularjs.org/)  
 [How I built my blog in one day](http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/)  
-
-
-Snippets
---------
-
-````Javascript
-// Callback without arguments
-$.get( "myhtmlpage.html", myCallBack );
-
-// Callback with arguments
-$.get( "myhtmlpage.html", function() {
-    myCallBack( param1, param2 );
-});
-````
-Source: <http://learn.jquery.com/about-jquery/how-jquery-works/>  
-
-````Javascript
-var stuffToDo = {
-    bar: function() {
-        alert("the value was bar -- yay!");
-    },
-
-    "baz" : function() {
-        alert("boo baz :(");
-    },
-
-    "default" : function() {
-        alert("everything else is just ok");
-    }
-};
-
-if ( stuffToDo[foo] ) {
-    stuffToDo[ foo ]();
-} else {
-    stuffToDo["default"]();
-}
-````
-Source: <http://learn.jquery.com/javascript-101/conditional-code/>  
-
-````Javascript
-<div>
-  <h3>Related Posts</h3>
-  {% for post in site.related_posts limit:3 %}
-  <h4><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></h4>
-  {% endfor %}
-</div>
-````
