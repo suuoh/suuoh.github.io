@@ -1,6 +1,12 @@
-*.DS_Store
-_site/
-_drafts/
-suuoh.com/
-originals/
+#Standard
+.DS_Store
+._*
+Thumbs.db
+
+
+# Other
+_site
+_drafts
+originals
 start.sh
+node_modules
