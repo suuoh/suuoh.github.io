@@ -5,15 +5,9 @@ About
 -----
 Welcome to the GitHub project for my personal website!
 
-License
--------
-All following files, directories, and their contents are Copyright 2013 Melvin Chien:
-* blog/
-* images/
-* about.html
-* portfolio.html
-
-Licenses for all files can be found in the [LICENSE](/LICENSE.md) file.
+Licenses
+--------
+Licenses for all files can be found in the [LICENSES](LICENSES.md) file.
 
 Resources
 ---------
