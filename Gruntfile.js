@@ -16,7 +16,9 @@ module.exports = function(grunt) {
 
     // Task configuration
     clean: {
-      melvin: ['_site', 'css/melvin.css', 'css/melvin.min.css', 'js/melvin.js', 'js/melvin.min.js']
+      jekyll: ['_site'],
+      css: ['css/melvin.css', 'css/melvin.min.css'],
+      js: ['js/melvin.js', 'js/melvin.min.js']
     },
 
     concat: {
