@@ -15,6 +15,10 @@ module.exports = function(grunt) {
             ' */\n\n',
 
     // Task configuration
+    clean: {
+      melvin: ['_site', 'css/melvin.css', 'css/melvin.min.css', 'js/melvin.js', 'js/melvin.min.js']
+    },
+
     concat: {
       options: {
         stripBanners: true,
@@ -54,9 +58,7 @@ module.exports = function(grunt) {
     },
 
     cssmin: {
-      options: {
-        banner: '<%= banner %>'
-      },
+      options: {},
       css: {
         src: 'css/melvin.css',
         dest: 'css/melvin.min.css'
@@ -93,9 +95,7 @@ module.exports = function(grunt) {
     },
 
     uglify: {
-      options: {
-        banner: '<%= banner %>'
-      },
+      options: {},
       js: {
         src: 'js/melvin.js',
         dest: 'js/melvin.min.js'
@@ -139,6 +139,7 @@ module.exports = function(grunt) {
   });
 
   // Load plugins
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-csslint');
@@ -151,10 +152,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
 
   // Test task
-  grunt.registerTask('test', ['less', 'csslint', 'coffee', 'jshint', 'jekyll', 'validation']);
+  grunt.registerTask('test', ['clean', 'less', 'csslint', 'coffee', 'jshint', 'jekyll', 'validation']);
 
   // Distribution task
-  grunt.registerTask('dist', ['less', 'coffee', 'concat', 'cssmin', 'uglify']);
+  grunt.registerTask('dist', ['clean', 'less', 'coffee', 'concat', 'cssmin', 'uglify']);
 
   // Default task
   grunt.registerTask('default', ['test', 'dist']);
