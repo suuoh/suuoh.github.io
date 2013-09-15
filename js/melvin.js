@@ -1,8 +1,3 @@
-//
-// suuoh.com
-// Melvin Chien 2013
-//
-
 $(document).ready(function() {
   $("a[href^='#']").click(function(e){
     e.preventDefault();

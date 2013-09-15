@@ -7,7 +7,7 @@ a:hover {
   cursor: pointer;
 }
 @media (min-width: 979px) {
-  #body {
+  .body {
     padding-top: 65px;
   }
 }
@@ -44,8 +44,8 @@ footer a:hover {
   color: #bbbbbb;
   text-decoration: none;
 }
-footer [class^="icon-"],
-footer [class*=" icon-"] {
+footer i[class^="icon-"],
+footer i[class*=" icon-"] {
   padding-right: 3px;
   font-size: 1.3em;
 }
@@ -79,7 +79,7 @@ h3 {
 }
 .navbar .nav .active a,
 .navbar .nav .active a:hover {
-  background-color: rgba(0, 140, 226, 0.25);
+  background-color: #06293E;
 }
 .navbar .nav li a:hover {
   color: #008ce2;
@@ -98,6 +98,6 @@ section {
 ul.no-bullets li {
   list-style: none;
 }
-ul.no-bullets li [class^="icon-"] {
+ul.no-bullets li i[class^="icon-"] {
   margin-left: -25px;
 }
