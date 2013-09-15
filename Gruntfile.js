@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+  "use strict";
 
   // Project configuration
   grunt.initConfig({
@@ -42,7 +43,10 @@ module.exports = function(grunt) {
 
     csslint: {
       options: {
-        import: false
+        'import': false,
+        'regex-selectors': false,
+        'unique-headings': false,
+        'zero-units': false
       },
       css: {
         src: 'css/*.css'
@@ -74,10 +78,11 @@ module.exports = function(grunt) {
       options: {
         browser: true,
         camelcase: true,
-        curly: true,
+        curly: false,
+        devel: true,
         eqeqeq: true,
         eqnull: true,
-        jquery: true
+        validthis: true
       },
       gruntfile: {
         src: 'Gruntfile.js'
