@@ -20,13 +20,13 @@ module.exports = function(grunt) {
         stripBanners: true,
         banner: '<%= banner %>'
       },
-      coffee: {
-        src: 'js/*.coffee',
-        dest: 'js/melvin.coffee'
+      js: {
+        src: 'js/melvin*.js',
+        dest: 'js/melvin.js'
       },
-      less: {
-        src: 'css/*.less',
-        dest: 'css/melvin.less'
+      css: {
+        src: 'css/melvin*.css',
+        dest: 'css/melvin.css'
       }
     },
 
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
       css: {
         expand: true,
         cwd: 'css/',
-        src: '*.less',
+        src: 'melvin*.less',
         dest: 'css/',
         ext: '.css'
       }
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         'zero-units': false
       },
       css: {
-        src: 'css/*.css'
+        src: 'css/melvin*.css'
       }
     },
 
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
       js: {
         expand: true,
         cwd: 'js/',
-        src: '*.coffee',
+        src: 'melvin*.coffee',
         dest: 'js/',
         ext: '.js'
       }
@@ -88,7 +88,7 @@ module.exports = function(grunt) {
         src: 'Gruntfile.js'
       },
       js: {
-        src: 'js/*.js'
+        src: 'js/melvin*.js'
       }
     },
 
@@ -113,25 +113,26 @@ module.exports = function(grunt) {
 
     jekyll: {
       options: {
-        serve: true
+        serve: true,
+        exclude: [".gitignore", "CNAME", "Gruntfile.js", "LICENSE", "LICENSES.md", "node_modules", "package.json", "README.md", "start.sh"]
       }
     },
 
     watch: {
       less: {
-        files: 'css/*.less',
+        files: 'css/melvin*.less',
         tasks: 'less'
       },
       css: {
-        files: 'css/*.css',
+        files: 'css/melvin*.css',
         tasks: 'csslint'
       },
       coffee: {
-        files: 'js/*.coffee',
+        files: 'js/melvin*.coffee',
         tasks: 'coffee'
       },
       js: {
-        files: 'js/*.js',
+        files: 'js/melvin*.js',
         tasks: 'jshint:js'
       }
     }
