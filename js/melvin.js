@@ -33,7 +33,9 @@
         },
         overlay: {
           showEarly: false,
-          css: background("rgba(25, 25, 25, 0.80)")
+          css: {
+            background: "rgba(25, 25, 25, 0.80)"
+          }
         }
       }
     });

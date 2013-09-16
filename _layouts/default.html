@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} · {% endif %}melvin</title>
+  <title>{% if page.title %}{{ page.title }} &middot; {% endif %}melvin</title>
   <meta name="author" content="Melvin Chien">
   <meta name="description" content="{{ page.description }}">
 
   <!-- Bootstrap Cosmo -->
-  <link href="/css/bootstrap-cosmo.no-icons.css" rel="stylesheet" media="screen">
+  <link href="{{ site.baseurl }}/css/bootstrap-cosmo.no-icons.css" rel="stylesheet" media="screen">
 
   <!-- Bootstrap Responsive -->
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
   <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" media="screen">
 
   <!-- melvin -->
-  <link href="/css/melvin.css" rel="stylesheet" media="screen">
+  <link href="{{ site.baseurl }}/css/melvin.min.css" rel="stylesheet" media="screen">
 
   <!-- jQuery -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -32,9 +32,9 @@
       <div class="container-fluid">
         <a class="brand" href="/">melvin</a>
         <ul class="nav">
-          <li id="about"><a href="/about/"><i class="icon-comments"></i><span class="hidden-phone"> About</span></a></li>
-          <li id="portfolio"><a href="/portfolio/"><i class="icon-suitcase"></i><span class="hidden-phone"> Portfolio</span></a></li>
-          <li id="blog"><a href="/blog/"><i class="icon-coffee"></i><span class="hidden-phone"> Blog</span></a></li>
+          <li id="about"><a href="{{ site.baseurl }}/about/"><i class="icon-comments"></i><span class="hidden-phone"> About</span></a></li>
+          <li id="portfolio"><a href="{{ site.baseurl }}/portfolio/"><i class="icon-suitcase"></i><span class="hidden-phone"> Portfolio</span></a></li>
+          <li id="blog"><a href="{{ site.baseurl }}/blog/"><i class="icon-coffee"></i><span class="hidden-phone"> Blog</span></a></li>
         </ul>
       </div>
     </div>
@@ -80,7 +80,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.js"></script>
 
   <!-- melvin -->
-  <script src="/js/melvin.js"></script>
+  <script src="{{ site.baseurl }}/js/melvin.min.js"></script>
 
   <!-- Google Analytics -->
   <script type="text/javascript">
