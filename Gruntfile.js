@@ -89,6 +89,9 @@ module.exports = function(grunt) {
         validthis: true
       },
       gruntfile: {
+        options: {
+          camelcase: false
+        },
         src: 'Gruntfile.js'
       },
       js: {
@@ -114,10 +117,19 @@ module.exports = function(grunt) {
     },
 
     jekyll: {
-      options: {
-        serve: true,
-        exclude: [".gitignore", "CNAME", "Gruntfile.js", "LICENSE", "LICENSES.md", "node_modules", "package.json", "README.md", "start.sh"]
-      }
+      options: {        
+        permalink: '/:categories/:year/:month/:title/',
+        relative_permalinks: 'false',
+        markdown: 'redcarpet',
+        exclude: ['.gitignore', 'CNAME', 'Gruntfile.js', 'LICENSE', 'LICENSES.md', 'node_modules', 'package.json', 'README.md', 'start.sh', 'validation-report.json', 'validation-status.json']
+      },
+      preview: {
+        options: {
+          baseurl: '\'\'',
+          serve: true
+        }
+      },
+      dist: {}
     },
 
     watch: {
@@ -154,10 +166,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
 
   // Test task
-  grunt.registerTask('test', ['clean', 'less', 'csslint', 'coffee', 'jshint', 'jekyll', 'validation']);
+  grunt.registerTask('test', ['clean', 'less', 'csslint', 'coffee', 'jshint', 'jekyll:dist', 'validation']);
 
   // Distribution task
   grunt.registerTask('dist', ['clean', 'less', 'coffee', 'concat', 'cssmin', 'uglify']);
+
+  // Preview task
+  grunt.registerTask('preview', ['default', 'jekyll:preview']);
 
   // Default task
   grunt.registerTask('default', ['test', 'dist']);

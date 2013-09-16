@@ -21,7 +21,7 @@ $(document).ready ->
       overlay:
         showEarly: false
         css:
-          background "rgba(25, 25, 25, 0.80)"
+          background: "rgba(25, 25, 25, 0.80)"
   $(".fanxybox-media").fancybox
     padding: 10
     margin: 50
