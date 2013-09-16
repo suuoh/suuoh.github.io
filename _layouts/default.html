@@ -1,86 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} &middot; {% endif %}melvin</title>
   <meta name="author" content="Melvin Chien">
   <meta name="description" content="{{ page.description }}">
+  <title>{% if page.title %}{{ page.title }} &middot; {% endif %}melvin</title>
 
-  <!-- Bootstrap Cosmo -->
-  <link href="{{ site.baseurl }}css/bootstrap-cosmo.no-icons.css" rel="stylesheet" media="screen">
-
-  <!-- Bootstrap Responsive -->
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-
-  <!-- fancyBox -->
-  <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" rel="stylesheet" media="screen">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" media="screen">
-
-  <!-- melvin -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.min.css" rel="stylesheet" media="screen">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/css/foundation.min.css" rel="stylesheet" media="screen">  
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" media="screen">
   <link href="{{ site.baseurl }}css/melvin.min.css" rel="stylesheet" media="screen">
-
-  <!-- jQuery -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/vendor/custom.modernizr.min.js"></script>
 </head>
 <body>
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container-fluid">
-        <a class="brand" href="{{ site.baseurl }}">melvin</a>
-        <ul class="nav">
-          <li id="about" {% if page.title == "About" %}class="active"{% endif %}><a href="{{ site.baseurl }}about/"><i class="icon-comments"></i><span class="hidden-phone"> About</span></a></li>
-          <li id="portfolio" {% if page.title == "Portfolio" %}class="active"{% endif %}><a href="{{ site.baseurl }}portfolio/"><i class="icon-suitcase"></i><span class="hidden-phone"> Portfolio</span></a></li>
-          <li id="blog" {% if page.title == "Blog" %}class="active"{% endif %}><a href="{{ site.baseurl }}blog/"><i class="icon-coffee"></i><span class="hidden-phone"> Blog</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  {{ content }}
+  <footer>
+    &copy; 2013 Melvin Chien.
+  </footer>
 
-  <div class="body container-fluid">
-    <!--<div class="alert">
-      Heavy construction ahead! Please excuse the (lack of a) mess!
-    </div>-->
-
-    {% if page.title %}
-    <div class="page-header">
-      <h1>{{ page.title }} <small class="hidden-phone">{{ page.subhead }}</small></h1>
-    </div>
-    {% endif %}
-
-    {{ content }}
-
-    {% if page.updated %}
-    <p class="last-updated"><i class="icon-pencil"></i>  {{ page.updated | date: "%B %e, %Y" }}</p>
-    {% endif %}
-
-    <footer>
-      <a href="http://twitter.com/suuoh/"><i class="icon-twitter"></i></a>
-      <a href="http://plus.google.com/101764870345759205118?prsrc=2"><i class="icon-google-plus"></i></a>
-      <a href="http://linkedin.com/in/melvinchien"><i class="icon-linkedin"></i></a>
-      <a href="http://git.io/melvin"><i class="icon-github"></i></a>
-      <a href="mailto:hello@melvin.io"><i class="icon-envelope-alt"></i></a>
-      &copy; 2013 Melvin Chien.
-    </footer>
-  </div>
-
-  <!-- Lazy Load -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.8.4/jquery.lazyload.min.js"></script>
-
-  <!-- Bootstrap Javascript -->
-  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-
-  <!-- fancyBox -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-media.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.js"></script>
-
-  <!-- melvin -->
+  <!-- Load Zepto or jQuery -->
+  <script>
+    document.write('<script src=' +
+      ('__proto__' in {} ? '//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js' : '//code.jquery.com/jquery-2.0.3.min.js') +
+      '><\/script>')
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/foundation.min.js"></script>
   <script src="{{ site.baseurl }}js/melvin.min.js"></script>
+
+  <!-- Initialize Foundation -->
+  <script>
+    $(document).foundation();
+  </script>
 
   <!-- Google Analytics -->
   <script type="text/javascript">
@@ -97,6 +49,5 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
   </script>
-  <!-- Google Analytics end -->
 </body>
 </html>
