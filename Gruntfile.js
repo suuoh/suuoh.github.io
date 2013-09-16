@@ -126,8 +126,7 @@ module.exports = function(grunt) {
       preview: {
         options: {
           baseurl: '\'\'',
-          serve: true,
-          watch: true
+          serve: true
         }
       },
       dist: {}
@@ -140,21 +139,21 @@ module.exports = function(grunt) {
       },
       css: {
         files: 'css/melvin*.less',
-        tasks: ['less', 'csslint', 'cssmin'],
+        tasks: ['clean:css', 'less', 'csslint', 'cssmin'],
         options: {
           spawn: false
         }
       },
       js: {
         files: 'js/melvin*.coffee',
-        tasks: ['coffee', 'jshint:js', 'uglify'],
+        tasks: ['clean:js', 'coffee', 'jshint:js', 'uglify'],
         options: {
           spawn: false
         }
       },
       jekyll: {
-        files: ['*.html', '_layouts', 'css/*.min.css', 'favicon.ico', 'images', 'js/*.min.js'],
-        tasks: ['jekyll:dist'],
+        files: ['*.html', '_layouts/*', 'css/*.min.css', 'favicon.ico', 'images/*', 'js/*.min.js'],
+        tasks: ['clean:jekyll', 'jekyll:dist'],
         options: {
           spawn: false
         }
