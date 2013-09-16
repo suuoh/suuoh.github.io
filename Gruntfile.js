@@ -126,28 +126,38 @@ module.exports = function(grunt) {
       preview: {
         options: {
           baseurl: '\'\'',
-          serve: true
+          serve: true,
+          watch: true
         }
       },
       dist: {}
     },
 
     watch: {
-      less: {
-        files: 'css/melvin*.less',
-        tasks: 'less'
+      gruntfile: {
+        files: 'Gruntfile.js',
+        tasks: 'jshint:gruntfile'
       },
       css: {
-        files: 'css/melvin*.css',
-        tasks: 'csslint'
-      },
-      coffee: {
-        files: 'js/melvin*.coffee',
-        tasks: 'coffee'
+        files: 'css/melvin*.less',
+        tasks: ['less', 'csslint', 'cssmin'],
+        options: {
+          spawn: false
+        }
       },
       js: {
-        files: 'js/melvin*.js',
-        tasks: 'jshint:js'
+        files: 'js/melvin*.coffee',
+        tasks: ['coffee', 'jshint:js', 'uglify'],
+        options: {
+          spawn: false
+        }
+      },
+      jekyll: {
+        files: ['*.html', '_layouts', 'css/*.min.css', 'favicon.ico', 'images', 'js/*.min.js'],
+        tasks: ['jekyll:dist'],
+        options: {
+          spawn: false
+        }
       }
     }
   });
@@ -172,7 +182,7 @@ module.exports = function(grunt) {
   grunt.registerTask('dist', ['clean', 'less', 'coffee', 'concat', 'cssmin', 'uglify']);
 
   // Preview task
-  grunt.registerTask('preview', ['default', 'jekyll:preview']);
+  grunt.registerTask('preview', ['dist', 'jekyll:preview']);
 
   // Default task
   grunt.registerTask('default', ['test', 'dist']);
