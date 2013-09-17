@@ -17,8 +17,8 @@ module.exports = function(grunt) {
     // Task configuration
     clean: {
       jekyll: ['_site'],
-      css: ['css/melvin.css', 'css/melvin.min.css'],
-      js: ['js/melvin.js', 'js/melvin.min.js']
+      css: ['css/melvin*.css'],
+      js: ['js/melvin*.js']
     },
 
     concat: {
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
         'zero-units': false
       },
       css: {
-        src: 'css/melvin*.css'
+        src: ['css/melvin*.css', '!css/*.min.css']
       }
     },
 
@@ -95,7 +95,7 @@ module.exports = function(grunt) {
         src: 'Gruntfile.js'
       },
       js: {
-        src: 'js/melvin*.js'
+        src: ['js/melvin*.js', '!js/*min.js']
       }
     },
 
@@ -126,7 +126,8 @@ module.exports = function(grunt) {
       preview: {
         options: {
           baseurl: '\'\'',
-          serve: true
+          serve: true,
+          watch: true
         }
       },
       dist: {}
@@ -150,13 +151,6 @@ module.exports = function(grunt) {
         options: {
           spawn: false
         }
-      },
-      jekyll: {
-        files: ['*.html', '_layouts/*', 'css/*.min.css', 'favicon.ico', 'images/*', 'js/*.min.js'],
-        tasks: ['clean:jekyll', 'jekyll:dist'],
-        options: {
-          spawn: false
-        }
       }
     }
   });
@@ -174,11 +168,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-jekyll');
 
+  // Build task
+  grunt.registerTask('build', ['clean', 'less', 'coffee', 'jekyll:dist']);
+
   // Test task
-  grunt.registerTask('test', ['clean', 'less', 'csslint', 'coffee', 'jshint', 'jekyll:dist', 'validation']);
+  grunt.registerTask('test', ['build', 'csslint', 'jshint', 'validation']);
 
   // Distribution task
-  grunt.registerTask('dist', ['clean', 'less', 'coffee', 'concat', 'cssmin', 'uglify']);
+  grunt.registerTask('dist', ['build', 'concat', 'cssmin', 'uglify']);
 
   // Preview task
   grunt.registerTask('preview', ['dist', 'jekyll:preview']);
