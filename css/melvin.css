@@ -12,98 +12,127 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-@media (min-width: 979px) {
-  .body {
-    padding-top: 65px;
-  }
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
+/*
+.body {
+  @media (min-width: 979px) {
+    padding-top: 65px;
+  }  
+}
+
 .collapse {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
 .container-fluid {
   margin-right: 10%;
   margin-left: 10%;
   padding-right: 0px;
   padding-left: 0px;
 }
+
 .fancybox-title-float-wrap {
   bottom: -20px;
   right: auto;
+  .child {
+    border-radius: 0px;
+    font-weight: normal;
+    margin-right: 0px;
+    padding: 10px 10px;
+  }
 }
-.fancybox-title-float-wrap .child {
-  border-radius: 0px;
-  font-weight: normal;
-  margin-right: 0px;
-  padding: 10px 10px;
-}
+
 footer {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid @grayLight;
   margin-top: 40px;
   padding-top: 11px;
   padding-bottom: 30px;
+  a {
+    color: @black;
+    &:hover {
+      color: @grayDark;
+      text-decoration: none;
+    }
+  }
+  i[class^="icon-"],
+  i[class*=" icon-"] {
+    padding-right: 3px;
+    font-size: 1.3em;
+  }
 }
-footer a {
-  color: #000000;
-}
-footer a:hover {
-  color: #bbbbbb;
-  text-decoration: none;
-}
-footer i[class^="icon-"],
-footer i[class*=" icon-"] {
-  padding-right: 3px;
-  font-size: 1.3em;
-}
+
 .gallery {
   margin-top: 1em;
 }
-h1 small,
-h2 small,
-h3 small {
-  color: #c8c8c8;
+
+h1, h2, h3 {
+  small {
+    color: @gray;
+  }
 }
+
 h3 {
   font-weight: normal;
   line-height: 1em;
-  color: #c8c8c8;
+  color: @gray;
   font-size: 17.5px;
   margin-bottom: 15px;
 }
+
 .last-updated {
-  color: #c8c8c8;
+  color: @gray;
   margin-top: 20px;
 }
+
 .lazy {
   display: none;
 }
+
 .nav {
   margin-bottom: 0px;
 }
-.navbar .brand:hover {
-  color: #008ce2;
+
+.navbar {
+  .brand:hover {
+    color: @blue;
+  }
+  .nav {
+    .active {
+      a, a:hover {
+        background-color: #06293E;
+      }
+    }
+    li a:hover {
+      color: @blue;
+    }
+  }
 }
-.navbar .nav .active a,
-.navbar .nav .active a:hover {
-  background-color: #06293E;
-}
-.navbar .nav li a:hover {
-  color: #008ce2;
-}
-@media (max-width: 979px) {
-  .navbar-fixed-top .navbar-inner {
+
+.navbar-fixed-top .navbar-inner {
+  @media (max-width: 979px) {
     padding: 0px;
   }
 }
+
 section {
   padding-top: 40px;
 }
+
 .tooltip-hover {
   border-bottom: 1px dotted;
 }
-ul.no-bullets li {
-  list-style: none;
+
+ul.no-bullets {
+  li {
+    list-style: none;
+    i[class^="icon-"] {
+      margin-left: -25px;
+    }
+  }
 }
-ul.no-bullets li i[class^="icon-"] {
-  margin-left: -25px;
-}
+*/

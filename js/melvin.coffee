@@ -1,5 +1,10 @@
 $(document).ready ->
   $(@).foundation()
+
+$(window).resize ->
+  width = $(window).width() * 0.3
+  $("#js-hexagon").height width
+  $("#js-hexagon").width width
 ###
   $('a[href^="#"]').click (e) ->
     e.preventDefault()
