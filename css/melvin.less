@@ -3,7 +3,9 @@
 @gray: #C8C8C8;
 @grayLight: #E5E5E5;
 @grayDark: #BBB;
-
+@primary: #000000;
+@secondary: #000000;
+@background: #001014;
 
 a {
   color: @blue;
@@ -14,11 +16,36 @@ a {
   }
 }
 
+body {
+  background-color: @background;
+  background-image: url("/images/bg_dots.png");
+  background-repeat: repeat;
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
+
+.hexagon {
+  width: 100px;
+  height: 100px;
+}
+
+.top-bar-clear {
+  background-color: transparent;
+  .top-bar-section {
+    ul {
+      background-color: transparent;
+    }
+    li a:not(.button) {
+      background-color: transparent;
+    }
+  }
+
+}
+
 /*
 .body {
   @media (min-width: 979px) {
