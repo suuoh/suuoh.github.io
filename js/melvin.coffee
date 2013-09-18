@@ -1,5 +1,13 @@
 $(document).ready ->
   $(@).foundation()
+  $(".hexagon-one, .hexagon-three, .hexagon-five").hover (->
+    $(@).css "border-top", "86px solid rgba(266, 140, 0, 1.0)"
+  ), ->
+    $(@).css "border-top", ""
+  $(".hexagon-two, .hexagon-four, .hexagon-six").hover (->
+    $(@).css "border-bottom", "86px solid rgba(266, 140, 0, 1.0)"
+  ), ->
+    $(@).css "border-bottom", ""
 
 $(window).resize ->
   width = $(window).width() * 0.3

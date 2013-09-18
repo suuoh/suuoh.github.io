@@ -6,7 +6,17 @@
 
 (function() {
   $(document).ready(function() {
-    return $(this).foundation();
+    $(this).foundation();
+    $(".hexagon-one, .hexagon-three, .hexagon-five").hover((function() {
+      return $(this).css("border-top", "86px solid rgba(266, 140, 0, 1.0)");
+    }), function() {
+      return $(this).css("border-top", "");
+    });
+    return $(".hexagon-two, .hexagon-four, .hexagon-six").hover((function() {
+      return $(this).css("border-bottom", "86px solid rgba(266, 140, 0, 1.0)");
+    }), function() {
+      return $(this).css("border-bottom", "");
+    });
   });
 
   $(window).resize(function() {
