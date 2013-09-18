@@ -17,14 +17,66 @@ body {
   background-image: url("/images/bg_dots.png");
   background-repeat: repeat;
 }
-.center {
+.centered-x {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 .hexagon {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 172px;
+}
+.hexagon div[class^="hexagon-"] {
+  position: relative;
+  width: 0;
+  height: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.hexagon .hexagon-one,
+.hexagon .hexagon-three,
+.hexagon .hexagon-five {
+  border-top: 86px solid #008ce2;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  /*&:hover {
+      border-top: @hexagonHeight solid rgb(266, 140, 0);
+      border-top: @hexagonHeight solid rgba(266, 140, 0, 1.0);
+    }*/
+
+}
+.hexagon .hexagon-two,
+.hexagon .hexagon-four,
+.hexagon .hexagon-six {
+  border-right: 50px solid transparent;
+  border-bottom: 86px solid #008ce2;
+  border-left: 50px solid transparent;
+  /*&:hover {
+      border-bottom: @hexagonHeight solid rgb(266, 140, 0);
+      border-bottom: @hexagonHeight solid rgba(266, 140, 0, 1.0);
+    }*/
+
+}
+.hexagon .hexagon-one {
+  margin-left: 50px;
+}
+.hexagon .hexagon-two {
+  margin-top: -86px;
+  margin-left: 100px;
+}
+.hexagon .hexagon-three {
+  margin-left: 100px;
+}
+.hexagon .hexagon-four {
+  margin-top: -86px;
+  margin-left: 50px;
+}
+.hexagon .hexagon-five {
+  margin-top: -86px;
+}
+.hexagon .hexagon-six {
+  margin-top: -172px;
 }
 .top-bar-clear {
   background-color: transparent;
@@ -71,7 +123,7 @@ footer {
   padding-top: 11px;
   padding-bottom: 30px;
   a {
-    color: @black;
+    color: black;
     &:hover {
       color: @grayDark;
       text-decoration: none;
@@ -117,7 +169,7 @@ h3 {
 
 .navbar {
   .brand:hover {
-    color: @blue;
+    color: @primary;
   }
   .nav {
     .active {
@@ -126,7 +178,7 @@ h3 {
       }
     }
     li a:hover {
-      color: @blue;
+      color: @primary;
     }
   }
 }
