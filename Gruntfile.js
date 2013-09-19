@@ -49,6 +49,7 @@ module.exports = function(grunt) {
 
     csslint: {
       options: {
+        'adjoining-classes': false,
         'import': false,
         'regex-selectors': false,
         'unique-headings': false,
@@ -80,6 +81,7 @@ module.exports = function(grunt) {
 
     jshint: {
       options: {
+        boss: true,
         browser: true,
         camelcase: true,
         curly: false,
