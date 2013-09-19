@@ -24,19 +24,49 @@ body {
   background-repeat: repeat;
 }
 
-.centered-x {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+li.centered-x {
+  text-align: center;
+  canvas {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 
 .hexagon {
+  margin-top: 3em;
+  @media only screen and (min-width: 768px) {
+    margin-top: 10em;
+  }
+}
+
+.top-bar-clear {
+  background-color: transparent;
+  .top-bar-section {
+    ul {
+      background-color: transparent;
+    }
+    li a:not(.button) {
+      background-color: transparent;
+    }
+  }
+}
+
+.top-bar-clear.expanded {
+  .title-area {
+    background-color: transparent;
+  }
+}
+
+/*
+.hexagon {
   width: @hexagonSide * 2;
   height: @hexagonHeight * 2;
-  //position: fixed;
-  //top: 50%;
-  //margin-top: -@hexagonSide;
-  //margin-left: -@hexagonHeight;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -@hexagonSide;
+  margin-left: -@hexagonHeight;
 
   div[class^="hexagon-"] {
     position: relative;
@@ -50,10 +80,10 @@ body {
     border-top: @hexagonHeight solid rgba(0, 140, 226, 1.0);
     border-right: (@hexagonSide / 2) solid transparent;
     border-left: (@hexagonSide / 2) solid transparent;
-    /*&:hover {
+    &:hover {
       border-top: @hexagonHeight solid rgb(266, 140, 0);
       border-top: @hexagonHeight solid rgba(266, 140, 0, 1.0);
-    }*/
+    }
   }
 
   .hexagon-two, .hexagon-four, .hexagon-six {
@@ -61,10 +91,10 @@ body {
     border-bottom: @hexagonHeight solid rgb(0, 140, 226);
     border-bottom: @hexagonHeight solid rgba(0, 140, 226, 1.0);
     border-left: (@hexagonSide / 2) solid transparent;
-    /*&:hover {
+    &:hover {
       border-bottom: @hexagonHeight solid rgb(266, 140, 0);
       border-bottom: @hexagonHeight solid rgba(266, 140, 0, 1.0);
-    }*/
+    }
   }
 
   .hexagon-one {
@@ -94,20 +124,6 @@ body {
   }
 }
 
-.top-bar-clear {
-  background-color: transparent;
-  .top-bar-section {
-    ul {
-      background-color: transparent;
-    }
-    li a:not(.button) {
-      background-color: transparent;
-    }
-  }
-
-}
-
-/*
 .body {
   @media (min-width: 979px) {
     padding-top: 65px;
