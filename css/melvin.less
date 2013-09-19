@@ -1,8 +1,8 @@
 @import "elements.less";
 
-@gray: #C8C8C8;
-@grayLight: #E5E5E5;
-@grayDark: #BBB;
+@grey: darken(white, 50%);
+@grey-light: darken(white, 10%);
+@grey-dark: darken(white, 80%);
 @primary: #008CE2;
 @secondary: #000000;
 @background: #001014;
@@ -12,7 +12,7 @@
 a {
   color: @primary;
   &:hover {
-    color: @gray;
+    color: @grey;
     text-decoration: none;
     cursor: pointer;
   }
@@ -24,7 +24,20 @@ body {
   background-repeat: repeat;
 }
 
-li.centered-x {
+.centered-bottom {
+  position: fixed;
+  margin-left: -20.5px;
+  bottom: 1em;
+  left: 50%;
+  @media only screen and (min-width: 768px) {
+    bottom: 3em;
+  }
+  i {
+    color: @grey-dark;
+  }
+}
+
+.centered-x {
   text-align: center;
   canvas {
     margin-left: auto;
@@ -154,14 +167,14 @@ li.centered-x {
 }
 
 footer {
-  border-top: 1px solid @grayLight;
+  border-top: 1px solid @grey-light;
   margin-top: 40px;
   padding-top: 11px;
   padding-bottom: 30px;
   a {
     color: black;
     &:hover {
-      color: @grayDark;
+      color: @grey-dark;
       text-decoration: none;
     }
   }
@@ -178,20 +191,20 @@ footer {
 
 h1, h2, h3 {
   small {
-    color: @gray;
+    color: @grey;
   }
 }
 
 h3 {
   font-weight: normal;
   line-height: 1em;
-  color: @gray;
+  color: @grey;
   font-size: 17.5px;
   margin-bottom: 15px;
 }
 
 .last-updated {
-  color: @gray;
+  color: @grey;
   margin-top: 20px;
 }
 

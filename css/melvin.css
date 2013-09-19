@@ -8,7 +8,7 @@ a {
   color: #008ce2;
 }
 a:hover {
-  color: #c8c8c8;
+  color: #808080;
   text-decoration: none;
   cursor: pointer;
 }
@@ -17,10 +17,24 @@ body {
   background-image: url("/images/bg_dots.png");
   background-repeat: repeat;
 }
-li.centered-x {
+.centered-bottom {
+  position: fixed;
+  margin-left: -20.5px;
+  bottom: 1em;
+  left: 50%;
+}
+@media only screen and (min-width: 768px) {
+  .centered-bottom {
+    bottom: 3em;
+  }
+}
+.centered-bottom i {
+  color: #333333;
+}
+.centered-x {
   text-align: center;
 }
-li.centered-x canvas {
+.centered-x canvas {
   margin-left: auto;
   margin-right: auto;
   display: block;
