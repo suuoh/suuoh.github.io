@@ -1,18 +1,16 @@
 $(document).ready ->
   $(@).foundation()
-  $(".hexagon-one, .hexagon-three, .hexagon-five").hover (->
-    $(@).css "border-top", "86px solid rgba(266, 140, 0, 1.0)"
-  ), ->
-    $(@).css "border-top", ""
-  $(".hexagon-two, .hexagon-four, .hexagon-six").hover (->
-    $(@).css "border-bottom", "86px solid rgba(266, 140, 0, 1.0)"
-  ), ->
-    $(@).css "border-bottom", ""
+  timeoutID = window.setTimeout fadeInNavbar, "1500"
+
+fadeInNavbar = () ->
+  navbar = $("#js-navbar")
+  navbar.css("visibility", "").hide()
+  navbar.fadeIn "2000"
 
 $(window).resize ->
   width = $(window).width() * 0.3
-  $("#js-hexagon").height width
-  $("#js-hexagon").width width
+  # $("#js-hexagon").height width
+  # $("#js-hexagon").width width
 ###
   $('a[href^="#"]').click (e) ->
     e.preventDefault()

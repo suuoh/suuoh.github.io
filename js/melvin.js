@@ -5,25 +5,24 @@
  */
 
 (function() {
+  var fadeInNavbar;
+
   $(document).ready(function() {
+    var timeoutID;
     $(this).foundation();
-    $(".hexagon-one, .hexagon-three, .hexagon-five").hover((function() {
-      return $(this).css("border-top", "86px solid rgba(266, 140, 0, 1.0)");
-    }), function() {
-      return $(this).css("border-top", "");
-    });
-    return $(".hexagon-two, .hexagon-four, .hexagon-six").hover((function() {
-      return $(this).css("border-bottom", "86px solid rgba(266, 140, 0, 1.0)");
-    }), function() {
-      return $(this).css("border-bottom", "");
-    });
+    return timeoutID = window.setTimeout(fadeInNavbar, "1500");
   });
+
+  fadeInNavbar = function() {
+    var navbar;
+    navbar = $("#js-navbar");
+    navbar.css("visibility", "").hide();
+    return navbar.fadeIn("2000");
+  };
 
   $(window).resize(function() {
     var width;
-    width = $(window).width() * 0.3;
-    $("#js-hexagon").height(width);
-    return $("#js-hexagon").width(width);
+    return width = $(window).width() * 0.3;
   });
 
   /*
