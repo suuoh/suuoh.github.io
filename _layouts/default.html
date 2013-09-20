@@ -19,7 +19,7 @@
   <nav class="top-bar top-bar-clear" id="js-navbar" style="visibility: hidden;">
     <ul class="title-area">
       <li class="name">
-        <h1><a href="#">&there4; melvin</a></h1>
+        <h1><a href="/">&there4; melvin</a></h1>
       </li>
       <li class="toggle-topbar menu-icon">
         <a href="#"><span></span></a>
@@ -27,14 +27,11 @@
     </ul>
 
     <section class="top-bar-section">
-      <ul class="left">
-      </ul>
-
       <ul class="right">
-        <li><a href="#"><i class="icon-user"></i> ABOUT</a></li>
-        <!--<li><a href="#"><i class="icon-coffee"></i> BLOG</a></li>-->
-        <li><a href="#"><i class="icon-suitcase"></i> PORTFOLIO</a></li>
-        <li><a href="#"><i class="icon-comments"></i> CONTACT</a></li>
+        <li><a href="#about" rel="address:/about"><i class="icon-user"></i>&nbsp;&nbsp;ABOUT</a></li>
+        <!--<li><a href="#"><i class="icon-coffee"></i>&nbsp;&nbsp;BLOG</a></li>-->
+        <li><a href="#portfolio" rel="address:/portfolio"><i class="icon-suitcase"></i>&nbsp;&nbsp;PORTFOLIO</a></li>
+        <li><a href="#contact" rel="address:/contact"><i class="icon-comments"></i>&nbsp;&nbsp;CONTACT</a></li>
       </ul>
     </section>
   </nav>
@@ -47,7 +44,7 @@
 
   <script src="//code.jquery.com/jquery-2.0.3.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/foundation.min.js"></script>
-  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.address/1.5/jquery.address.js"></script>-->
+  <script src="{{ site.baseurl }}js/jquery.address.min.js"></script>
   <script src="{{ site.baseurl }}js/melvin.js"></script>
 
   <!-- Google Analytics -->
