@@ -32,16 +32,21 @@ h6 {
   margin-right: auto;
   display: block;
 }
+.divider {
+  border-top: solid 1px #cccccc;
+  clear: both;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
 }
 .hexagon {
-  margin-top: 3em;
-@media only screen and (min-width: 768px) {
-  .hexagon {
-    margin-top: 10em;
-  }
+  background-image: url("/images/hexagon.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 175px;
+  margin-top: 10em;
 }
 .scroll-arrow {
-  margin-top: 15em;
+  margin-top: 8em;
 }
 .scroll-arrow i {
   color: #333333;

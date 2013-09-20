@@ -35,16 +35,23 @@ body, h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+.divider {
+  border-top: solid 1px @grey-light;
+  clear: both;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
 }
 
 .hexagon {
-  margin-top: 3em;
-  @media only screen and (min-width: 768px) {
-    margin-top: 10em;
+  background-image: url("/images/hexagon.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 175px;
+  margin-top: 10em;
 }
 
 .scroll-arrow {
-  margin-top: 15em;
+  margin-top: 8em;
   i {
     color: @grey-dark;
   }
