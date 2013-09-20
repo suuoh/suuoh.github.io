@@ -1,27 +1,32 @@
 @import "elements.less";
 
+@primary: #008AAD;
 @grey: darken(white, 50%);
-@grey-light: darken(white, 10%);
+@grey-light: darken(white, 20%);
 @grey-dark: darken(white, 80%);
-@primary: #008CE2;
-@secondary: #000000;
-@background: #001014;
+@old-primary: #008CE2;
+@old-background: #001014;
 @hexagonSide: 100px;
 @hexagonHeight: 86px;
 
 a {
   color: @primary;
   &:hover {
-    color: @grey;
+    color: lighten(@primary, 20%);
     text-decoration: none;
     cursor: pointer;
   }
 }
 
 body {
-  background-color: @background;
+  background-color: darken(@primary, 30%);
   background-image: url("/images/bg_dots.png");
   background-repeat: repeat;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  color: @grey-light;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 .canvas-hexagon {
@@ -30,15 +35,12 @@ body {
   display: block;
 }
 
-.text-centered {
-  text-align: center;  
 }
 
 .hexagon {
   margin-top: 3em;
   @media only screen and (min-width: 768px) {
     margin-top: 10em;
-  }
 }
 
 .scroll-arrow {
@@ -48,6 +50,10 @@ body {
   }
 }
 
+.text-centered {
+  text-align: center;  
+}
+
 .top-bar {
   max-height: 45px;
   -webkit-transition: max-height 0.5s ease;
@@ -55,7 +61,6 @@ body {
   -o-transition: max-height 0.5s ease;
   transition: max-height 0.5s ease;
 }
-
 .top-bar.expanded {
   max-height: 177px;
 }
@@ -65,9 +70,15 @@ body {
   .top-bar-section {
     ul {
       background-color: transparent;
-    }
-    li a:not(.button) {
-      background-color: transparent;
+      li {
+        a:not(.button) {
+          color: @grey-light;
+          background-color: transparent;
+        }
+        a:not(.button):hover {
+          color: white;
+        }
+      }
     }
   }
 }

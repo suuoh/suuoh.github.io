@@ -5,10 +5,10 @@
  */
 
 a {
-  color: #008ce2;
+  color: #008aad;
 }
 a:hover {
-  color: #808080;
+  color: #14cfff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -17,17 +17,24 @@ body {
   background-image: url("/images/bg_dots.png");
   background-repeat: repeat;
 }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #cccccc;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
 .canvas-hexagon {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-.text-centered {
-  text-align: center;
 }
 .hexagon {
   margin-top: 3em;
-}
 @media only screen and (min-width: 768px) {
   .hexagon {
     margin-top: 10em;
@@ -38,6 +45,9 @@ body {
 }
 .scroll-arrow i {
   color: #333333;
+}
+.text-centered {
+  text-align: center;
 }
 .top-bar {
   max-height: 45px;
@@ -55,8 +65,12 @@ body {
 .top-bar-clear .top-bar-section ul {
   background-color: transparent;
 }
-.top-bar-clear .top-bar-section li a:not(.button) {
+.top-bar-clear .top-bar-section ul li a:not(.button) {
+  color: #cccccc;
   background-color: transparent;
+}
+.top-bar-clear .top-bar-section ul li a:not(.button):hover {
+  color: white;
 }
 .top-bar-clear.expanded .title-area {
   background-color: transparent;
