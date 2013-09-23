@@ -4,6 +4,11 @@
  * Licensed under the MIT license
  */
 
+::selection {
+  background: #008aad;
+  color: white;
+  text-shadow: none;
+}
 a {
   color: #008aad;
 }
@@ -33,7 +38,7 @@ h6 {
   display: block;
 }
 .divider {
-  border-top: solid 1px #cccccc;
+  border-top: solid 1px #333333;
   clear: both;
   margin-top: 2.5em;
   margin-bottom: 2em;
@@ -47,6 +52,7 @@ h6 {
 }
 .scroll-arrow {
   margin-top: 8em;
+  visibility: hidden;
 }
 .scroll-arrow i {
   color: #333333;
