@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +13,52 @@
   <title>{% if page.title %}{{ page.title }} &middot; {% endif %}melvin</title>
 
   <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css" rel="stylesheet" media="screen">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/css/foundation.css" rel="stylesheet" media="screen">  
+  <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/css/foundation.css" rel="stylesheet" media="screen">
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" media="screen">
   <link href="{{ site.baseurl }}css/melvin.css" rel="stylesheet" media="screen">
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/vendor/custom.modernizr.js"></script>
 </head>
 <body>
-<div class="fixed">
-  <nav class="top-bar top-bar-clear" id="js-navbar" style="visibility: hidden;">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="/">&there4; melvin</a></h1>
-      </li>
-      <li class="toggle-topbar menu-icon">
-        <a href="#"><span></span></a>
-      </li>
-    </ul>
-
-    <section class="top-bar-section">
-      <ul class="right">
-        <li><a href="#about" rel="address:/about"><i class="icon-user"></i>&nbsp;&nbsp;ABOUT</a></li>
-        <!--<li><a href="#"><i class="icon-coffee"></i>&nbsp;&nbsp;BLOG</a></li>-->
-        <li><a href="#portfolio" rel="address:/portfolio"><i class="icon-suitcase"></i>&nbsp;&nbsp;PORTFOLIO</a></li>
-        <li><a href="#contact" rel="address:/contact"><i class="icon-comments"></i>&nbsp;&nbsp;CONTACT</a></li>
+  <div class="fixed">
+    <nav class="top-bar top-bar-clear" id="js-navbar" style="visibility: hidden;">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="/">&there4; melvin</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon">
+          <a href="#"><span></span></a>
+        </li>
       </ul>
-    </section>
-  </nav>
-</div>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="#about" rel="address:/about"><i class="icon-user"></i>&nbsp;&nbsp;ABOUT</a></li>
+          <!--<li><a href="#"><i class="icon-coffee"></i>&nbsp;&nbsp;BLOG</a></li>-->
+          <li><a href="#portfolio" rel="address:/portfolio"><i class="icon-suitcase"></i>&nbsp;&nbsp;PORTFOLIO</a></li>
+          <li><a href="#contact" rel="address:/contact"><i class="icon-comments"></i>&nbsp;&nbsp;CONTACT</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
   {{ content }}
 
-  <!--<footer>
-    &copy; 2013 Melvin Chien.
-  </footer>-->
-
+  <div class="row footer">
+    <div class="large-12 columns">
+      <div class="divider"></div>
+      <div class="row">
+        <div class="large-8 columns">
+          <p>
+            <a onclick="javascript:window.open('https://twitter.com/intent/tweet?screen_name=suuoh', '', 'status=yes, width=550, height=420')" target="_blank"><i class="icon-twitter"></i>&nbsp;</a>
+            <a onclick="javascript:window.open('mailto:hello@melvin.io', '', 'status=yes, width=800, height=600')" target="_blank"><i class="icon-envelope"></i>&nbsp;</a>
+            Copyright &copy; 2013 Melvin Chien.
+          </p>
+        </div>
+        <div class="large-4 columns hide-for-small">
+          <p class="text-right">Powered by <a href="http://pages.github.com/" target="_blank">GitHub</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="//code.jquery.com/jquery-2.0.3.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/foundation.min.js"></script>
   <script src="{{ site.baseurl }}js/jquery.address.min.js"></script>
@@ -49,18 +66,18 @@
 
   <!-- Google Analytics -->
   <script type="text/javascript">
-  var _gaq = _gaq || [];
-  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', 'UA-16595656-2']);
-  _gaq.push(['_setDomainName', 'melvin.io']);
-  _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', 'UA-16595656-2']);
+    _gaq.push(['_setDomainName', 'melvin.io']);
+    _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
   </script>
 </body>
 </html>

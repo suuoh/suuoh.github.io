@@ -44,8 +44,24 @@ body, h1, h2, h3, h4, h5, h6 {
 .divider {
   border-top: solid 1px @grey-dark;
   clear: both;
-  margin-top: 2.5em;
-  margin-bottom: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  @media only screen and (min-width: 768px) {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+  }
+}
+
+.footer {
+  a {
+    color: @grey;
+    &:hover {
+      color: white;
+    }
+  }
+  p {
+    color: @grey;
+  }
 }
 
 .hexagon {
@@ -62,10 +78,6 @@ body, h1, h2, h3, h4, h5, h6 {
     color: @grey-dark;
   }
   visibility: hidden;
-}
-
-.text-centered {
-  text-align: center;  
 }
 
 .top-bar {
@@ -172,24 +184,6 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.body {
-  @media (min-width: 979px) {
-    padding-top: 65px;
-  }
-}
-
-.collapse {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-.container-fluid {
-  margin-right: 10%;
-  margin-left: 10%;
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
 .fancybox-title-float-wrap {
   bottom: -20px;
   right: auto;
@@ -198,95 +192,6 @@ body, h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     margin-right: 0px;
     padding: 10px 10px;
-  }
-}
-
-footer {
-  border-top: 1px solid @grey-light;
-  margin-top: 40px;
-  padding-top: 11px;
-  padding-bottom: 30px;
-  a {
-    color: black;
-    &:hover {
-      color: @grey-dark;
-      text-decoration: none;
-    }
-  }
-  i[class^="icon-"],
-  i[class*=" icon-"] {
-    padding-right: 3px;
-    font-size: 1.3em;
-  }
-}
-
-.gallery {
-  margin-top: 1em;
-}
-
-h1, h2, h3 {
-  small {
-    color: @grey;
-  }
-}
-
-h3 {
-  font-weight: normal;
-  line-height: 1em;
-  color: @grey;
-  font-size: 17.5px;
-  margin-bottom: 15px;
-}
-
-.last-updated {
-  color: @grey;
-  margin-top: 20px;
-}
-
-.lazy {
-  display: none;
-}
-
-.nav {
-  margin-bottom: 0px;
-}
-
-.navbar {
-  .brand:hover {
-    color: @primary;
-  }
-  .nav {
-    .active {
-      a, a:hover {
-        background-color: #06293E;
-      }
-    }
-    li a:hover {
-      color: @primary;
-    }
-  }
-}
-
-.navbar-fixed-top .navbar-inner {
-  @media (max-width: 979px) {
-    padding: 0px;
-  }
-}
-
-section {
-  padding-top: 40px;
-}
-
-.tooltip-hover {
-  border-bottom: 1px dotted;
-}
-
-ul.no-bullets {
-  li {
-    list-style: none;
-    i[class^="icon-"] {
-      margin-left: -25px;
-    }
   }
 }
 */

@@ -40,8 +40,23 @@ h6 {
 .divider {
   border-top: solid 1px #333333;
   clear: both;
-  margin-top: 2.5em;
-  margin-bottom: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+@media only screen and (min-width: 768px) {
+  .divider {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+  }
+}
+.footer a {
+  color: #808080;
+}
+.footer a:hover {
+  color: white;
+}
+.footer p {
+  color: #808080;
 }
 .hexagon {
   background-image: url("/images/hexagon.png");
@@ -56,9 +71,6 @@ h6 {
 }
 .scroll-arrow i {
   color: #333333;
-}
-.text-centered {
-  text-align: center;
 }
 .top-bar {
   max-height: 45px;
