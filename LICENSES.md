@@ -3,13 +3,13 @@ melvin.io
 
 Licenses
 --------
-The following files, directories, and their contents are Copyright 2013 Melvin Chien with all rights reserved - please ask me before you reuse anything:
+The following files, directories, and their contents are Copyright © 2013 Melvin Chien with all rights reserved - please ask me before you reuse anything:
 * blog/
 * images/
 * about.html
 * portfolio.html
 
-All other files are Copyright 2013 Melvin Chien and licensed under the [MIT License](LICENSE), unless otherwise stated.  
+All other files are Copyright © 2013 Melvin Chien and licensed under the [MIT License](LICENSE), unless otherwise stated.  
 
 #### jQuery
 **Author:** jQuery Foundation  
