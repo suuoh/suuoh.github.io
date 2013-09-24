@@ -56,7 +56,13 @@ h6 {
   color: white;
 }
 .footer p {
+  margin-top: -0.5em;
   color: #808080;
+}
+@media only screen and (min-width: 768px) {
+  .footer p {
+    margin-top: -1.2em;
+  }
 }
 .hexagon {
   background-image: url("/images/hexagon.png");
