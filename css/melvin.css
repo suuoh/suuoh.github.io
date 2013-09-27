@@ -1,6 +1,6 @@
 /*!
  * melvin.io v1.6.0
- * Copyright 2013 Melvin Chien <hello@melvin.io> (http://melvin.io/)
+ * Copyright © 2013 Melvin Chien <hello@melvin.io> (http://melvin.io/)
  * Licensed under the MIT license
  */
 
@@ -40,14 +40,17 @@ h6 {
 .divider {
   border-top: solid 1px #333333;
   clear: both;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.8em;
+  margin-bottom: 1.8em;
 }
 @media only screen and (min-width: 768px) {
   .divider {
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+    margin-top: 2.8em;
+    margin-bottom: 2.8em;
   }
+}
+.footer {
+  color: #808080;
 }
 .footer a {
   color: #808080;
@@ -57,7 +60,6 @@ h6 {
 }
 .footer p {
   margin-top: -0.5em;
-  color: #808080;
 }
 @media only screen and (min-width: 768px) {
   .footer p {
@@ -67,13 +69,13 @@ h6 {
 .hexagon {
   background-image: url("/images/hexagon.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
   height: 175px;
   margin-top: 10em;
+  margin-bottom: 10em;
 }
 .scroll-arrow {
   margin-top: 8em;
-  visibility: hidden;
 }
 .scroll-arrow i {
   color: #333333;
