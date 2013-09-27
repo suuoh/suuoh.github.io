@@ -81,14 +81,14 @@ h6 {
   color: #333333;
 }
 .top-bar {
-  max-height: 45px;
-  -webkit-transition: max-height 0.5s ease;
-  -moz-transition: max-height 0.5s ease;
-  -o-transition: max-height 0.5s ease;
-  transition: max-height 0.5s ease;
+  height: 45px;
+  -webkit-transition: height 0.5s ease;
+  -moz-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
+  transition: height 0.5s ease;
 }
 .top-bar.expanded {
-  max-height: 177px;
+  height: 177px;
 }
 .top-bar-clear {
   background-color: transparent;
