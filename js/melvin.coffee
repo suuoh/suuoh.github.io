@@ -8,6 +8,14 @@ $(document).ready ->
   # Fade in navbar
   timeoutID = window.setTimeout delayedFadeIn, "1500"
 
+  # Close expanded navbar when an item is clicked
+  $("#js-navbar .name a, #js-navbar .top-bar-section a").click ->
+    # Snippet taken from foundation.topbar.js:215
+    topbar = $(".top-bar, [data-topbar]")
+    topbar.css "height", ""
+    topbar.removeClass "expanded"
+    topbar.find("li").removeClass "hover"
+
   # Add jQuery Address handler for navbar links
   $("#js-navbar a").address ->
     $(this).attr("href").replace /^#/, ""
