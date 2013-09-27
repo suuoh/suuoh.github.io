@@ -18,9 +18,9 @@ $(document).ready ->
 
   # Add jQuery Address handler for navbar links
   $("#js-navbar a").address ->
-    $(this).attr("href").replace /^#/, ""
+    $(this).attr("href").replace /^#/, "" if $(this).attr("href")?
 
-  # Load appropriate data
+  # Load appropriate data with smooth transitions
   $.address.change (event) ->
     container = $("#js-container")
     footer = $("#js-footer")
@@ -37,10 +37,10 @@ $(document).ready ->
         container.fadeIn "500"
         footer.fadeIn "500"
 
-$(window).resize ->
+# $(window).resize ->
   # Hexagon height is 175px, Navbar height is 45px
-  $(".hexagon").css "margin-top", $(window).height() / 2 - 175 / 2 - 45
-  $(".hexagon").css "margin-bottom", $(window).height() / 2 - 175 / 2 - 45
+  # $(".hexagon").css "margin-top", $(window).height() / 3 - 175 / 2 - 45
+  # $(".hexagon").css "margin-bottom", $(window).height() / 2 - 175 / 2 - 45
 ###
   width = $(window).width() * 0.3
   $("#js-hexagon").height width
