@@ -20,21 +20,21 @@
 </head>
 <body>
   <div class="fixed">
-    <nav class="top-bar top-bar-clear" id="js-navbar" style="visibility: hidden;">
+    <nav class="top-bar top-bar-clear" id="js-navbar" style="display: none;">
       <ul class="title-area">
         <li class="name">
           <h1><a href="/">&there4; melvin</a></h1>
         </li>
         <li class="toggle-topbar menu-icon">
-          <a href="#"><span></span></a>
+          <a><span></span></a>
         </li>
       </ul>
       <section class="top-bar-section">
         <ul class="right">
-          <li><a href="#about" rel="address:/about"><i class="icon-user"></i>&nbsp;&nbsp;ABOUT</a></li>
+          <li><a href="#about"><i class="icon-user"></i>&nbsp;&nbsp;ABOUT</a></li>
           <!--<li><a href="#"><i class="icon-coffee"></i>&nbsp;&nbsp;BLOG</a></li>-->
-          <li><a href="#portfolio" rel="address:/portfolio"><i class="icon-suitcase"></i>&nbsp;&nbsp;PORTFOLIO</a></li>
-          <li><a href="#contact" rel="address:/contact"><i class="icon-comments"></i>&nbsp;&nbsp;CONTACT</a></li>
+          <li><a href="#portfolio"><i class="icon-suitcase"></i>&nbsp;&nbsp;PORTFOLIO</a></li>
+          <li><a href="#contact"><i class="icon-comments"></i>&nbsp;&nbsp;CONTACT</a></li>
         </ul>
       </section>
     </nav>
@@ -61,7 +61,7 @@
   </div>
   <script src="//code.jquery.com/jquery-2.0.3.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/foundation.min.js"></script>
-  <script src="{{ site.baseurl }}js/jquery.address.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
   <script src="{{ site.baseurl }}js/melvin.js"></script>
 
   <!-- Google Analytics -->
@@ -74,7 +74,9 @@
     _gaq.push(['_trackPageview']);
 
     (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();

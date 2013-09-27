@@ -1,20 +1,42 @@
-$(document).ready ->
-  $(@).foundation()
-  timeoutID = window.setTimeout fadeInNavbar, "1500"
+delayedFadeIn = ->
+  $("#js-navbar").fadeIn "2000"
 
-fadeInNavbar = () ->
-  navbar = $("#js-navbar")
-  navbar.css("visibility", "").hide()
-  navbar.fadeIn "2000"
+$(document).ready ->
+  # Initialize Foundation
+  $(this).foundation()
+
+  # Fade in navbar
+  timeoutID = window.setTimeout delayedFadeIn, "1500"
+
+  # Add jQuery Address handler for navbar links
+  $("#js-navbar a").address ->
+    $(this).attr("href").replace /^#/, ""
+
+  # Load appropriate data
+  $.address.change (event) ->
+    container = $("#js-container")
+    if event.value is "/"
+      $("html, body").animate
+        scrollTop: 0,
+        500, ->
+          container.fadeOut "500"
+          container.html ""
+    else
+      container.fadeOut "500", ->
+        container.load event.value + ".html"
+    container.fadeIn "500"
 
 $(window).resize ->
-  width = $(window).width() * 0.3
-  # $("#js-hexagon").height width
-  # $("#js-hexagon").width width
+  # Hexagon height is 175px, Navbar height is 45px
+  $(".hexagon").css "margin-top", $(window).height() / 2 - 175 / 2 - 45
+  $(".hexagon").css "margin-bottom", $(window).height() / 2 - 175 / 2 - 45
 ###
+  width = $(window).width() * 0.3
+  $("#js-hexagon").height width
+  $("#js-hexagon").width width
   $('a[href^="#"]').click (e) ->
     e.preventDefault()
-    id = $(@).attr("href")
+    id = $(this).attr("href")
     posTop = $(id).position().top;
     posTop -= 50 if $(".hidden-phone").is(":visible")
     $("html, body").animate
