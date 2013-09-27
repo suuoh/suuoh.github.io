@@ -15,16 +15,19 @@ $(document).ready ->
   # Load appropriate data
   $.address.change (event) ->
     container = $("#js-container")
+    footer = $("#js-footer")
     if event.value is "/"
       $("html, body").animate
         scrollTop: 0,
-        500, ->
-          container.fadeOut "500"
-          container.html ""
+        300, ->
+          footer.fadeOut "500"
+          container.fadeOut "500", ->
+            container.html ""
     else
       container.fadeOut "500", ->
         container.load event.value + ".html"
-    container.fadeIn "500"
+        container.fadeIn "500"
+        footer.fadeIn "500"
 
 $(window).resize ->
   # Hexagon height is 175px, Navbar height is 45px
