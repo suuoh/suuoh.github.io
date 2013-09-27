@@ -24,14 +24,17 @@ $(document).ready ->
   $.address.change (event) ->
     container = $("#js-container")
     footer = $("#js-footer")
+    arrow = $("#js-scroll-arrow")
     if event.value is "/"
       $("html, body").animate
         scrollTop: 0,
-        300, ->
+        500, ->
           footer.fadeOut "500"
+          arrow.fadeOut "200"
           container.fadeOut "500", ->
             container.html ""
     else
+      arrow.fadeIn "200"
       container.fadeOut "500", ->
         container.load event.value + ".html"
         container.fadeIn "500"

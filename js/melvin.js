@@ -28,19 +28,22 @@
       }
     });
     return $.address.change(function(event) {
-      var container, footer;
+      var arrow, container, footer;
       container = $("#js-container");
       footer = $("#js-footer");
+      arrow = $("#js-scroll-arrow");
       if (event.value === "/") {
         return $("html, body").animate({
           scrollTop: 0
-        }, 300, function() {
+        }, 500, function() {
           footer.fadeOut("500");
+          arrow.fadeOut("200");
           return container.fadeOut("500", function() {
             return container.html("");
           });
         });
       } else {
+        arrow.fadeIn("200");
         return container.fadeOut("500", function() {
           container.load(event.value + ".html");
           container.fadeIn("500");
