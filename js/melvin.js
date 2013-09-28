@@ -45,8 +45,13 @@
       } else {
         arrow.fadeIn("200");
         return container.fadeOut("500", function() {
+          var _this = this;
           container.load(event.value + ".html");
-          container.fadeIn("500");
+          container.fadeIn("500", function() {
+            return $("html, body").animate({
+              scrollTop: $(_this).position().top
+            }, 800);
+          });
           return footer.fadeIn("500");
         });
       }

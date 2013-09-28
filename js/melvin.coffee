@@ -37,7 +37,10 @@ $(document).ready ->
       arrow.fadeIn "200"
       container.fadeOut "500", ->
         container.load event.value + ".html"
-        container.fadeIn "500"
+        container.fadeIn "500", =>
+          $("html, body").animate
+            scrollTop: $(this).position().top,
+            800
         footer.fadeIn "500"
 
 # $(window).resize ->
