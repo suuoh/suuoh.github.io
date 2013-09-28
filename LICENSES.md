@@ -11,32 +11,37 @@ The following files, directories, and their contents are Copyright © 2013 Melvi
 
 All other files are Copyright © 2013 Melvin Chien and licensed under the [MIT License](LICENSE), unless otherwise stated.  
 
-#### jQuery
-**Author:** jQuery Foundation  
-**Website:** <http://jquery.com/>  
-**License:** [MIT License](http://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt)
-
-#### Bootstrap
-**Author:** Mark Otto and Jacob Thornton  
-**Website:** <http://twitter.github.com/bootstrap/>  
-**License:** [Apache License](http://www.apache.org/licenses/LICENSE-2.0)
-
-#### Bootswatch
-**Author:** Thomas Park  
-**Website:** <http://bootswatch.com/>  
-**License:** [Apache License](http://www.apache.org/licenses/LICENSE-2.0)  
-
 #### Font Awesome
 **Author:** Dave Gandy  
 **Website:** <http://fortawesome.github.com/Font-Awesome>  
 **License:** [SIL Open Font License](http://scripts.sil.org/OFL)  
 
-#### fancyBox
-**Author:** fancyApps  
-**Website:** <http://fancyapps.com/fancybox/>  
-**License:** [Creative Commons Attribution-NonCommercial 3.0](http://creativecommons.org/licenses/by-nc/3.0/)  
+#### Foundation
+**Author:** ZURB  
+**Website:** <http://foundation.zurb.com>  
+**License:** [MIT License](http://github.com/zurb/foundation/blob/master/LICENSE)  
 
-#### Lazy Load
-**Author:** Mika Tuupola   
-**Website:** <http://www.appelsiini.net/projects/lazyload>  
-**License:** [MIT License](http://opensource.org/licenses/mit-license.php)  
+#### jQuery
+**Author:** jQuery Foundation  
+**Website:** <http://jquery.com/>  
+**License:** [MIT License](http://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt)  
+
+#### jQuery Address
+**Author:** Rostislav Hristov, Asual DZZD  
+**Website:** <http://www.asual.com/jquery/address/>  
+**License:** [MIT License](http://github.com/asual/jquery-address/blob/master/MIT-LICENSE)  
+
+#### LESS Elements
+**Author:** Dmitry Fadeyev  
+**Website:** <http://lesselements.com/>  
+**License:** [None](https://github.com/dmitryf/elements/blob/master/README.md)  
+
+#### Modernizr
+**Author:** Faruk Ates, Paul Irish, and Alex Sexton  
+**Website:** <http://modernizr.com/>  
+**License:** [MIT License](http://modernizr.com/license/)  
+
+#### Normalize
+**Author:** Nicolas Gallagher and Jonathan Neal  
+**Website:** <http://necolas.github.io/normalize.css/>  
+**License:** [MIT License](http://github.com/necolas/normalize.css/blob/master/LICENSE.md)  
