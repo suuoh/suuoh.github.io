@@ -77,10 +77,46 @@ body, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10em;
 }
 
+.rocket {
+  padding-bottom: 1em;
+}
+
 .scroll-arrow {
   margin-top: 4em;
   i {
     color: @grey-dark;
+  }
+}
+
+.space {
+  div {
+    position: absolute;
+  }
+  .earth {
+    color: @primary;
+    top: 28%;
+    left: 15%;
+  }
+
+  .moon {
+    color: @grey;
+    top: 10%;
+    right: 12%;
+  }
+
+  .star-1 {
+    color: @grey;
+    top: 13%;
+    left: 35%;
+  }
+
+  .star-2 {
+    color: @grey;
+    top: 34%;
+    right: 38%;
+    @media only screen and (min-width: 768px) {
+      top: 40%;
+    }
   }
 }
 
