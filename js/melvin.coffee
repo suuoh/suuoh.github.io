@@ -16,16 +16,23 @@ $(document).ready ->
     topbar.removeClass "expanded"
     topbar.find("li").removeClass "hover"
 
-  # Add jQuery Address handler for navbar links
-  $("#js-navbar a").address ->
-    $(this).attr("href").replace /^#/, "" if $(this).attr("href")?
+  # Bind event handler to selected links for jQuery Address
+  $("#js-navbar, #js-container").on "click", ".deep-link", (event) ->
+    href = $(this).attr("href")
+    href = href.replace /^#/, ""
+    href = href.replace "-", "/"
+    $.address.value href
+    event.preventDefault()
 
-  # Load appropriate data with smooth transitions
+  # Parse link and load selected data with smooth transitions
   $.address.change (event) ->
+    console.log event.value
+    href = event.value.replace /^\//, ""
     container = $("#js-container")
     footer = $("#js-footer")
     arrow = $("#js-scroll-arrow")
-    if event.value is "/"
+
+    if href is ""
       $("html, body").animate
         scrollTop: 0,
         500, ->
@@ -34,14 +41,15 @@ $(document).ready ->
           container.fadeOut "500", ->
             container.html ""
     else
+      href = href.replace "/", "-"
       arrow.fadeIn "200"
       container.fadeOut "500", ->
-        container.load event.value + ".html"
-        container.fadeIn "500", =>
-          $("html, body").animate
-            scrollTop: $(this).position().top,
-            800
-        footer.fadeIn "500"
+        container.load "/" + href + ".html", ->
+          container.fadeIn "500", =>
+            $("html, body").animate
+              scrollTop: $(this).position().top,
+              800
+          footer.fadeIn "500"
 
 # $(window).resize ->
   # Hexagon height is 175px, Navbar height is 45px
