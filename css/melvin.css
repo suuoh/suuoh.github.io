@@ -74,6 +74,26 @@ h6 {
   margin-top: 10em;
   margin-bottom: 10em;
 }
+.portfolio a:hover img {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+  filter: alpha(opacity=80);
+}
+.portfolio img {
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.portfolio img,
+.portfolio p {
+  background-color: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
 .rocket {
   padding-bottom: 1em;
 }
