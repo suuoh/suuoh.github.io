@@ -1,6 +1,3 @@
-delayedFadeIn = ->
-  $("#js-navbar").fadeIn "2000"
-
 $(document).ready ->
   # Initialize Foundation
   $(this).foundation()
@@ -26,12 +23,28 @@ $(document).ready ->
 
   # Parse link and load selected data with smooth transitions
   $.address.change (event) ->
-    console.log event.value
+    title = "melvin"
     href = event.value.replace /^\//, ""
+    url = href.split "/"
     container = $("#js-container")
     footer = $("#js-footer")
     # arrow = $("#js-scroll-arrow")
 
+    # Set page title
+    for i of url
+      word = url[i]
+      if word is "anteaternetwork"
+        word = "Anteater Network"
+      else if word is "jmmp"
+        word = "JMMP"
+      else if word is "alienescape"
+        word = "Alien Escape"
+      else
+        word = word.charAt(0).toUpperCase() + word.slice 1
+      title = word + " · " + title
+    $.address.title title
+
+    # Load data with transitions
     if href is ""
       $("html, body").animate
         scrollTop: 0,
@@ -50,6 +63,9 @@ $(document).ready ->
               scrollTop: $(this).position().top,
               500
           footer.fadeIn "500"
+
+delayedFadeIn = ->
+  $("#js-navbar").fadeIn "2000"
 
 # $(window).resize ->
   # Hexagon height is 175px, Navbar height is 45px
