@@ -30,25 +30,25 @@ $(document).ready ->
     href = event.value.replace /^\//, ""
     container = $("#js-container")
     footer = $("#js-footer")
-    arrow = $("#js-scroll-arrow")
+    # arrow = $("#js-scroll-arrow")
 
     if href is ""
       $("html, body").animate
         scrollTop: 0,
         500, ->
           footer.fadeOut "500"
-          arrow.fadeOut "200"
+          # arrow.fadeOut "200"
           container.fadeOut "500", ->
             container.html ""
     else
       href = href.replace "/", "-"
-      arrow.fadeIn "200"
+      # arrow.fadeIn "200"
       container.fadeOut "500", ->
         container.load "/" + href + ".html", ->
           container.fadeIn "500", =>
             $("html, body").animate
               scrollTop: $(this).position().top,
-              800
+              500
           footer.fadeIn "500"
 
 # $(window).resize ->

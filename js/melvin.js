@@ -31,32 +31,29 @@
       return event.preventDefault();
     });
     return $.address.change(function(event) {
-      var arrow, container, footer, href;
+      var container, footer, href;
       console.log(event.value);
       href = event.value.replace(/^\//, "");
       container = $("#js-container");
       footer = $("#js-footer");
-      arrow = $("#js-scroll-arrow");
       if (href === "") {
         return $("html, body").animate({
           scrollTop: 0
         }, 500, function() {
           footer.fadeOut("500");
-          arrow.fadeOut("200");
           return container.fadeOut("500", function() {
             return container.html("");
           });
         });
       } else {
         href = href.replace("/", "-");
-        arrow.fadeIn("200");
         return container.fadeOut("500", function() {
           return container.load("/" + href + ".html", function() {
             var _this = this;
             container.fadeIn("500", function() {
               return $("html, body").animate({
                 scrollTop: $(_this).position().top
-              }, 800);
+              }, 500);
             });
             return footer.fadeIn("500");
           });
