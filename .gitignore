@@ -1,15 +1,12 @@
-#Standard
+# Standard
 .DS_Store
 ._*
 Thumbs.db
-
 
 # Other
 _site
 _drafts
 originals
-start.sh
 node_modules
 validation-report.json
-
 validation-status.json
