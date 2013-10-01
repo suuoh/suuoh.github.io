@@ -7,7 +7,7 @@ $(document).ready ->
 
   # Add background to navbar if page is scrolled down
   $(window).scroll ->
-    if $(this).scrollTop() > 500
+    if $(this).scrollTop() > 550
       $(".top-bar").removeClass "top-bar-clear"
     else
       $(".top-bar").addClass "top-bar-clear"

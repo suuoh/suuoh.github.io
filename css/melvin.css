@@ -138,15 +138,19 @@ h6 {
   transition: height 0.5s ease;
 }
 .top-bar .top-bar-section ul li a:not(.button) {
-  background-color: #222222;
   color: #cccccc;
 }
 .top-bar .top-bar-section ul li a:not(.button):hover {
-  background-color: #333333;
   color: white;
 }
 .top-bar.expanded {
   height: 177px;
+}
+.top-bar.expanded .top-bar-section ul li a:not(.button) {
+  background-color: #001014;
+}
+.top-bar.expanded .top-bar-section ul li a:not(.button):hover {
+  background-color: #333333;
 }
 .top-bar-clear {
   background-color: transparent;

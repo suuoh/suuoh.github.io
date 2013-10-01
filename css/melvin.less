@@ -150,19 +150,27 @@ body, h1, h2, h3, h4, h5, h6 {
 
   .top-bar-section ul li {
     a:not(.button) {
-      background-color: #222222;
       color: @grey-light;
 
       &:hover {
-        background-color: @grey-dark;
         color: white;
       }
-    }    
+    }
   }
 }
 
 .top-bar.expanded {
   height: 177px;
+
+  .top-bar-section ul li {
+    a:not(.button) {
+      background-color: #001014;
+
+      &:hover {
+        background-color: @grey-dark;
+      }
+    }
+  }
 }
 
 .top-bar-clear {

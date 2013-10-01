@@ -12,7 +12,7 @@
     $(this).foundation();
     timeoutID = window.setTimeout(delayedFadeIn, "1500");
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 500) {
+      if ($(this).scrollTop() > 550) {
         return $(".top-bar").removeClass("top-bar-clear");
       } else {
         return $(".top-bar").addClass("top-bar-clear");
