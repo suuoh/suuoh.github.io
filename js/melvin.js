@@ -23,7 +23,10 @@
       topbar = $(".top-bar, [data-topbar]");
       topbar.css("height", "");
       topbar.removeClass("expanded");
-      return topbar.find("li").removeClass("hover");
+      topbar.find("li").removeClass("hover");
+      topbar.removeClass("fixed");
+      topbar.parent().addClass("fixed");
+      return $("body").addClass("f-topbar-fixed");
     });
     $("#js-navbar, #js-container").on("click", ".deep-link", function(event) {
       var href;

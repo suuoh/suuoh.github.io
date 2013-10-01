@@ -19,6 +19,10 @@ $(document).ready ->
     topbar.css "height", ""
     topbar.removeClass "expanded"
     topbar.find("li").removeClass "hover"
+    topbar.removeClass "fixed"
+    topbar.parent().addClass "fixed"
+    $("body").addClass "f-topbar-fixed"
+
 
   # Bind event handler to selected links for jQuery Address
   $("#js-navbar, #js-container").on "click", ".deep-link", (event) ->
