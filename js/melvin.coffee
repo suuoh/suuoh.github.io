@@ -3,7 +3,9 @@ $(document).ready ->
   $(this).foundation()
 
   # Fade in navbar
-  timeoutID = window.setTimeout delayedFadeIn, "1500"
+  timeoutID = window.setTimeout(->
+    $("#js-navbar").fadeIn "2000"
+  , "1500")
 
   # Add background to navbar if page is scrolled down
   $(window).scroll ->
@@ -11,14 +13,16 @@ $(document).ready ->
       $(".top-bar").removeClass "top-bar-clear"
     else
       $(".top-bar").addClass "top-bar-clear"
-
-  # Close expanded navbar when an item is clicked
+  
   $("#js-navbar .name a, #js-navbar .top-bar-section a").click ->
+    # Close expanded navbar when an item is clicked
     # Snippet taken from foundation.topbar.js:215
     topbar = $(".top-bar, [data-topbar]")
     topbar.css "height", ""
     topbar.removeClass "expanded"
     topbar.find("li").removeClass "hover"
+
+    # Fix for collapsed navbar staying fixed to the top of the window
     topbar.removeClass "fixed"
     topbar.parent().addClass "fixed"
     $("body").addClass "f-topbar-fixed"
@@ -73,14 +77,10 @@ $(document).ready ->
         container.load "/" + href + ".html", ->
           divider.fadeIn "500"
           container.fadeIn "500", =>
-            console.log $(this)
             $("html, body").animate
               scrollTop: $(this).position().top - 45,
               500
           footer.fadeIn "500"
-
-delayedFadeIn = ->
-  $("#js-navbar").fadeIn "2000"
 
 # $(window).resize ->
   # Hexagon height is 175px, Navbar height is 45px

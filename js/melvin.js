@@ -5,12 +5,12 @@
  */
 
 (function() {
-  var delayedFadeIn;
-
   $(document).ready(function() {
     var timeoutID;
     $(this).foundation();
-    timeoutID = window.setTimeout(delayedFadeIn, "1500");
+    timeoutID = window.setTimeout(function() {
+      return $("#js-navbar").fadeIn("2000");
+    }, "1500");
     $(window).scroll(function() {
       if ($(this).scrollTop() > 550) {
         return $(".top-bar").removeClass("top-bar-clear");
@@ -75,7 +75,6 @@
             var _this = this;
             divider.fadeIn("500");
             container.fadeIn("500", function() {
-              console.log($(_this));
               return $("html, body").animate({
                 scrollTop: $(_this).position().top - 45
               }, 500);
@@ -86,10 +85,6 @@
       }
     });
   });
-
-  delayedFadeIn = function() {
-    return $("#js-navbar").fadeIn("2000");
-  };
 
   /*
     width = $(window).width() * 0.3
