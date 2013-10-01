@@ -11,6 +11,13 @@
     var timeoutID;
     $(this).foundation();
     timeoutID = window.setTimeout(delayedFadeIn, "1500");
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 500) {
+        return $(".top-bar").removeClass("top-bar-clear");
+      } else {
+        return $(".top-bar").addClass("top-bar-clear");
+      }
+    });
     $("#js-navbar .name a, #js-navbar .top-bar-section a").click(function() {
       var topbar;
       topbar = $(".top-bar, [data-topbar]");

@@ -30,7 +30,6 @@ h4,
 h5,
 h6 {
   color: #cccccc;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 .canvas-hexagon {
   margin-left: auto;
@@ -138,6 +137,14 @@ h6 {
   -o-transition: height 0.5s ease;
   transition: height 0.5s ease;
 }
+.top-bar .top-bar-section ul li a:not(.button) {
+  background-color: #222222;
+  color: #cccccc;
+}
+.top-bar .top-bar-section ul li a:not(.button):hover {
+  background-color: #333333;
+  color: white;
+}
 .top-bar.expanded {
   height: 177px;
 }
@@ -148,15 +155,8 @@ h6 {
   background-color: transparent;
 }
 .top-bar-clear .top-bar-section ul li a:not(.button) {
-  color: #cccccc;
   background-color: transparent;
-}
-.top-bar-clear .top-bar-section ul li a:not(.button):hover {
-  color: white;
 }
 .top-bar-clear.expanded .title-area {
   background-color: transparent;
-}
-.top-bar-clear.expanded .top-bar-section > ul > li > a:hover {
-  background-color: #333333;
 }

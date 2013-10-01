@@ -5,6 +5,13 @@ $(document).ready ->
   # Fade in navbar
   timeoutID = window.setTimeout delayedFadeIn, "1500"
 
+  # Add background to navbar if page is scrolled down
+  $(window).scroll ->
+    if $(this).scrollTop() > 500
+      $(".top-bar").removeClass "top-bar-clear"
+    else
+      $(".top-bar").addClass "top-bar-clear"
+
   # Close expanded navbar when an item is clicked
   $("#js-navbar .name a, #js-navbar .top-bar-section a").click ->
     # Snippet taken from foundation.topbar.js:215

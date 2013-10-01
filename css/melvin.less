@@ -32,7 +32,7 @@ body {
 
 body, h1, h2, h3, h4, h5, h6 {
   color: @grey-light;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  //font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 .canvas-hexagon {
@@ -147,6 +147,18 @@ body, h1, h2, h3, h4, h5, h6 {
   -moz-transition: height 0.5s ease;
   -o-transition: height 0.5s ease;
   transition: height 0.5s ease;
+
+  .top-bar-section ul li {
+    a:not(.button) {
+      background-color: #222222;
+      color: @grey-light;
+
+      &:hover {
+        background-color: @grey-dark;
+        color: white;
+      }
+    }    
+  }
 }
 
 .top-bar.expanded {
@@ -160,15 +172,8 @@ body, h1, h2, h3, h4, h5, h6 {
     ul {
       background-color: transparent;
 
-      li {
-        a:not(.button) {
-          color: @grey-light;
-          background-color: transparent;
-        }
-
-        a:not(.button):hover {
-          color: white;
-        }
+      li a:not(.button) {
+        background-color: transparent;
       }
     }
   }
@@ -180,7 +185,6 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 
   .top-bar-section > ul > li > a:hover {
-    background-color: @grey-dark;
   }
 }
 
