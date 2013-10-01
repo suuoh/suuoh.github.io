@@ -28,6 +28,7 @@ $(document).ready ->
     url = href.split "/"
     container = $("#js-container")
     footer = $("#js-footer")
+    divider = $("#js-divider")
     # arrow = $("#js-scroll-arrow")
 
     # Set page title
@@ -51,6 +52,7 @@ $(document).ready ->
         500, ->
           footer.fadeOut "500"
           # arrow.fadeOut "200"
+          divider.fadeOut "500"
           container.fadeOut "500", ->
             container.html ""
     else
@@ -58,9 +60,11 @@ $(document).ready ->
       # arrow.fadeIn "200"
       container.fadeOut "500", ->
         container.load "/" + href + ".html", ->
+          divider.fadeIn "500"
           container.fadeIn "500", =>
+            console.log $(this)
             $("html, body").animate
-              scrollTop: $(this).position().top,
+              scrollTop: $(this).position().top - 45,
               500
           footer.fadeIn "500"
 
