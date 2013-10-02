@@ -102,7 +102,9 @@ module.exports = function(grunt) {
     },
 
     uglify: {
-      options: {},
+      options: {
+        preserveComments: 'some'
+      },
       js: {
         src: 'js/melvin.js',
         dest: 'js/melvin.min.js'
