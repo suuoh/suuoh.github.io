@@ -20,13 +20,13 @@
     });
     $("#js-navbar .name a, #js-navbar .top-bar-section a").click(function() {
       var topbar;
+      topbar.removeClass("fixed");
+      topbar.parent().addClass("fixed");
+      $("body").addClass("f-topbar-fixed");
       topbar = $(".top-bar, [data-topbar]");
       topbar.css("height", "");
       topbar.removeClass("expanded");
-      topbar.find("li").removeClass("hover");
-      topbar.removeClass("fixed");
-      topbar.parent().addClass("fixed");
-      return $("body").addClass("f-topbar-fixed");
+      return topbar.find("li").removeClass("hover");
     });
     $("#js-navbar, #js-container").on("click", ".deep-link", function(event) {
       var href;

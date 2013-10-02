@@ -15,18 +15,18 @@ $(document).ready ->
       $(".top-bar").addClass "top-bar-clear"
   
   $("#js-navbar .name a, #js-navbar .top-bar-section a").click ->
+    # Fix for collapsed navbar staying fixed to the top of the window
+    # Snippet taken from foundation.topbar.js:60
+    topbar.removeClass "fixed"
+    topbar.parent().addClass "fixed"
+    $("body").addClass "f-topbar-fixed"
+
     # Close expanded navbar when an item is clicked
     # Snippet taken from foundation.topbar.js:215
     topbar = $(".top-bar, [data-topbar]")
     topbar.css "height", ""
     topbar.removeClass "expanded"
     topbar.find("li").removeClass "hover"
-
-    # Fix for collapsed navbar staying fixed to the top of the window
-    topbar.removeClass "fixed"
-    topbar.parent().addClass "fixed"
-    $("body").addClass "f-topbar-fixed"
-
 
   # Bind event handler to selected links for jQuery Address
   $("#js-navbar, #js-container").on "click", ".deep-link", (event) ->

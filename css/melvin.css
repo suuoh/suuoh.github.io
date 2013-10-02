@@ -73,7 +73,7 @@ h6 {
   margin-top: 10em;
   margin-bottom: 10em;
 }
-.portfolio a:hover img {
+.portfolio-index a:hover img {
   -moz-opacity: 0.75;
   -khtml-opacity: 0.75;
   -webkit-opacity: 0.75;
@@ -81,17 +81,23 @@ h6 {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=75);
   filter: alpha(opacity=75);
 }
-.portfolio img {
+.portfolio-index img {
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
-.portfolio img,
-.portfolio p {
+.portfolio-index img,
+.portfolio-index p {
   background-color: white;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-project .button {
+    margin-top: 1.25em;
+    margin-bottom: 0;
+  }
 }
 .rocket {
   padding-bottom: 1em;
@@ -131,6 +137,7 @@ h6 {
   }
 }
 .top-bar {
+  margin-bottom: 0;
   height: 45px;
   -webkit-transition: height 0.5s ease;
   -moz-transition: height 0.5s ease;
