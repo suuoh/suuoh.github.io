@@ -62,7 +62,13 @@
       <h4 class="subheader">Gallery</h4>
       <ul data-orbit>
         <li>
-          <img src="/images/" alt="jmmp_.png" />
+          <img src="/images/jmmp_mockup.png" alt="" />
+        </li>
+        <li>
+          <img src="/images/jmmp_.png" alt="" />
+        </li>
+        <li>
+          <img src="/images/jmmp_.png" alt="" />
         </li>
       </ul>
     </div>
@@ -75,9 +81,9 @@
     .done(function() {
       $(document).foundation("orbit", {
         animation: 'fade',
+        timer_speed: 4000,
         resume_on_mouseout: true,
-        slide_number: false,
-        timer: false
+        slide_number: false
       });
     });
   });
