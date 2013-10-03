@@ -1,6 +1,6 @@
 @import "elements.less";
 
-@primary: #008AAD;
+@primary: #0078AD;
 @grey: darken(white, 50%);
 @grey-light: darken(white, 20%);
 @grey-dark: darken(white, 80%);
@@ -25,7 +25,7 @@ a {
 }
 
 body {
-  background-color: darken(@primary, 30%);
+  background-color: darken(@primary, 28%);
   background-image: url("/images/bg_dots.png");
   background-repeat: repeat;
 }
@@ -54,7 +54,9 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
+  margin-top: 5em;
   color: @grey;
+
   a {
     color: @grey;
 
@@ -63,11 +65,13 @@ body, h1, h2, h3, h4, h5, h6 {
     }
   }
 
-  p {
-    margin-top: -0.5em;
-    @media only screen and (min-width: 768px) {
-      margin-top: -1.2em;
-    }
+  .divider {
+    margin-bottom: 0;
+  }
+
+  .row {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -113,6 +117,10 @@ body, h1, h2, h3, h4, h5, h6 {
     }
   }
 
+  .list {
+    margin-left: 1em;
+  }
+
   .orbit-bullets {
     li {
       background-color: @grey-light;
@@ -149,6 +157,11 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .rocket {
   padding-bottom: 1em;
+}
+
+.row .row {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .scroll-arrow {
@@ -247,6 +260,11 @@ body, h1, h2, h3, h4, h5, h6 {
 
   .top-bar-section > ul > li > a:hover {
   }
+}
+
+.uci {
+  padding-top: 2.5em;
+  text-align: center;
 }
 
 /*
