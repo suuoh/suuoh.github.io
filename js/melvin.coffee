@@ -78,13 +78,16 @@ $(document).ready ->
       href = href.replace "/", "-"
       # arrow.fadeIn "200"
       container.fadeOut "500", ->
-        container.load "/" + href + ".html", ->
-          divider.fadeIn "500"
-          container.fadeIn "500", =>
-            $("html, body").animate
-              scrollTop: $(this).position().top - 45,
-              500
-          footer.fadeIn "500"
+        container.load "/" + href + ".html", (response, status, xhr) ->
+          if status is "error"
+            window.location.replace "/" + href
+          else
+            divider.fadeIn "500"
+            container.fadeIn "500", =>
+              $("html, body").animate
+                scrollTop: $(this).position().top + 330 - 45,
+                500
+            footer.fadeIn "500"
 
 ###
 $(window).resize ->

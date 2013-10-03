@@ -75,15 +75,19 @@
       } else {
         href = href.replace("/", "-");
         return container.fadeOut("500", function() {
-          return container.load("/" + href + ".html", function() {
+          return container.load("/" + href + ".html", function(response, status, xhr) {
             var _this = this;
-            divider.fadeIn("500");
-            container.fadeIn("500", function() {
-              return $("html, body").animate({
-                scrollTop: $(_this).position().top - 45
-              }, 500);
-            });
-            return footer.fadeIn("500");
+            if (status === "error") {
+              return window.location.replace("/" + href);
+            } else {
+              divider.fadeIn("500");
+              container.fadeIn("500", function() {
+                return $("html, body").animate({
+                  scrollTop: $(_this).position().top + 330 - 45
+                }, 500);
+              });
+              return footer.fadeIn("500");
+            }
           });
         });
       }
