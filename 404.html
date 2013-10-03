@@ -30,7 +30,7 @@
     <section class="top-bar-section">
       <ul class="right">
         <li><a href="/#/about"><i class="icon-user"></i>&nbsp;&nbsp;ABOUT</a></li>
-        <li><a href="/#/portfolio"><i class="icon-suitcase"></i>&nbsp;&nbsp;PORTFOLIO</a></li>
+        <li><a href="/#/projects"><i class="icon-suitcase"></i>&nbsp;&nbsp;PROJECTS</a></li>
         <li><a href="/#/contact"><i class="icon-comments"></i>&nbsp;&nbsp;CONTACT</a></li>
       </ul>
     </section>
@@ -99,9 +99,7 @@
   <script>
     $(document).foundation();
     document.getElementById("js-button-back").href = document.referrer;
-
     document.getElementById("js-button-github").href = "https://github.com/melvinchien/melvinchien.github.com/issues/new?title=Broken%20link%3A%20" + document.URL;
-
     var twitter = document.getElementById("js-button-twitter");
     twitter.href = "https://twitter.com/intent/tweet?screen_name=suuoh&text=I%20found%20a%20broken%20link%20on%20your%20site!%20" + document.URL;
     twitter.onclick = function() {
