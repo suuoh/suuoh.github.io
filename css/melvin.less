@@ -6,8 +6,6 @@
 @grey-dark: darken(white, 80%);
 @old-primary: #008CE2;
 @old-background: #001014;
-@hexagonSide: 100px;
-@hexagonHeight: 86px;
 
 ::selection {
   background: @primary;
@@ -25,8 +23,9 @@ a {
 }
 
 body {
-  background-color: darken(@primary, 28%);
-  background-image: url("/images/bg_dots.png");
+  background-image: url("/images/bg_dark.gif");
+  background-attachment: fixed;
+  background-position: 50%;
   background-repeat: repeat;
 }
 
@@ -35,10 +34,15 @@ body, h1, h2, h3, h4, h5, h6 {
   //font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
-.canvas-hexagon {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.container {
+  background-image: url("/images/bg_light.gif");
+  background-position: 50%;
+  background-repeat: repeat;
+  position: relative;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  .drop-shadow(0, 0, 50px, 0.8);
 }
 
 .divider {
@@ -76,22 +80,24 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .hexagon {
-  background-image: url("/images/hexagon.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 175px;
-  margin-top: 10em;
-  margin-bottom: 10em;
+  position: relative;
+  height: 330px + 45px;
+  width: 100%;
+  margin-top: -45px;
+
+  img {
+    position: fixed;
+    top: 330px / 2;
+    left: 50%;
+    margin-top: -175px / 2;
+    margin-left: -175px / 2;
+  }
 }
 
 .panel {
-  min-height: 337px;
-
-  @media only screen and (min-width: 768px) {
-    min-height: 285px;
-  }
-
   background-color: @grey-light;
+  min-height: 295px;
+
   .rounded(4px);
 
   &.subheader {
@@ -278,11 +284,20 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .uci {
-  padding-top: 2.5em;
-  text-align: center;
+  padding-top: 1em;
+  .opacity(0.5);
 }
 
 /*
+@hexagonSide: 100px;
+@hexagonHeight: 86px;
+
+.canvas-hexagon {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .hexagon {
   width: @hexagonSide * 2;
   height: @hexagonHeight * 2;
