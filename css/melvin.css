@@ -104,6 +104,11 @@ h6 {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+@media only screen and (min-width: 768px) {
+  .portfolio-project .links {
+    text-align: right;
+  }
+}
 .portfolio-project .orbit-bullets li {
   background-color: #cccccc;
   border-color: #333333;
@@ -113,7 +118,6 @@ h6 {
 }
 .portfolio-project .orbit-container {
   background: none;
-  height: 628px;
 }
 .portfolio-project .orbit-container .orbit-next,
 .portfolio-project .orbit-container .orbit-prev {
