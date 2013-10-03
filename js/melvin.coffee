@@ -13,8 +13,10 @@ $(document).ready ->
       $(".top-bar").removeClass "top-bar-clear"
     else
       $(".top-bar").addClass "top-bar-clear"
-  
+
   $("#js-navbar .name a, #js-navbar .top-bar-section a").click ->
+    topbar = $(".top-bar, [data-topbar]")
+
     # Fix for collapsed navbar staying fixed to the top of the window
     # Snippet taken from foundation.topbar.js:60
     topbar.removeClass "fixed"
@@ -23,7 +25,6 @@ $(document).ready ->
 
     # Close expanded navbar when an item is clicked
     # Snippet taken from foundation.topbar.js:215
-    topbar = $(".top-bar, [data-topbar]")
     topbar.css "height", ""
     topbar.removeClass "expanded"
     topbar.find("li").removeClass "hover"
@@ -39,7 +40,9 @@ $(document).ready ->
   # Parse link and load selected data with smooth transitions
   $.address.change (event) ->
     title = "melvin"
-    href = event.value.replace /^\//, ""
+    href = event.value.trim()
+    href = href.replace /^\//, ""
+    href = href.replace /\/$/, ""
     url = href.split "/"
     container = $("#js-container")
     footer = $("#js-footer")
@@ -49,15 +52,16 @@ $(document).ready ->
     # Set page title
     for i of url
       word = url[i]
-      if word is "anteaternetwork"
-        word = "Anteater Network"
-      else if word is "jmmp"
-        word = "JMMP"
-      else if word is "alienescape"
-        word = "Alien Escape"
-      else
-        word = word.charAt(0).toUpperCase() + word.slice 1
-      title = word + " · " + title
+      if word isnt ""
+        if word is "anteaternetwork"
+          word = "Anteater Network"
+        else if word is "jmmp"
+          word = "JMMP"
+        else if word is "alienescape"
+          word = "Alien Escape"
+        else
+          word = word.charAt(0).toUpperCase() + word.slice 1
+        title = word + " · " + title
     $.address.title title
 
     # Load data with transitions
@@ -82,46 +86,13 @@ $(document).ready ->
               500
           footer.fadeIn "500"
 
-# $(window).resize ->
-  # Hexagon height is 175px, Navbar height is 45px
-  # $(".hexagon").css "margin-top", $(window).height() / 3 - 175 / 2 - 45
-  # $(".hexagon").css "margin-bottom", $(window).height() / 2 - 175 / 2 - 45
 ###
+$(window).resize ->
+  # Hexagon height is 175px, Navbar height is 45px
+  $(".hexagon").css "margin-top", $(window).height() / 3 - 175 / 2 - 45
+  $(".hexagon").css "margin-bottom", $(window).height() / 2 - 175 / 2 - 45
+
   width = $(window).width() * 0.3
   $("#js-hexagon").height width
   $("#js-hexagon").width width
-  $('a[href^="#"]').click (e) ->
-    e.preventDefault()
-    id = $(this).attr("href")
-    posTop = $(id).position().top;
-    posTop -= 50 if $(".hidden-phone").is(":visible")
-    $("html, body").animate
-      scrollTop: posTop,
-      1000
-  $('a[href^="http"]').attr "target", "_blank"
-  $('a[class="tooltip-hover"]').tooltip()
-  $("img.lazy").show().lazyload effect: "fadeIn"
-  $('a[href$=".gif"],a[href$=".jpg"],a[href$=".png"]').fancybox
-    padding: 10
-    margin: 50
-    loopo: false
-    helpers:
-      title:
-        type: "over"
-      overlay:
-        showEarly: false
-        css:
-          background: "rgba(25, 25, 25, 0.80)"
-  $(".fanxybox-media").fancybox
-    padding: 10
-    margin: 50
-    loop: false
-    helpers:
-      media: {}
-      title:
-        type: "float"
-      overlay:
-        showEarly: false
-        css:
-          background: "rgba(25, 25, 25, 0.80)"
 ###

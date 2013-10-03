@@ -121,7 +121,7 @@ module.exports = function(grunt) {
     },
 
     jekyll: {
-      options: {        
+      options: {
         permalink: '/:categories/:year/:month/:title/',
         relative_permalinks: 'false',
         markdown: 'redcarpet',
