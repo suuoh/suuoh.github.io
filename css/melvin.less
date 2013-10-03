@@ -84,7 +84,7 @@ body, h1, h2, h3, h4, h5, h6 {
   a:hover img {
     .opacity(0.75);
   }
-  
+
   img {
     .drop-shadow(3px, 3px, 3px, 0.5);
   }
@@ -100,6 +100,44 @@ body, h1, h2, h3, h4, h5, h6 {
     @media only screen and (min-width: 768px) {
       margin-top: 1.25em;
       margin-bottom: 0;
+    }
+  }
+
+  img {
+    .rounded(3px);
+  }
+
+  .orbit-bullets {
+    li {
+      background-color: @grey-light;
+      border-color: @grey-dark;
+
+      &.active {
+        background-color: @primary;
+      }
+    }
+  }
+
+  .orbit-container {
+    background: none;
+    height: 628px;
+
+    .orbit-next, .orbit-prev {
+      background-color: @grey-dark;
+      background-color: rgba(0, 0, 0, 0.25);
+      width: 35px;
+      height: 50px;
+    }
+
+    .orbit-next > span {
+    }
+
+    .orbit-prev > span {
+      border-left-width: 10px;
+    }
+
+    .orbit-slides-container {
+      height: 588px;
     }
   }
 }
@@ -228,6 +266,7 @@ body, h1, h2, h3, h4, h5, h6 {
     border-top: @hexagonHeight solid rgba(0, 140, 226, 1.0);
     border-right: (@hexagonSide / 2) solid transparent;
     border-left: (@hexagonSide / 2) solid transparent;
+
     &:hover {
       border-top: @hexagonHeight solid rgb(266, 140, 0);
       border-top: @hexagonHeight solid rgba(266, 140, 0, 1.0);
@@ -239,6 +278,7 @@ body, h1, h2, h3, h4, h5, h6 {
     border-bottom: @hexagonHeight solid rgb(0, 140, 226);
     border-bottom: @hexagonHeight solid rgba(0, 140, 226, 1.0);
     border-left: (@hexagonSide / 2) solid transparent;
+
     &:hover {
       border-bottom: @hexagonHeight solid rgb(266, 140, 0);
       border-bottom: @hexagonHeight solid rgba(266, 140, 0, 1.0);
