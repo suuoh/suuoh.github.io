@@ -1,6 +1,90 @@
-<div class="row">
-  <div class="large-12 large-centered columns">
-    <div class="divider"></div>
-    <h2>JMMP</h2>
+<div class="portfolio-project">
+  <div class="row">
+    <div class="large-6 columns">
+      <h2>JMMP <small>March 2013</small></h2>
+    </div>
+    <div class="large-6 columns links">
+      <a class="button small secondary" href="http://github.com/JMMP/" target="_blank"><i class="icon-globe"></i>&nbsp;&nbsp;Website</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-7 columns">
+      <h4 class="subheader">About</h4>
+      <p><strong>JMMP</strong> was a student group formed for the year long Informatics 191 senior design project course at the <a href="http://uci.edu" target="_blank">University of California, Irvine</a>. Our goal was to develop the <a class="deep-link" href="#portfolio-anteaternetwork">Anteater Network</a> system in collaboration with our sponsors, the <a href="http://alumni.uci.edu" target="_blank">UCI Alumni Association</a>.</p>
+      <p>JMMP operated for in an agile software development environment for one year, with iterative bi-weekly cycles of planning, analysis, design, development, testing, and presentations.</p>
+    </div>
+    <div class="small-5 columns">
+      <div class="row">
+        <div class="large-6 columns">
+          <h4 class="subheader">Deliverables</h4>
+          <ul class="list disc">
+            <li>Project plans</li>
+            <li>Business cases</li>
+            <li>Requirements specifications</li>
+            <li>Progress reports</li>
+            <li>Use case diagrams</li>
+            <li>Architectural diagrams</li>
+            <li>Test plans</li>
+            <li>Deployment plans</li>
+          </ul>
+        </div>
+        <div class="large-6 columns">
+          <h4 class="subheader">User Experience</h4>
+          <ul class="list disc">
+            <li>Wireframe mockups</li>
+            <li>Prototypes</li>
+            <li>Unit tests</li>
+            <li>Execution tests</li>
+            <li>Keystroke analyses</li>
+            <li>Heuristic evaluations</li>
+            <li>Code reviews</li>
+            <li>Expert reviews</li>
+            <li>User studies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h4 class="subheader">Tools</h4>
+      <p class="label radius">Illustrator</p>
+      <p class="label radius">Photoshop</p>
+      <p class="label radius">Balsamiq</p>
+      <p class="label radius">Gantto</p>
+      <p class="label secondary radius">UML</p>
+      <p class="label secondary radius">QUnit</p>
+      <p class="label secondary radius">Git</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h4 class="subheader">Gallery</h4>
+      <ul data-orbit>
+        <li>
+          <img src="/images/" alt="jmmp_.png" />
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function() {
+    $.getScript("//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/foundation/foundation.orbit.min.js")
+    .done(function() {
+      $(document).foundation("orbit", {
+        animation: 'fade',
+        resume_on_mouseout: true,
+        slide_number: false,
+        timer: false
+      });
+    });
+  });
+</script>
+<!--
+<a title="The team logo identity and document header.">  </a>
+<a title="Example of our custom header in an official document.">  </a>
+<a title="One of the very first mockups of the Anteater Network on the Alumni Association's website.">  </a>
+<a title="Our poster board used for marketing in various events and presentations.">  </a>
+ -->

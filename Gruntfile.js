@@ -51,6 +51,7 @@ module.exports = function(grunt) {
       options: {
         'adjoining-classes': false,
         'import': false,
+        'overqualified-elements': false,
         'regex-selectors': false,
         'unique-headings': false,
         'zero-units': false
