@@ -12,7 +12,7 @@
       return $("#js-navbar").fadeIn("2000");
     }, "1500");
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 550) {
+      if ($(this).scrollTop() > 330) {
         return $(".top-bar").removeClass("top-bar-clear");
       } else {
         return $(".top-bar").addClass("top-bar-clear");
