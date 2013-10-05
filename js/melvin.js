@@ -12,7 +12,7 @@
       return $("#js-navbar").fadeIn("2000");
     }, "1500");
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 330) {
+      if ($(this).scrollTop() > 120) {
         return $(".top-bar").removeClass("top-bar-clear");
       } else {
         return $(".top-bar").addClass("top-bar-clear");
@@ -37,7 +37,7 @@
       return event.preventDefault();
     });
     return $.address.change(function(event) {
-      var container, divider, footer, href, i, title, url, word;
+      var container, divider, footer, hexagon, href, i, title, url, word;
       title = "melvin";
       href = event.value.trim();
       href = href.replace(/^\//, "");
@@ -46,6 +46,7 @@
       container = $("#js-container");
       footer = $("#js-footer");
       divider = $("#js-divider");
+      hexagon = $("#js-hexagon");
       for (i in url) {
         word = url[i];
         if (word !== "") {
@@ -63,6 +64,7 @@
       }
       $.address.title(title);
       if (href === "") {
+        hexagon.show();
         return $("html, body").animate({
           scrollTop: 0
         }, 500, function() {
@@ -82,9 +84,13 @@
             } else {
               divider.fadeIn("500");
               container.fadeIn("500", function() {
-                return $("html, body").animate({
-                  scrollTop: $(_this).position().top + 330 - 45
-                }, 500);
+                if (hexagon.is(":visible")) {
+                  return $("html, body").animate({
+                    scrollTop: $(_this).position().top + 600 - 45
+                  }, 500, function() {
+                    return hexagon.hide();
+                  });
+                }
               });
               return footer.fadeIn("500");
             }

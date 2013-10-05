@@ -9,7 +9,7 @@ $(document).ready ->
 
   # Add background to navbar if page is scrolled down
   $(window).scroll ->
-    if $(this).scrollTop() > 330
+    if $(this).scrollTop() > 120
       $(".top-bar").removeClass "top-bar-clear"
     else
       $(".top-bar").addClass "top-bar-clear"
@@ -47,6 +47,7 @@ $(document).ready ->
     container = $("#js-container")
     footer = $("#js-footer")
     divider = $("#js-divider")
+    hexagon = $("#js-hexagon")
     # arrow = $("#js-scroll-arrow")
 
     # Set page title
@@ -66,6 +67,7 @@ $(document).ready ->
 
     # Load data with transitions
     if href is ""
+      hexagon.show()
       $("html, body").animate
         scrollTop: 0,
         500, ->
@@ -84,9 +86,11 @@ $(document).ready ->
           else
             divider.fadeIn "500"
             container.fadeIn "500", =>
-              $("html, body").animate
-                scrollTop: $(this).position().top + 330 - 45,
-                500
+              if hexagon.is(":visible")
+                $("html, body").animate
+                  scrollTop: $(this).position().top + 600 - 45,
+                  500, ->
+                    hexagon.hide()
             footer.fadeIn "500"
 
 ###
