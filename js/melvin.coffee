@@ -62,7 +62,7 @@ $(document).ready ->
             word = "Alien Escape"
           else
             word = word.charAt(0).toUpperCase() + word.slice 1
-        title = word + " . " + title
+        title = word + " · " + title
     $.address.title title
 
     # Load appropriate content
