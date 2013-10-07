@@ -117,7 +117,7 @@ module.exports = function(grunt) {
         reset: true,
       },
       melvin: {
-        src: '_site/**/*.html'
+        src: ['_site/**/*.html', '!_site/archive/**/*']
       }
     },
 
@@ -126,7 +126,7 @@ module.exports = function(grunt) {
         permalink: '/:categories/:year/:month/:title/',
         relative_permalinks: 'false',
         markdown: 'redcarpet',
-        exclude: ['.gitignore', 'CNAME', 'Gruntfile.js', 'LICENSE', 'LICENSES.md', 'node_modules', 'package.json', 'README.md', 'start.sh', 'validation-report.json', 'validation-status.json']
+        exclude: ['.gitignore', 'archive', 'CNAME', 'Gruntfile.js', 'LICENSE', 'LICENSES.md', 'node_modules', 'package.json', 'README.md', 'start.sh', 'validation-report.json', 'validation-status.json']
       },
       preview: {
         options: {
