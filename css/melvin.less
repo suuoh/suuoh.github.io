@@ -7,6 +7,7 @@
 @grey-dark: darken(white, 80%);
 @old-primary: #008CE2;
 @old-background: #001014;
+
 ::selection {
   background: @primary;
   color: white;
@@ -56,6 +57,14 @@ body,  h1,  h2,  h3,  h4,  h5,  h6 {
   }
 }
 
+.content {
+  padding-top: 2em;
+
+  @media only screen and (min-width:768px) {
+    padding-top: 5em;
+  }
+}
+
 .divider {
   border-top: solid 1px @grey-dark;
   clear: both;
@@ -70,7 +79,11 @@ body,  h1,  h2,  h3,  h4,  h5,  h6 {
 
 .footer {
   color: @grey;
-  margin-top: 5em;
+  padding-top: 2em;
+
+  @media only screen and (min-width:768px) {
+    padding-top: 5em;
+  }
 
   a {
     color: @grey;
