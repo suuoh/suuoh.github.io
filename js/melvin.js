@@ -59,7 +59,7 @@
             default:
               word = word.charAt(0).toUpperCase() + word.slice(1);
           }
-          title = word + " . " + title;
+          title = word + " · " + title;
         }
       }
       $.address.title(title);
