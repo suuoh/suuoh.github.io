@@ -20,7 +20,7 @@
 </head>
 <body>
   <div class="fixed">
-    <nav class="top-bar top-bar-clear" id="js-navbar" style="display: none;">
+    <nav class="top-bar top-bar-clear" id="js-navbar">
       <ul class="title-area">
         <li class="name">
           <h1><a class="deep-link" href="/">&there4; melvin</a></h1>
@@ -40,20 +40,18 @@
     </nav>
   </div>
 
-  <div class="hexagon" id="js-hexagon">
-    <img src="images/hexagon.png" alt="hexagon" />
-  </div>
+  <img class="hexagon" id="js-hexagon" src="images/hexagon.png" alt="hexagon" />
 
-  <div class="container">
+  <div class="container" id="js-container">
     <div class="row" id="js-divider" style="display: none;">
       <div class="large-12 large-centered columns">
         <div class="divider"></div>
       </div>
     </div>
+
     {{ content }}
 
-
-    <div class="row footer" id="js-footer" style="display: none;">
+    <div class="row footer" id="js-footer">
       <div class="large-12 columns">
         <div class="divider"></div>
         <div class="row">
