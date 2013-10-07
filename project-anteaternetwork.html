@@ -48,40 +48,40 @@
   <div class="row">
     <div class="large-12 columns">
       <h4 class="subheader">Gallery</h4>
-      <ul data-orbit>
-        <li>
-          <img src="/images/antnet_devices.jpg" alt="The Anteater Network is responsive and adapts to any device" />
-        </li>
-        <li>
-          <img src="/images/antnet_main.jpg" alt="Main view of the Anteater Network" />
-        </li>
-        <li>
-          <img src="/images/antnet_clusters.jpg" alt="Too many pins? Turn on marker clustering!" />
-        </li>
-        <li>
-          <img src="/images/antnet_filter.jpg" alt="Filter the results by school or business category" />
-        </li>
-        <li>
-          <img src="/images/antnet_fullscreen.jpg" alt="Hide the results for a larger view of the map" />
-        </li>
-        <li>
-          <img src="/images/antnet_uciaa.jpg" alt="UCI Alumni Association" />
-        </li>
-      </ul>
+      <div class="slideshow-wrapper">
+        <div class="preloader"></div>
+        <ul data-orbit>
+          <li>
+            <img src="/images/antnet_devices.jpg" alt="The Anteater Network is responsive and adapts to any device" />
+          </li>
+          <li>
+            <img src="/images/antnet_main.jpg" alt="Main view of the Anteater Network" />
+          </li>
+          <li>
+            <img src="/images/antnet_clusters.jpg" alt="Too many pins? Turn on marker clustering!" />
+          </li>
+          <li>
+            <img src="/images/antnet_filter.jpg" alt="Filter the results by school or business category" />
+          </li>
+          <li>
+            <img src="/images/antnet_fullscreen.jpg" alt="Hide the results for a larger view of the map" />
+          </li>
+          <li>
+            <img src="/images/antnet_uciaa.jpg" alt="UCI Alumni Association" />
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
 
 <script>
   $(document).ready(function() {
-    $.getScript("//cdnjs.cloudflare.com/ajax/libs/foundation/4.3.1/js/foundation/foundation.orbit.min.js")
-    .done(function() {
-      $(document).foundation("orbit", {
-        animation: 'fade',
-        timer_speed: 4000,
-        resume_on_mouseout: true,
-        slide_number: false
-      });
+    $(document).foundation("orbit", {
+      animation: 'fade',
+      timer_speed: 4000,
+      resume_on_mouseout: true,
+      slide_number: false
     });
   });
 </script>
