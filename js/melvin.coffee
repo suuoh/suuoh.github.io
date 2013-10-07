@@ -18,7 +18,7 @@ $(document).ready ->
     topbar.removeClass "expanded"
     topbar.find("li").removeClass "hover"
 
-  # Add background to navbar if page is scrolled down
+  # Remove clear navbar if page is scrolled down
   $(window).scroll ->
       if $(this).scrollTop() > 45
         $(".top-bar").removeClass "top-bar-clear"
@@ -81,4 +81,3 @@ $(document).ready ->
           else
             content.fadeIn "2000"
             container.addClass "active"
-
