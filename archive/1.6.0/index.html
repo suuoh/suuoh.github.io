@@ -6,35 +6,23 @@
   <title>melvin</title>
   <meta name="author" content="Melvin Chien">
   <meta name="description" content="Melvin Chien">
-
-  <!-- Bootstrap Cosmo -->
-  <link href="/css/bootstrap-cosmo.no-icons.css" rel="stylesheet" media="screen">
-
-  <!-- Bootstrap Responsive -->
+  <link href="/archive/1.6.0/css/bootstrap-cosmo.no-icons.css" rel="stylesheet" media="screen">
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
-
-  <!-- Font Awesome -->
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-
-  <!-- fancyBox -->
   <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" rel="stylesheet" media="screen">
   <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" media="screen">
-
-  <!-- melvin -->
-  <link href="/css/melvin.min.css" rel="stylesheet" media="screen">
-
-  <!-- jQuery -->
+  <link href="/archive/1.6.0/css/melvin.min.css" rel="stylesheet" media="screen">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 <body>
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container-fluid">
-        <a class="brand" href="/">melvin</a>
+        <a class="brand" href="/archive/1.6.0/">melvin</a>
         <ul class="nav">
-          <li id="about" ><a href="/about/"><i class="icon-comments"></i><span class="hidden-phone"> About</span></a></li>
-          <li id="portfolio" ><a href="/portfolio/"><i class="icon-suitcase"></i><span class="hidden-phone"> Portfolio</span></a></li>
-          <li id="blog" ><a href="/blog/"><i class="icon-coffee"></i><span class="hidden-phone"> Blog</span></a></li>
+          <li id="about" ><a href="/archive/1.6.0/about/"><i class="icon-comments"></i><span class="hidden-phone"> About</span></a></li>
+          <li id="portfolio" ><a href="/archive/1.6.0/portfolio/"><i class="icon-suitcase"></i><span class="hidden-phone"> Portfolio</span></a></li>
+          <li id="blog" ><a href="/archive/1.6.0/blog/"><i class="icon-coffee"></i><span class="hidden-phone"> Blog</span></a></li>
         </ul>
       </div>
     </div>
@@ -42,23 +30,10 @@
 
   <div class="body container-fluid">
     <div class="alert">
-      New website coming soon! Check out the <a href="https://github.com/melvinchien/melvinchien.github.com/commits/1.7.0">progress</a> or <a href="https://github.com/melvinchien/melvinchien.github.com/tree/1.7.0">repository</a> if you are interested!
+      Heavy construction ahead! Please excuse the (lack of a) mess!
     </div>
 
-    
-
     <img id="splash" title="Welcome!" alt="splash" src="images/leaves.gif" style="display: none;"/>
-
-<script>
-$(document).ready(function() {
-  $("footer").hide();
-  $("img#splash").fadeIn(3000, function() {
-    $("footer").fadeIn(1500);
-  });
-});
-</script>
-
-    
 
     <footer>
       <a href="http://twitter.com/suuoh/"><i class="icon-twitter"></i></a>
@@ -70,36 +45,35 @@ $(document).ready(function() {
     </footer>
   </div>
 
-  <!-- Lazy Load -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.8.4/jquery.lazyload.min.js"></script>
-
-  <!-- Bootstrap Javascript -->
   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-
-  <!-- fancyBox -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-media.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.js"></script>
-
-  <!-- melvin -->
-  <script src="/js/melvin.min.js"></script>
-
-  <!-- Google Analytics -->
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', 'UA-16595656-2']);
-  _gaq.push(['_setDomainName', 'melvin.io']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  <script src="/archive/1.6.0/js/melvin.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("footer").hide();
+      $("img#splash").fadeIn(3000, function() {
+        $("footer").fadeIn(1500);
+      });
+    });
   </script>
-  <!-- Google Analytics end -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', 'UA-16595656-2']);
+    _gaq.push(['_setDomainName', 'melvin.io']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 </body>
 </html>
