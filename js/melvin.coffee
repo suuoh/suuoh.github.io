@@ -67,17 +67,20 @@ $(document).ready ->
 
     # Load appropriate content
     if href is ""
+      footer.fadeOut "500"
       content.fadeOut "500", ->
         container.hide()
       container.removeClass "active"
     else
       container.show()
       href = href.replace "/", "-"
+      footer.fadeOut "250"
       content.fadeOut "250", ->
         content.load "/" + href + ".html", (response, status, xhr) ->
           if status is "error"
             # Redirect to page without hashtag (which then redirects to 404)
             window.location.replace "/" + href
           else
+            footer.fadeIn "500"
             content.fadeIn "2000"
             container.addClass "active"

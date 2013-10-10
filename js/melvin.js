@@ -64,6 +64,7 @@
       }
       $.address.title(title);
       if (href === "") {
+        footer.fadeOut("500");
         content.fadeOut("500", function() {
           return container.hide();
         });
@@ -71,11 +72,13 @@
       } else {
         container.show();
         href = href.replace("/", "-");
+        footer.fadeOut("250");
         return content.fadeOut("250", function() {
           return content.load("/" + href + ".html", function(response, status, xhr) {
             if (status === "error") {
               return window.location.replace("/" + href);
             } else {
+              footer.fadeIn("500");
               content.fadeIn("2000");
               return container.addClass("active");
             }
