@@ -143,6 +143,12 @@ img.hexagon {
 
 .project {
   .button {
+    background-color: lighten(@primary, 10%);
+
+    &:hover {
+      background-color: lighten(@primary, 20%);
+    }
+    
     @media only screen and (min-width:768px) {
       margin-bottom: 0;
       margin-top: 1.25em;

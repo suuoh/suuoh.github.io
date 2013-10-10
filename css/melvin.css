@@ -141,6 +141,12 @@ img.hexagon {
   border-radius: 4px;
   background-color: white;
 }
+.project .button {
+  background-color: #009be0;
+}
+.project .button:hover {
+  background-color: #14b7ff;
+}
 @media only screen and (min-width: 768px) {
   .project .button {
     margin-bottom: 0;
@@ -269,3 +275,8 @@ img.hexagon {
   filter: alpha(opacity=50);
   padding-top: 1em;
 }
+  .hexagon-six {
+    margin-top: -@hexagonHeight * 2;
+  }
+}
+*/
