@@ -1,6 +1,9 @@
 module.exports = function(grunt) {
   "use strict";
 
+  // Load all dependencies
+  require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
+
   // Project configuration
   grunt.initConfig({
 
@@ -160,6 +163,7 @@ module.exports = function(grunt) {
     }
   });
 
+  /*
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
@@ -172,6 +176,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-html-validation');
   grunt.loadNpmTasks('grunt-jekyll');
+  */
 
   // Build task
   grunt.registerTask('build', ['clean', 'less', 'coffee', 'jekyll:dist']);
@@ -188,4 +193,3 @@ module.exports = function(grunt) {
   // Default task
   grunt.registerTask('default', ['test', 'dist']);
 };
-

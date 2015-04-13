@@ -1,6 +1,5 @@
 /*!
  * melvin.io v1.7.1
- * Copyright © 2014 Melvin Chien <hello@melvin.io> (http://melvin.io/)
  * Licensed under the MIT license
  */
 
@@ -275,6 +274,72 @@ img.hexagon {
   filter: alpha(opacity=50);
   padding-top: 1em;
 }
+/*
+@hexagonSide: 100px;
+@hexagonHeight: 86px;
+
+.hexagon {
+  width: @hexagonSide * 2;
+  height: @hexagonHeight * 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -@hexagonSide;
+  margin-left: -@hexagonHeight;
+
+  div[class^="hexagon-"] {
+    position: relative;
+    width: 0;
+    height: 0;
+    .background-clip();
+  }
+
+  .hexagon-one, .hexagon-three, .hexagon-five {
+    border-top: @hexagonHeight solid rgb(0, 140, 226);
+    border-top: @hexagonHeight solid rgba(0, 140, 226, 1.0);
+    border-right: (@hexagonSide / 2) solid transparent;
+    border-left: (@hexagonSide / 2) solid transparent;
+
+    &:hover {
+      border-top: @hexagonHeight solid rgb(266, 140, 0);
+      border-top: @hexagonHeight solid rgba(266, 140, 0, 1.0);
+    }
+  }
+
+  .hexagon-two, .hexagon-four, .hexagon-six {
+    border-right: (@hexagonSide / 2) solid transparent;
+    border-bottom: @hexagonHeight solid rgb(0, 140, 226);
+    border-bottom: @hexagonHeight solid rgba(0, 140, 226, 1.0);
+    border-left: (@hexagonSide / 2) solid transparent;
+
+    &:hover {
+      border-bottom: @hexagonHeight solid rgb(266, 140, 0);
+      border-bottom: @hexagonHeight solid rgba(266, 140, 0, 1.0);
+    }
+  }
+
+  .hexagon-one {
+    margin-left: @hexagonSide / 2;
+  }
+
+  .hexagon-two {
+    margin-top: -@hexagonHeight;
+    margin-left: @hexagonSide;
+  }
+
+  .hexagon-three {
+    margin-left: @hexagonSide;
+  }
+
+  .hexagon-four {
+    margin-top: -@hexagonHeight;
+    margin-left: @hexagonSide / 2;
+  }
+
+  .hexagon-five {
+    margin-top: -@hexagonHeight;
+  }
+
   .hexagon-six {
     margin-top: -@hexagonHeight * 2;
   }

@@ -1,6 +1,5 @@
 /*!
  * melvin.io v1.7.1
- * Copyright © 2014 Melvin Chien <hello@melvin.io> (http://melvin.io/)
  * Licensed under the MIT license
  */
 
@@ -33,7 +32,7 @@
       return $.address.value(href);
     });
     return $.address.change(function(e) {
-      var container, content, divider, footer, href, title, url, word, _i, _len;
+      var container, content, divider, footer, href, i, len, title, url, word;
       container = $("#js-container");
       content = $("#js-content");
       footer = $("#js-footer");
@@ -43,8 +42,8 @@
       href = href.replace(/^\//, "");
       href = href.replace(/\/$/, "");
       url = href.split("/");
-      for (_i = 0, _len = url.length; _i < _len; _i++) {
-        word = url[_i];
+      for (i = 0, len = url.length; i < len; i++) {
+        word = url[i];
         if (word !== "") {
           switch (word) {
             case "anteaternetwork":
