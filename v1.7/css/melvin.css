@@ -23,7 +23,7 @@ html {
   width: 100%;
 }
 body {
-  background-image: url("images/bg_dark.gif");
+  background-image: url("/v1.7/images/bg_dark.gif");
   background-position: 50%;
   background-repeat: repeat;
 }
@@ -41,7 +41,7 @@ h6 {
   -moz-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
-  background-image: url("images/bg_light.gif");
+  background-image: url("/v1.7/images/bg_light.gif");
   background-position: 50%;
   background-repeat: repeat;
   display: none;
