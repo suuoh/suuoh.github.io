@@ -1,0 +1,5 @@
+# robotstxt.org
+# google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
+
+User-agent: *
+Disallow: /404.html

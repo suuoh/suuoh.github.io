@@ -1,0 +1,87 @@
+<div class="project">
+  <div class="row">
+    <div class="large-6 columns">
+      <h2>Anteater Network <small>March 2013</small></h2>
+    </div>
+    <div class="large-6 columns links">
+      <a class="button small" href="http://alumni.uci.edu/anteater-network/" target="_blank"><i class="icon-globe"></i>&nbsp;&nbsp;Website</a>
+      <a class="button small" href="http://git.io/antnet" target="_blank"><i class="icon-github"></i>&nbsp;&nbsp;Source</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-6 columns">
+      <h4 class="subheader">About</h4>
+      <p>The <strong>Anteater Network</strong> is a dynamic and extensible website that connects <a href="http://uci.edu" target="_blank">University of California, Irvine</a> alumni who have started their own businesses to past, present, and future students and faculty.</p>
+      <p>By displaying these businesses on a map and offering a variety of filters the Anteater Network offers a highly effective, convenient, and visual representation of the spread of UCI's alumni network.</p>
+      <p>The system was created for the <a href="http://alumni.uci.edu" target="_blank">UCI Alumni Association</a> as my senior design project in the informatics undergraduate program.</p>
+    </div>
+    <div class="small-5 small-offset-1 columns">
+      <h4 class="subheader">Features</h4>
+      <ul class="list disc">
+        <li>Responsive interface for compatibility with all screen sizes</li>
+        <li>600+ UCI alumni owned businesses</li>
+        <li>User friendly school and business category filters</li>
+        <li>Powerful and flexible instant search</li>
+        <li>Toggle-able pin clustering</li>
+        <li>Full screen map mode</li>
+        <li>Buffered auto focusing map after searching</li>
+        <li>Custom admin panel for UCIAA staff</li>
+        <li>Address geocoding and caching</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h4 class="subheader">Languages and Tools</h4>
+      <p class="label radius">HTML</p>
+      <p class="label radius">CSS</p>
+      <p class="label radius">Javascript</p>
+      <p class="label radius">PHP</p>
+      <p class="label radius">MySQL</p>
+      <p class="label secondary radius">Git</p>
+      <p class="label secondary radius">jQuery</p>
+      <p class="label secondary radius">jQuery UI</p>
+      <p class="label secondary radius">Bootstrap</p>
+      <p class="label secondary radius">Google Maps</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h4 class="subheader">Gallery</h4>
+      <div class="slideshow-wrapper">
+        <div class="preloader"></div>
+        <ul data-orbit>
+          <li>
+            <img src="/images/antnet_devices.jpg" alt="The Anteater Network is responsive and adapts to any device" />
+          </li>
+          <li>
+            <img src="/images/antnet_main.jpg" alt="Main view of the Anteater Network" />
+          </li>
+          <li>
+            <img src="/images/antnet_clusters.jpg" alt="Too many pins? Turn on marker clustering!" />
+          </li>
+          <li>
+            <img src="/images/antnet_filter.jpg" alt="Filter the results by school or business category" />
+          </li>
+          <li>
+            <img src="/images/antnet_fullscreen.jpg" alt="Hide the results for a larger view of the map" />
+          </li>
+          <li>
+            <img src="/images/antnet_uciaa.jpg" alt="UCI Alumni Association" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $(document).foundation("orbit", {
+      animation: 'fade',
+      timer_speed: 4000,
+      resume_on_mouseout: true,
+      slide_number: false
+    });
+  });
+</script>

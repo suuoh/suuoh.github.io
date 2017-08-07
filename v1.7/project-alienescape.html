@@ -1,0 +1,80 @@
+<div class="project">
+  <div class="row">
+    <div class="large-8 columns">
+      <h2>Alien Escape <small>December 2012</small></h2>
+    </div>
+    <div class="large-4 columns links">
+      <a class="button small" href="http://melvin.io/AlienEscape/" target="_blank"><i class="icon-globe"></i>&nbsp;&nbsp;Website</a>
+      <a class="button small" href="http://github.com/melvinchien/AlienEscape" target="_blank"><i class="icon-github"></i>&nbsp;&nbsp;Source</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-6 columns">
+      <h4 class="subheader">About</h4>
+      <p><strong>Alien Escape</strong> is a short, original, tiled based, adventure video game developed as part of a 7 week project that involved creating prototypes, presentations, and documentation in addition to the game itself.</p>
+      <p>The player takes the role of an alien who has been captured and placed in quarantine. The alien must find an engine piece on each level to unlock the teleporter to the next level without running out of steps, all while playing under a fog of war and avoiding various enemies and traps.</p>
+    </div>
+    <div class="small-5 small-offset-1 columns">
+      <h4 class="subheader">Features</h4>
+      <ul class="list disc">
+        <li>3 different levels</li>
+        <li>Original artwork and sprites</li>
+        <li>Original music and sound effects</li>
+        <li>Original fog of war and line of sight algorithms</li>
+        <li>Original artificial intelligence algorithms</li>        
+        <li>Multiple unique sound zones per level</li>
+        <li>4 tiers of enemy intelligence</li>
+        <li>2 tiers of turret intelligence</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h4 class="subheader">Languages and Tools</h4>
+      <p class="label radius">Illustrator</p>
+      <p class="label radius">Photoshop</p>
+      <p class="label radius">HTML</p>
+      <p class="label radius">Javascript</p>
+      <p class="label radius">Tile Map XML</p>
+      <p class="label secondary radius">melonJS</p>
+      <p class="label secondary radius">Tiled</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <h4 class="subheader">Gallery</h4>
+      <div class="slideshow-wrapper">
+        <div class="preloader"></div>
+        <ul data-orbit>
+          <li>
+            <img src="images/alienescape_main.jpg" alt="Title screen of Alien Escape, a tile based, action strategy game" />
+          </li>
+          <li>
+            <img src="images/alienescape_fog.jpg" alt="Custom fog of war is enabled by default, but can be toggled off for 5 steps for easier gameplay" />
+          </li>
+          <li>
+            <img src="images/alienescape_level1.jpg" alt="Start off easy with the outdoor themed Facility 1" />
+          </li>
+          <li>
+            <img src="images/alienescape_level2.jpg" alt="A few more turrets and a few more guards on Facility 2" />
+          </li>
+          <li>
+            <img src="images/alienescape_level3.jpg" alt="Facility 3 welcomes you with 28 turrets and 2 teleporting guards" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $(document).foundation("orbit", {
+      animation: 'fade',
+      timer_speed: 4000,
+      resume_on_mouseout: true,
+      slide_number: false
+    });
+    $(".orbit-slides-container").height("728");
+  });
+</script>
