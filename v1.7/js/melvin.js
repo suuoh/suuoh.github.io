@@ -1,3 +1,8 @@
+/*!
+ * melvin.io v1.7.1
+ * Licensed under the MIT license
+ */
+
 (function() {
   $(document).ready(function() {
     $(this).foundation();

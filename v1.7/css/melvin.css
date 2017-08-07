@@ -1,9 +1,8 @@
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
+/*!
+ * melvin.io v1.7.1
+ * Licensed under the MIT license
+ */
+
 ::selection {
   background: #0078ad;
   color: white;
