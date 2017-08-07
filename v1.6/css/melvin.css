@@ -1,5 +1,5 @@
 /*!
- * melvin.io v1.6.0
+ * melvin.io v1.6
  * Copyright 2013 Melvin Chien <hello@melvin.io> (http://melvin.io/)
  * Licensed under the MIT license
  */
