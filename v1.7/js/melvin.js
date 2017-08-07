@@ -68,7 +68,7 @@
         href = href.replace("/", "-");
         footer.fadeOut("250");
         return content.fadeOut("250", function() {
-          return content.load("/" + href + ".html", function(response, status, xhr) {
+          return content.load(href + ".html", function(response, status, xhr) {
             if (status === "error") {
               return window.location.replace("/" + href);
             } else {
