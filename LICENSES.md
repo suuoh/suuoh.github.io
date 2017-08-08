@@ -9,7 +9,12 @@ The following files, directories, and their contents are licensed under the [Cre
 * about.html
 * portfolio.html
 
-All other files are licensed under the [MIT License](LICENSE), unless otherwise explicitly stated.  
+All other files are licensed under the [MIT License](LICENSE), unless otherwise stated.  
+
+#### Bootstrap
+**Author:** Mark Otto, Jacob Thornton, Various Contributors, Twitter  
+**Website:** <https://v4-alpha.getbootstrap.com/>  
+**License:** [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE)  
 
 #### Font Awesome
 **Author:** Dave Gandy  
@@ -20,13 +25,3 @@ All other files are licensed under the [MIT License](LICENSE), unless otherwise 
 **Author:** jQuery Foundation  
 **Website:** <http://jquery.com/>  
 **License:** [MIT License](https://github.com/jquery/jquery/blob/master/LICENSE.txt)  
-
-#### Modernizr
-**Author:** Faruk Ates, Paul Irish, Alex Sexton, Ryan Seddon, Patrick Kettner, Stu Cox, Richard Herrera  
-**Website:** <http://modernizr.com/>  
-**License:** [MIT License](https://modernizr.com/license)  
-
-#### Normalize
-**Author:** Nicolas Gallagher and Jonathan Neal  
-**Website:** <http://necolas.github.io/normalize.css/>  
-**License:** [MIT License](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)  
