@@ -1,0 +1,12 @@
+/*!
+ * melvin.io v1.8
+ * Licensed under the MIT license
+ */
+footer a:hover {
+  text-decoration: none;
+
+}
+
+footer i:hover {
+  color: #1a1a1a !important;
+}
