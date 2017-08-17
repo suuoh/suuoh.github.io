@@ -3,8 +3,6 @@
  * Licensed under the MIT license
  */
 
-/* TODO: Add Row Spacing */
-
 footer {
    text-transform: uppercase;
    letter-spacing: 2px;
@@ -17,4 +15,8 @@ footer a:hover {
 
 footer i:hover {
   color: #1a1a1a !important;
+}
+
+.container {
+  margin-top: 3rem;
 }
