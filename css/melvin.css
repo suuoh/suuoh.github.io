@@ -2,9 +2,17 @@
  * melvin.io v1.8
  * Licensed under the MIT license
  */
+
+/* TODO: Add Row Spacing */
+
+footer {
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 0.75rem;
+}
+
 footer a:hover {
   text-decoration: none;
-
 }
 
 footer i:hover {
