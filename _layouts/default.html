@@ -12,7 +12,11 @@
   <title>{% if page.title %}{{ page.title }} &middot; {% endif %}melvin.io</title>
   <meta name="description" content="{{ page.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="apple-touch-icon" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/img/favicon.png">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0-alpha.6/lux/bootstrap.min.css" integrity="sha256-dkfdbrxcV56QnFlopOjr7M9prgk7vANoLNdaNCH8H60=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -24,6 +28,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
+  <!-- Menu Bar -->
   <nav class="navbar navbar-light bg-inverse navbar-toggleable-xl">
     <a class="navbar-brand" href="#">
       <img src="/img/melvin_logo_full.png" class="d-inline-block align-top ml-3" height="35" alt="melvin logo">
@@ -36,6 +41,7 @@
 
   {{ content }}
 
+  <!-- Footer -->
   <div class="container">
     <footer class="row justify-content-between">
       <div class="col-4">
