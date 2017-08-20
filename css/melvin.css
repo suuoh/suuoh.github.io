@@ -40,3 +40,9 @@ footer i:hover {
   -webkit-filter: blur(1px);
   filter: blur(1px);
 }
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
