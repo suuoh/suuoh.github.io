@@ -4,6 +4,14 @@
  */
 
 $(document).ready(function() {
+  $(".nav-link").click(function(event) {
+    event.preventDefault();
+    var clickedSection = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(clickedSection).offset().top
+    }, 500);
+  });
+
   $(".project-card").click(function(event) {
     event.preventDefault();
     var clickedProject = $(this).attr("href");
