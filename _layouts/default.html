@@ -29,14 +29,25 @@
   <![endif]-->
 
   <!-- Menu Bar -->
-  <nav class="navbar navbar-light bg-inverse navbar-toggleable-xl">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-light bg-inverse navbar-toggleable">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menubar" aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="navbar-toggler-icon fa fa-bars text-muted"></i>
+    </button>
+    <a class="navbar-brand mr-auto" href="#">
       <img src="/img/melvin_logo_full.png" class="d-inline-block align-top ml-3" height="35" alt="melvin logo">
     </a>
-    <div class="navbar-nav ml-auto mr-3">
-      <a class="nav-item nav-link" href="#projects">Projects</a>
-      <a class="nav-item nav-link ml-3" href="#about">About</a>
-      <a class="nav-item nav-link ml-3" href="#contact">Contact</a>
+    <div class="navbar-collapse collapse" id="menubar">
+      <ul class="navbar-nav ml-auto mr-1">
+        <li class="nav-item ml-3">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item ml-3">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item ml-3">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
   </nav>
 

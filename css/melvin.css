@@ -3,6 +3,20 @@
  * Licensed under the MIT license
  */
 
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  padding-top: 0.4rem;
+}
+
+.navbar-toggler-icon:hover {
+  cursor: pointer;
+  color: #1a1a1a !important;
+}
+
 footer {
    text-transform: uppercase;
    letter-spacing: 2px;
