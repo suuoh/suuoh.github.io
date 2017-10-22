@@ -3,10 +3,10 @@ layout: default
 description: Personal website of Melvin Chien
 ---
 
-<div class="carousel slide" data-ride="carousel" id="melvinBanner">
+<div class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <img class="d-block" src="/img/melvin_banner.jpg" width="100%" height="100%" alt="Hero Banner Image">
+      <img class="d-block" id="melvinBanner" src="/img/melvin_banner.jpg" alt="Hero Banner Image">
       <div class="carousel-caption d-none d-md-block">
         <h4 class="text-white">this is me</h4>
       </div>
@@ -32,7 +32,7 @@ description: Personal website of Melvin Chien
     </div>
 
     <div class="col-md-6">
-      <a class="project-card" href="#projectJMMP" data-toggle="collapse" aria-expanded="false" aria-controls="#projectJMMP">
+      <a class="project-card" href="#projectJMMP" data-toggle="collapse" aria-expanded="false" aria-controls="projectJMMP">
         <div class="card">
           <img class="card-img img-fluid" src="/img/project_jmmp.jpg" alt="JMMP">
           <div class="card-img-overlay d-flex align-items-center">
@@ -48,7 +48,7 @@ description: Personal website of Melvin Chien
 
   <div class="row">
     <div class="col-md-6">
-      <a class="project-card" href="#projectAlienEscape" data-toggle="collapse" aria-expanded="false" aria-controls="#projectAlienEscape">
+      <a class="project-card" href="#projectAlienEscape" data-toggle="collapse" aria-expanded="false" aria-controls="projectAlienEscape">
         <div class="card">
           <img class="card-img img-fluid" src="/img/project_alienescape.jpg" alt="Alien Escape">
           <div class="card-img-overlay d-flex align-items-center">
@@ -62,7 +62,7 @@ description: Personal website of Melvin Chien
     </div>
 
     <div class="col-md-6">
-      <a class="project-card" href="#projectTerris" data-toggle="collapse" aria-expanded="false" aria-controls="#projectTerris">
+      <a class="project-card" href="#projectTerris" data-toggle="collapse" aria-expanded="false" aria-controls="projectTerris">
         <div class="card">
           <img class="card-img img-fluid" src="/img/project_terris.jpg" alt="Terris">
           <div class="card-img-overlay d-flex align-items-center">
@@ -417,7 +417,7 @@ description: Personal website of Melvin Chien
         </div>
         <div class="form-group">
           <label for="contactEmail">Email</label>
-          <input type="email" class="form-control" id="contactEmail" name="email" aria-describedby="emailHelp" placeholder="Enter your email address">
+          <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Enter your email address">
         </div>
         <div class="form-group">
           <label for="contactComments">Comments</label>
