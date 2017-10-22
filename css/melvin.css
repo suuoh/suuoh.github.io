@@ -61,6 +61,10 @@ footer i:hover {
   display: block;
 }
 
+#contactAlert {
+  display: none;
+}
+
 #melvinBanner {
   width: 100%;
   height: 100%;
