@@ -18,7 +18,7 @@ All other files are licensed under the [MIT License](LICENSE), unless otherwise 
 
 #### Bootswatch Lux Theme
 **Author:** Thomas Park
-**Website:** <https://bootswatch.com/4-alpha/>
+**Website:** <https://bootswatch.com/>
 **License:** [MIT License](https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE)
 
 #### Font Awesome
