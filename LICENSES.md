@@ -13,13 +13,13 @@ All other files are licensed under the [MIT License](LICENSE), unless otherwise 
 
 #### Bootstrap
 **Author:** Mark Otto, Jacob Thornton, Various Contributors, Twitter  
-**Website:** <https://v4-alpha.getbootstrap.com/>  
+**Website:** <https://getbootstrap.com/>  
 **License:** [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE)  
 
 #### Bootswatch Lux Theme
-**Author:** Thomas Park
-**Website:** <https://bootswatch.com/>
-**License:** [MIT License](https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE)
+**Author:** Thomas Park  
+**Website:** <https://bootswatch.com/>  
+**License:** [MIT License](https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE)  
 
 #### Font Awesome
 **Author:** Dave Gandy  
