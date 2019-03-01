@@ -23,10 +23,10 @@ All other files are licensed under the [MIT License](LICENSE), unless otherwise 
 
 #### Font Awesome
 **Author:** Dave Gandy  
-**Website:** <http://fontawesome.io>  
-**License:** [SIL Open Font License](http://scripts.sil.org/OFL)  
+**Website:** <https://fontawesome.io>  
+**License:** [SIL Open Font License](https://scripts.sil.org/OFL)  
 
 #### jQuery
 **Author:** jQuery Foundation  
-**Website:** <http://jquery.com/>  
+**Website:** <https://jquery.com/>  
 **License:** [MIT License](https://github.com/jquery/jquery/blob/master/LICENSE.txt)  
