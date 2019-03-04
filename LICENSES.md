@@ -30,3 +30,8 @@ All other files are licensed under the [MIT License](LICENSE), unless otherwise 
 **Author:** jQuery Foundation  
 **Website:** <https://jquery.com/>  
 **License:** [MIT License](https://github.com/jquery/jquery/blob/master/LICENSE.txt)  
+
+#### Outdated Browser
+**Author:** burocratik
+**Website:** <http://outdatedbrowser.com>  
+**License:** [MIT License](https://github.com/burocratik/outdated-browser/blob/develop/LICENSE)  
