@@ -1,430 +1,476 @@
----
-layout: default
-description: Personal website of Melvin Chien
----
-
-<div class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <img class="d-block" id="melvinBanner" src="/img/melvin_banner.jpg" alt="Hero Banner Image">
-      <div class="carousel-caption d-none d-md-block">
-        <h4 class="text-white">this is me</h4>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Melvin Chien</title>
+    <meta name="description" content="Personal website of Melvin Chien">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.2/lux/bootstrap.min.css" integrity="sha512-zTvuig0lp44Ol8dgsXd7DGM3vSuLu8lIaGIEZ9pvh62u5lXNKMqZzqcBxBqju8pacqCCS2J5hWKrVS4IzJXEyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/css/melvin.css"/>
+  </head>
+  <body>
+    <!-- Menu Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img src="/img/melvin_logo_full.png" class="d-inline-block align-top ml-3" height="35" alt="melvin logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse show" id="navbarColor01" style="">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="d-block" id="melvinBanner" src="/img/melvin_banner.jpg" alt="Hero Banner Image">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 class="text-white">this is me</h4>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-<section class="container" id="projects">
-  <h4 class="text-center text-muted">Projects</h4>
-  <div class="row">
-    <div class="col-md-6">
-      <a class="project-card" href="#projectAnteaterNetwork" data-toggle="collapse" aria-expanded="false" aria-controls="projectAnteaterNetwork">
-        <div class="card">
-          <img class="card-img img-fluid" src="/img/project_anteaternetwork.jpg" alt="Anteater Network">
-          <div class="card-img-overlay d-flex align-items-center">
-            <div>
-              <h4 class="card-title text-center text-info">Anteater Network</h4>
-              <p class="card-text text-center">Visualize alumni entrepreneurs of University of California, Irvine through a Google Maps-like web interface.</p>
+    <section class="container" id="projects">
+      <h4 class="text-center text-muted">Projects</h4>
+      <div class="row">
+        <div class="col-md-6">
+          <a class="project-card" href="#projectAnteaterNetwork" data-toggle="collapse" aria-expanded="false" aria-controls="projectAnteaterNetwork">
+            <div class="card">
+              <img class="card-img img-fluid" src="/img/project_anteaternetwork.jpg" alt="Anteater Network">
+              <div class="card-img-overlay d-flex align-items-center">
+                <div>
+                  <h4 class="card-title text-center text-info">Anteater Network</h4>
+                  <p class="card-text text-center">Visualize alumni entrepreneurs of University of California, Irvine through a Google Maps-like web interface.</p>
+                </div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-      </a>
-    </div>
-
-    <div class="col-md-6">
-      <a class="project-card" href="#projectJMMP" data-toggle="collapse" aria-expanded="false" aria-controls="projectJMMP">
-        <div class="card">
-          <img class="card-img img-fluid" src="/img/project_jmmp.jpg" alt="JMMP">
-          <div class="card-img-overlay d-flex align-items-center">
-            <div>
-              <h4 class="card-title text-center text-info">Team JMMP</h4>
-              <p class="card-text text-center">Management team for the agile software development process and project documentation for the Anteater Network.</p>
+        <div class="col-md-6">
+          <a class="project-card" href="#projectJMMP" data-toggle="collapse" aria-expanded="false" aria-controls="projectJMMP">
+            <div class="card">
+              <img class="card-img img-fluid" src="/img/project_jmmp.jpg" alt="JMMP">
+              <div class="card-img-overlay d-flex align-items-center">
+                <div>
+                  <h4 class="card-title text-center text-info">Team JMMP</h4>
+                  <p class="card-text text-center">Management team for the agile software development process and project documentation for the Anteater Network.</p>
+                </div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-6">
-      <a class="project-card" href="#projectAlienEscape" data-toggle="collapse" aria-expanded="false" aria-controls="projectAlienEscape">
-        <div class="card">
-          <img class="card-img img-fluid" src="/img/project_alienescape.jpg" alt="Alien Escape">
-          <div class="card-img-overlay d-flex align-items-center">
-            <div>
-              <h4 class="card-title text-center text-info">Alien Escape</h4>
-              <p class="card-text text-center">A simple web game built using lightweight HTML5 frameworks and engines along with original art assets.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a class="project-card" href="#projectAlienEscape" data-toggle="collapse" aria-expanded="false" aria-controls="projectAlienEscape">
+            <div class="card">
+              <img class="card-img img-fluid" src="/img/project_alienescape.jpg" alt="Alien Escape">
+              <div class="card-img-overlay d-flex align-items-center">
+                <div>
+                  <h4 class="card-title text-center text-info">Alien Escape</h4>
+                  <p class="card-text text-center">A simple web game built using lightweight HTML5 frameworks and engines along with original art assets.</p>
+                </div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-      </a>
-    </div>
-
-    <div class="col-md-6">
-      <a class="project-card" href="#projectTerris" data-toggle="collapse" aria-expanded="false" aria-controls="projectTerris">
-        <div class="card">
-          <img class="card-img img-fluid" src="/img/project_terris.jpg" alt="Terris">
-          <div class="card-img-overlay d-flex align-items-center">
-            <div>
-              <h4 class="card-title text-center text-info">Terris</h4>
-              <p class="card-text text-center">Host servers for and manage adminstration of a Minecraft gaming community.</p>
+        <div class="col-md-6">
+          <a class="project-card" href="#projectTerris" data-toggle="collapse" aria-expanded="false" aria-controls="projectTerris">
+            <div class="card">
+              <img class="card-img img-fluid" src="/img/project_terris.jpg" alt="Terris">
+              <div class="card-img-overlay d-flex align-items-center">
+                <div>
+                  <h4 class="card-title text-center text-info">Terris</h4>
+                  <p class="card-text text-center">Host servers for and manage adminstration of a Minecraft gaming community.</p>
+                </div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="container collapse project-panel" id="projectAnteaterNetwork">
-  <h4 class="text-center">Anteater Network</h4>
-  <div class="row justify-content-center">
-    <div class="col-md-11">
-      <div id="carouselAnteaterNetwork" class="carousel slide" data-ride="carousel" data-interval="4000">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselAnteaterNetwork" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselAnteaterNetwork" data-slide-to="1" class="active"></li>
-          <li data-target="#carouselAnteaterNetwork" data-slide-to="2" class="active"></li>
-          <li data-target="#carouselAnteaterNetwork" data-slide-to="3" class="active"></li>
-          <li data-target="#carouselAnteaterNetwork" data-slide-to="4" class="active"></li>
-          <li data-target="#carouselAnteaterNetwork" data-slide-to="5" class="active"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img class="d-block img-fluid" src="/img/project_anteaternetwork_main.jpg" alt="Main view of the Anteater Network.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_anteaternetwork_clusters.jpg" alt="When there are too many pins, marker clustering can group pins in similar locations together.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_anteaternetwork_filter.jpg" alt="Filter results by school or business category.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_anteaternetwork_fullscreen.jpg" alt="Hiding the results list provides a larger view of the map.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_anteaternetwork_devices.jpg" alt="The Anteater Network was built mobile-first and responsively adapts to any device.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_anteaternetwork_mockups.jpg" alt="Wireframe mockups of the system from the planning and design phases.">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselAnteaterNetwork" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselAnteaterNetwork" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-    </div>
-  </div>
-
-  <div class="row justify-content-around">
-    <div class="col-md-5">
-      <h6>Description</h6>
-      <p>The <strong>Anteater Network</strong> is a dynamic and extensible website that connects alumni entrepeneurs of the <a href="https://uci.edu" target="_blank">University of California, Irvine</a> to past, present, and future students and faculty.</p>
-      <p>By displaying these businesses on a map with a variety of filters, the Anteater Network offers a highly effective, convenient, and visual representation of the spread of UCI's alumni network.</p>
-      <p>The system was created for the <a href="http://alumni.uci.edu" target="_blank">UCI Alumni Association</a> as a senior design project of my undergraduate informatics program.</p>
-      <a class="btn btn-info btn-sm" href="http://alumni.uci.edu/anteater-network/" target="_blank" role="button">View Project</a>
-      <a class="btn btn-secondary btn-sm" href="https://github.com/suuoh/AnteaterNetwork" target="_blank" role="button">View Source Code</a>
-    </div>
-    <div class="col-md-5">
-      <h6>Features</h6>
-      <ul>
-        <li>Responsive interface for compatibility with all screen sizes</li>
-        <li>600+ UCI alumni owned businesses listed</li>
-        <li>User friendly taxonomies for school and business category filters</li>
-        <li>Toggle-able pin clustering</li>
-        <li>Full screen map mode</li>
-        <li>Dynamic address geocoding and caching</li>
-        <li>Powerful and flexible instant search results</li>
-        <li>Buffered auto focusing map after searching</li>
-        <li>Custom admin panel for UCIAA staff</li>
-      </ul>
-      <h6>Development Tools</h6>
-      <span class="badge badge-dark">HTML5</span>
-      <span class="badge badge-dark">CSS3</span>
-      <span class="badge badge-dark">Javascript</span>
-      <span class="badge badge-dark">PHP</span>
-      <span class="badge badge-dark">MySQL</span>
-      <span class="badge badge-dark">GitHub</span>
-      <span class="badge badge-dark">jQuery</span>
-      <span class="badge badge-dark">Bootstrap</span>
-      <span class="badge badge-dark">Google Maps API</span>
-      <span class="badge badge-dark">QUnit</span>
-    </div>
-  </div>
-</section>
-
-<section class="container collapse project-panel" id="projectJMMP">
-  <h4 class="text-center">Team JMMP</h4>
-  <div class="row justify-content-center">
-    <div class="col-md-11">
-      <div id="carouselJMMP" class="carousel slide" data-ride="carousel" data-interval="4000">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselJMMP" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselJMMP" data-slide-to="1" class="active"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img class="d-block img-fluid" src="/img/project_jmmp_documents.jpg" alt="A variety of project documentation was produced including a project plan, communication covenant, risk analysis, and deployment plan.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_jmmp_poster.jpg" alt="Marketing poster that was used in several networking and showcase events.">
+    </section>
+    <section class="container collapse project-panel" id="projectAnteaterNetwork">
+      <h4 class="text-center">Anteater Network</h4>
+      <div class="row justify-content-center">
+        <div class="col-md-11">
+          <div id="carouselAnteaterNetwork" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselAnteaterNetwork" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselAnteaterNetwork" data-slide-to="1" class="active"></li>
+              <li data-target="#carouselAnteaterNetwork" data-slide-to="2" class="active"></li>
+              <li data-target="#carouselAnteaterNetwork" data-slide-to="3" class="active"></li>
+              <li data-target="#carouselAnteaterNetwork" data-slide-to="4" class="active"></li>
+              <li data-target="#carouselAnteaterNetwork" data-slide-to="5" class="active"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="/img/project_anteaternetwork_main.jpg" alt="Main view of the Anteater Network.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_anteaternetwork_clusters.jpg" alt="When there are too many pins, marker clustering can group pins in similar locations together.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_anteaternetwork_filter.jpg" alt="Filter results by school or business category.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_anteaternetwork_fullscreen.jpg" alt="Hiding the results list provides a larger view of the map.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_anteaternetwork_devices.jpg" alt="The Anteater Network was built mobile-first and responsively adapts to any device.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_anteaternetwork_mockups.jpg" alt="Wireframe mockups of the system from the planning and design phases.">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselAnteaterNetwork" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselAnteaterNetwork" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselJMMP" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselJMMP" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-    </div>
-  </div>
-
-  <div class="row justify-content-around">
-    <div class="col-md-5">
-      <h6>Description</h6>
-      <p><strong>JMMP</strong> is a student organization that was formed for the year long senior capstone project at the <a href="https://uci.edu" target="_blank">University of California, Irvine</a>. Our goal was to develop the Anteater Network, an innovative web app in collaboration with our sponsors, the <a href="http://alumni.uci.edu" target="_blank">UCI Alumni Association</a>.</p>
-      <p>JMMP operated under agile software development methodologies for one year, with iterative bi-weekly cycles of planning, analysis, design, development, testing, and presentations.</p>
-      <a class="btn btn-info btn-sm" href="https://jmmp.github.io/" target="_blank" role="button">View Website</a>
-      <a class="btn btn-secondary btn-sm" href="https://github.com/JMMP/INF191" target="_blank" role="button">View Art Assets</a>
-    </div>
-    <div class="col-md-5">
-      <h6>Project Management Deliverables</h6>
-      <ul>
-        <li>Project plans, business cases, and risk analysis</li>
-        <li>Stakeholder agreement and communication convenant</li>
-      </ul>
-      <h6>Software Development Deliverables</h6>
-      <ul>
-        <li>Wireframe mockups and functional prototypes</li>
-        <li>Requirements specification, architectural diagrams, and use cases</li>
-        <li>Test and deployment plans</li>
-      </ul>
-      <h6>Usability Testing Deliverables</h6>
-      <ul>
-        <li>Keystroke analyses and heuristic evaluations</li>
-        <li>Code and expert reviews</li>
-        <li>User studies</li>
-      </ul>
-      <h6>Development Tools</h6>
-      <span class="badge badge-dark">Adobe Illustrator</span>
-      <span class="badge badge-dark">Adobe Photoshop</span>
-      <span class="badge badge-dark">Balsamiq</span>
-      <span class="badge badge-dark">Gantto</span>
-      <span class="badge badge-dark">GitHub</span>
-      <span class="badge badge-dark">UML</span>
-    </div>
-  </div>
-</section>
-
-<section class="container collapse project-panel" id="projectAlienEscape">
-  <h4 class="text-center">Alien Escape</h4>
-  <div class="row justify-content-center">
-    <div class="col-md-11">
-      <div id="carouselAlienEscape" class="carousel slide" data-ride="carousel" data-interval="4000">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselAlienEscape" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselAlienEscape" data-slide-to="1" class="active"></li>
-          <li data-target="#carouselAlienEscape" data-slide-to="2" class="active"></li>
-          <li data-target="#carouselAlienEscape" data-slide-to="3" class="active"></li>
-          <li data-target="#carouselAlienEscape" data-slide-to="4" class="active"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img class="d-block img-fluid" src="/img/project_alienescape_main.jpg" alt="Alien Escape is a turn based, action and strategy game built in HTML5.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_alienescape_fog.jpg" alt="The player's line of site is severely limited using a custom fog of war algorithm.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_alienescape_level1.jpg" alt="The first level introduces players to mechanics of Alien Escape.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_alienescape_level2.jpg" alt="Facility 2 adds more AI controlled enemies including turrets and guards.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_alienescape_level3.jpg" alt="In the final level, the player is tasked with escaping a high security science lab with an abundance of turrets and two highly advanced guards.">
-          </div>
+      <div class="row justify-content-around">
+        <div class="col-md-5">
+          <h6>Description</h6>
+          <p>The <strong>Anteater Network</strong> is a dynamic and extensible website that connects alumni entrepeneurs of the <a href="https://uci.edu" target="_blank">University of California, Irvine</a> to past, present, and future students and faculty.</p>
+          <p>By displaying these businesses on a map with a variety of filters, the Anteater Network offers a highly effective, convenient, and visual representation of the spread of UCI's alumni network.</p>
+          <p>The system was created for the <a href="http://alumni.uci.edu" target="_blank">UCI Alumni Association</a> as a senior design project of my undergraduate informatics program.</p>
+          <a class="btn btn-info btn-sm" href="http://alumni.uci.edu/anteater-network/" target="_blank" role="button">View Project</a>
+          <a class="btn btn-secondary btn-sm" href="https://github.com/suuoh/AnteaterNetwork" target="_blank" role="button">View Source Code</a>
         </div>
-        <a class="carousel-control-prev" href="#carouselAlienEscape" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselAlienEscape" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="col-md-5">
+          <h6>Features</h6>
+          <ul>
+            <li>Responsive interface for compatibility with all screen sizes</li>
+            <li>600+ UCI alumni owned businesses listed</li>
+            <li>User friendly taxonomies for school and business category filters</li>
+            <li>Toggle-able pin clustering</li>
+            <li>Full screen map mode</li>
+            <li>Dynamic address geocoding and caching</li>
+            <li>Powerful and flexible instant search results</li>
+            <li>Buffered auto focusing map after searching</li>
+            <li>Custom admin panel for UCIAA staff</li>
+          </ul>
+          <h6>Development Tools</h6>
+          <span class="badge badge-dark">HTML5</span>
+          <span class="badge badge-dark">CSS3</span>
+          <span class="badge badge-dark">Javascript</span>
+          <span class="badge badge-dark">PHP</span>
+          <span class="badge badge-dark">MySQL</span>
+          <span class="badge badge-dark">GitHub</span>
+          <span class="badge badge-dark">jQuery</span>
+          <span class="badge badge-dark">Bootstrap</span>
+          <span class="badge badge-dark">Google Maps API</span>
+          <span class="badge badge-dark">QUnit</span>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="row justify-content-around">
-    <div class="col-md-5">
-      <h6>Description</h6>
-      <p><strong>Alien Escape</strong> is a short, turn based, adventure video game developed over the course of 7 weeks. It features all original artwork, sound assets, line of sight algorithms, and AI logic.</p>
-      <p>The project involved creating prototypes, presentations, and documentation in addition to the game itself.</p>
-      <p>The player takes the role of an alien who has been captured and placed in quarantine. The alien must find an engine piece on each level to unlock the teleporter to the next level without running out of turns, all while playing under a fog of war and avoiding various enemies and traps.</p>
-      <a class="btn btn-info btn-sm" href="https://melvin.io/AlienEscape/" target="_blank" role="button">View Project</a>
-      <a class="btn btn-secondary btn-sm" href="https://github.com/suuoh/AlienEscape" target="_blank" role="button">View Source Code</a>
-    </div>
-    <div class="col-md-5">
-      <h6>Features</h6>
-      <ul>
-        <li>3 unique levels in increasing difficulty</li>
-        <li>Original artwork and sprites</li>
-        <li>Original music and sound effects, dynamically generated within the levels</li>
-        <li>Custom fog of war and line of sight algorithms</li>
-        <li>Custom artificial intelligence logic - 4 tiers of guard and 2 tiers of turret intelligence</li>
-      </ul>
-      <h6>Development Tools</h6>
-      <span class="badge badge-dark">HTML5</span>
-      <span class="badge badge-dark">Javascript</span>
-      <span class="badge badge-dark">Tile Map XML</span>
-      <span class="badge badge-dark">melonJS</span>
-      <span class="badge badge-dark">Tiled</span>
-      <span class="badge badge-dark">GitHub</span>
-      <span class="badge badge-dark">Adobe Illustrator</span>
-      <span class="badge badge-dark">Adobe Photoshop</span>
-    </div>
-  </div>
-</section>
-
-<section class="container collapse project-panel" id="projectTerris">
-  <h4 class="text-center">Terris</h4>
-  <div class="row justify-content-center">
-    <div class="col-md-11">
-      <div id="carouselTerris" class="carousel slide" data-ride="carousel" data-interval="4000">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselTerris" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselTerris" data-slide-to="1" class="active"></li>
-          <li data-target="#carouselTerris" data-slide-to="2" class="active"></li>
-          <li data-target="#carouselTerris" data-slide-to="3" class="active"></li>
-          <li data-target="#carouselTerris" data-slide-to="4" class="active"></li>
-          <li data-target="#carouselTerris" data-slide-to="5" class="active"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="carousel-item active">
-            <img class="d-block img-fluid" src="/img/project_terris_pins.jpg" alt="Custom digital and physical merchandise was given out as content prizes and as rewards.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_terris_enjin.jpg" alt="Revamped Terris website, on the Enjin platform.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_terris_downtime.jpg" alt="Landing page for the website during maintenance periods.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_terris_technica.jpg" alt="Digital poster for the new Tekkit Minecraft server, alongside a design pattern derived from the Terris wordmark.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_terris_valhalla.jpg" alt="Marketing banner for Valhalla, a new unforgiving world with no convenience and quality of life plugins.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_terris_survivalgames.jpg" alt="Marketing banner for a new custom map and survival game mode, based on the Hunger Games novels.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_terris_terrisz1.jpg" alt="First concept poster for a new zombie survival mode server called TerrisZ.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_terris_terrisz2.jpg" alt="Second concept poster for the TerrisZ zombie survival server.">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="/img/project_terris_logos.jpg" alt="A history of the graphic identities of Terris, including the most recent sketch-style logotype.">
+    </section>
+    <section class="container collapse project-panel" id="projectJMMP">
+      <h4 class="text-center">Team JMMP</h4>
+      <div class="row justify-content-center">
+        <div class="col-md-11">
+          <div id="carouselJMMP" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselJMMP" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselJMMP" data-slide-to="1" class="active"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="/img/project_jmmp_documents.jpg" alt="A variety of project documentation was produced including a project plan, communication covenant, risk analysis, and deployment plan.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_jmmp_poster.jpg" alt="Marketing poster that was used in several networking and showcase events.">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselJMMP" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselJMMP" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselTerris" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselTerris" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-    </div>
-  </div>
-
-  <div class="row justify-content-around">
-    <div class="col-md-5">
-      <h6>Description</h6>
-      <p><strong>Terris</strong> is a gaming community that was was founded in December 2011. The community largely centered around <a href="https://minecraft.net" target="_blank">Minecraft</a>, but steadily expanding to other popular games including Terraria and Team Fortress 2.</p>
-      <p>Formed from the merging of two smaller Minecraft communities, Terris enabled me to drastically expand our reach and infrastructure.</p>
-      <p>I actively created, managed, and directed new projects and contests for the community, including the development of custom game plugins. I also maintained all aspects of the administration including the weekly staff meetings, finances, social media presence, graphical identity, technical support, and in game operations.</p>
-      <a class="btn btn-info btn-sm" href="https://web.archive.org/web/20141218062239/https://terrismc.info/" target="_blank" role="button">View Project</a>
-    </div>
-    <div class="col-md-5">
-      <h6>Features</h6>
-      <ul>
-        <li>Over 800 registered members</li>
-        <li>6 active servers across 3 different games</li>
-        <li>Team of 20 staff members covering all time zones</li>
-        <li>Customized plugins that add depth to gameplay</li>
-        <li>Custom mod packs for an entirely new experience</li>
-        <li>Rotating daily and weekly events</li>
-        <li>Monthly contests and giveaways</li>
-      </ul>
-      <h6>Development Tools</h6>
-      <span class="badge badge-dark">Java</span>
-      <span class="badge badge-dark">HTML5</span>
-      <span class="badge badge-dark">CSS3</span>
-      <span class="badge badge-dark">Javascript</span>
-      <span class="badge badge-dark">CentOS</span>
-      <span class="badge badge-dark">Debian</span>
-      <span class="badge badge-dark">Ubuntu</span>
-      <span class="badge badge-dark">GitHub</span>
-      <span class="badge badge-dark">Enjin</span>
-      <span class="badge badge-dark">Adobe Illustrator</span>
-      <span class="badge badge-dark">Adobe Photoshop</span>
-      <span class="badge badge-dark">Adobe After Effects</span>
-    </div>
-  </div>
-</section>
-
-<section class="container" id="about">
-  <h4 class="text-center text-muted">About</h4>
-  <div class="row justify-content-center">
-    <div class="col-md-auto d-flex align-items-center">
-      <img class="rounded-circle" src="/img/melvin_profile.jpg" width="150" alt="Profile Picture">
-    </div>
-    <div class="col-md-6 ml-3">
-      <p>Hello there! My name is Melvin Chien.</p>
-      <p class="text-justify">
-        Most of days are currently spent as an educational technology specialist at the <em>University of Toronto</em>.
-        My educational background is in human-computer interaction and I have an aspiring passion for web development and user interaction design.
-      </p>
-      <p>In my free time, I enjoy cooking, playing video and board games, budgeting, and gardening.</p>
-    </div>
-  </div>
-</section>
-
-<section class="container" id="contact">
-  <h4 class="text-center text-muted">Contact</h4>
-  <div class="row justify-content-center">
-    <div class="col-sm-5">
-      <div class="alert fade" role="alert" id="contactAlert">
+      <div class="row justify-content-around">
+        <div class="col-md-5">
+          <h6>Description</h6>
+          <p><strong>JMMP</strong> is a student organization that was formed for the year long senior capstone project at the <a href="https://uci.edu" target="_blank">University of California, Irvine</a>. Our goal was to develop the Anteater Network, an innovative web app in collaboration with our sponsors, the <a href="http://alumni.uci.edu" target="_blank">UCI Alumni Association</a>.</p>
+          <p>JMMP operated under agile software development methodologies for one year, with iterative bi-weekly cycles of planning, analysis, design, development, testing, and presentations.</p>
+          <a class="btn btn-info btn-sm" href="https://jmmp.github.io/" target="_blank" role="button">View Website</a>
+          <a class="btn btn-secondary btn-sm" href="https://github.com/JMMP/INF191" target="_blank" role="button">View Art Assets</a>
+        </div>
+        <div class="col-md-5">
+          <h6>Project Management Deliverables</h6>
+          <ul>
+            <li>Project plans, business cases, and risk analysis</li>
+            <li>Stakeholder agreement and communication convenant</li>
+          </ul>
+          <h6>Software Development Deliverables</h6>
+          <ul>
+            <li>Wireframe mockups and functional prototypes</li>
+            <li>Requirements specification, architectural diagrams, and use cases</li>
+            <li>Test and deployment plans</li>
+          </ul>
+          <h6>Usability Testing Deliverables</h6>
+          <ul>
+            <li>Keystroke analyses and heuristic evaluations</li>
+            <li>Code and expert reviews</li>
+            <li>User studies</li>
+          </ul>
+          <h6>Development Tools</h6>
+          <span class="badge badge-dark">Adobe Illustrator</span>
+          <span class="badge badge-dark">Adobe Photoshop</span>
+          <span class="badge badge-dark">Balsamiq</span>
+          <span class="badge badge-dark">Gantto</span>
+          <span class="badge badge-dark">GitHub</span>
+          <span class="badge badge-dark">UML</span>
+        </div>
       </div>
-      <form id="contactForm">
-        <div class="form-group">
-          <label for="contactName">Name</label>
-          <input type="text" class="form-control" id="contactName" name="name" placeholder="Enter your name">
+    </section>
+    <section class="container collapse project-panel" id="projectAlienEscape">
+      <h4 class="text-center">Alien Escape</h4>
+      <div class="row justify-content-center">
+        <div class="col-md-11">
+          <div id="carouselAlienEscape" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselAlienEscape" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselAlienEscape" data-slide-to="1" class="active"></li>
+              <li data-target="#carouselAlienEscape" data-slide-to="2" class="active"></li>
+              <li data-target="#carouselAlienEscape" data-slide-to="3" class="active"></li>
+              <li data-target="#carouselAlienEscape" data-slide-to="4" class="active"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="/img/project_alienescape_main.jpg" alt="Alien Escape is a turn based, action and strategy game built in HTML5.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_alienescape_fog.jpg" alt="The player's line of site is severely limited using a custom fog of war algorithm.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_alienescape_level1.jpg" alt="The first level introduces players to mechanics of Alien Escape.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_alienescape_level2.jpg" alt="Facility 2 adds more AI controlled enemies including turrets and guards.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_alienescape_level3.jpg" alt="In the final level, the player is tasked with escaping a high security science lab with an abundance of turrets and two highly advanced guards.">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselAlienEscape" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselAlienEscape" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="contactEmail">Email</label>
-          <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Enter your email address">
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-md-5">
+          <h6>Description</h6>
+          <p><strong>Alien Escape</strong> is a short, turn based, adventure video game developed over the course of 7 weeks. It features all original artwork, sound assets, line of sight algorithms, and AI logic.</p>
+          <p>The project involved creating prototypes, presentations, and documentation in addition to the game itself.</p>
+          <p>The player takes the role of an alien who has been captured and placed in quarantine. The alien must find an engine piece on each level to unlock the teleporter to the next level without running out of turns, all while playing under a fog of war and avoiding various enemies and traps.</p>
+          <a class="btn btn-info btn-sm" href="https://melvin.io/AlienEscape/" target="_blank" role="button">View Project</a>
+          <a class="btn btn-secondary btn-sm" href="https://github.com/suuoh/AlienEscape" target="_blank" role="button">View Source Code</a>
         </div>
-        <div class="form-group">
-          <label for="contactComments">Comments</label>
-          <textarea class="form-control" id="contactComments" rows="3" name="message" placeholder="Have any questions or feedback? Come say hello!"></textarea>
+        <div class="col-md-5">
+          <h6>Features</h6>
+          <ul>
+            <li>3 unique levels in increasing difficulty</li>
+            <li>Original artwork and sprites</li>
+            <li>Original music and sound effects, dynamically generated within the levels</li>
+            <li>Custom fog of war and line of sight algorithms</li>
+            <li>Custom artificial intelligence logic - 4 tiers of guard and 2 tiers of turret intelligence</li>
+          </ul>
+          <h6>Development Tools</h6>
+          <span class="badge badge-dark">HTML5</span>
+          <span class="badge badge-dark">Javascript</span>
+          <span class="badge badge-dark">Tile Map XML</span>
+          <span class="badge badge-dark">melonJS</span>
+          <span class="badge badge-dark">Tiled</span>
+          <span class="badge badge-dark">GitHub</span>
+          <span class="badge badge-dark">Adobe Illustrator</span>
+          <span class="badge badge-dark">Adobe Photoshop</span>
         </div>
-        <button type="submit" class="btn btn-info btn-sm">Submit</button>
-      </form>
+      </div>
+    </section>
+    <section class="container collapse project-panel" id="projectTerris">
+      <h4 class="text-center">Terris</h4>
+      <div class="row justify-content-center">
+        <div class="col-md-11">
+          <div id="carouselTerris" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselTerris" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselTerris" data-slide-to="1" class="active"></li>
+              <li data-target="#carouselTerris" data-slide-to="2" class="active"></li>
+              <li data-target="#carouselTerris" data-slide-to="3" class="active"></li>
+              <li data-target="#carouselTerris" data-slide-to="4" class="active"></li>
+              <li data-target="#carouselTerris" data-slide-to="5" class="active"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="/img/project_terris_pins.jpg" alt="Custom digital and physical merchandise was given out as content prizes and as rewards.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_terris_enjin.jpg" alt="Revamped Terris website, on the Enjin platform.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_terris_downtime.jpg" alt="Landing page for the website during maintenance periods.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_terris_technica.jpg" alt="Digital poster for the new Tekkit Minecraft server, alongside a design pattern derived from the Terris wordmark.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_terris_valhalla.jpg" alt="Marketing banner for Valhalla, a new unforgiving world with no convenience and quality of life plugins.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_terris_survivalgames.jpg" alt="Marketing banner for a new custom map and survival game mode, based on the Hunger Games novels.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_terris_terrisz1.jpg" alt="First concept poster for a new zombie survival mode server called TerrisZ.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_terris_terrisz2.jpg" alt="Second concept poster for the TerrisZ zombie survival server.">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="/img/project_terris_logos.jpg" alt="A history of the graphic identities of Terris, including the most recent sketch-style logotype.">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselTerris" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselTerris" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-md-5">
+          <h6>Description</h6>
+          <p><strong>Terris</strong> is a gaming community that was was founded in December 2011. The community largely centered around <a href="https://minecraft.net" target="_blank">Minecraft</a>, but steadily expanding to other popular games including Terraria and Team Fortress 2.</p>
+          <p>Formed from the merging of two smaller Minecraft communities, Terris enabled me to drastically expand our reach and infrastructure.</p>
+          <p>I actively created, managed, and directed new projects and contests for the community, including the development of custom game plugins. I also maintained all aspects of the administration including the weekly staff meetings, finances, social media presence, graphical identity, technical support, and in game operations.</p>
+          <a class="btn btn-info btn-sm" href="https://web.archive.org/web/20141218062239/https://terrismc.info/" target="_blank" role="button">View Project</a>
+        </div>
+        <div class="col-md-5">
+          <h6>Features</h6>
+          <ul>
+            <li>Over 800 registered members</li>
+            <li>6 active servers across 3 different games</li>
+            <li>Team of 20 staff members covering all time zones</li>
+            <li>Customized plugins that add depth to gameplay</li>
+            <li>Custom mod packs for an entirely new experience</li>
+            <li>Rotating daily and weekly events</li>
+            <li>Monthly contests and giveaways</li>
+          </ul>
+          <h6>Development Tools</h6>
+          <span class="badge badge-dark">Java</span>
+          <span class="badge badge-dark">HTML5</span>
+          <span class="badge badge-dark">CSS3</span>
+          <span class="badge badge-dark">Javascript</span>
+          <span class="badge badge-dark">CentOS</span>
+          <span class="badge badge-dark">Debian</span>
+          <span class="badge badge-dark">Ubuntu</span>
+          <span class="badge badge-dark">GitHub</span>
+          <span class="badge badge-dark">Enjin</span>
+          <span class="badge badge-dark">Adobe Illustrator</span>
+          <span class="badge badge-dark">Adobe Photoshop</span>
+          <span class="badge badge-dark">Adobe After Effects</span>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="about">
+      <h4 class="text-center text-muted">About</h4>
+      <div class="row justify-content-center">
+        <div class="col-md-auto d-flex align-items-center">
+          <img class="rounded-circle" src="/img/melvin_profile.jpg" width="150" alt="Profile Picture">
+        </div>
+        <div class="col-md-6 ml-3">
+          <p>Hello there! My name is Melvin Chien.</p>
+          <p class="text-justify">
+            Most of days are currently spent as an educational technology specialist at the <em>University of Toronto</em>.
+            My educational background is in human-computer interaction and I have an aspiring passion for web development and user interaction design.
+          </p>
+          <p>In my free time, I enjoy cooking, playing video and board games, budgeting, and gardening.</p>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="contact">
+      <h4 class="text-center text-muted">Contact</h4>
+      <div class="row justify-content-center">
+        <div class="col-sm-5">
+          <div class="alert fade" role="alert" id="contactAlert">
+          </div>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">Name</label>
+              <input type="text" class="form-control" id="contactName" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+              <label for="contactComments">Comments</label>
+              <textarea class="form-control" id="contactComments" rows="3" name="message" placeholder="Have any questions or feedback? Come say hello!"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info btn-sm">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="container">
+      <footer class="row justify-content-between">
+        <div class="col-4">
+          <p class="text-muted">&copy; Melvin Chien 2020</p>
+        </div>
+        <div class="col-4 text-right">
+          <a href="mailto:me@melvin.io" target="_blank">
+          <i class="fa fa-envelope text-info"></i>
+          </a>
+          <a href="https://github.com/suuoh" target="_blank">
+          <i class="fa fa-github text-info"></i>
+          </a>
+          <a href="https://linkedin.com/in/melvinchien" target="_blank">
+          <i class="fa fa-linkedin text-info"></i>
+          </a>
+          <a href="https://twitter.com/suuoh" target="_blank">
+          <i class="fa fa-twitter text-info"></i>
+          </a>
+        </div>
+      </footer>
     </div>
-  </div>
-</section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/melvin.js"></script>
+  </body>
+</html>
