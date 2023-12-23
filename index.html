@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Melvin Chien</title>
     <meta name="description" content="Personal website of Melvin Chien">
+
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.2/lux/bootstrap.min.css" integrity="sha512-zTvuig0lp44Ol8dgsXd7DGM3vSuLu8lIaGIEZ9pvh62u5lXNKMqZzqcBxBqju8pacqCCS2J5hWKrVS4IzJXEyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css" integrity="sha512-D1liES3uvDpPrgk7vXR/hR/sukGn7EtDWEyvpdLsyalQYq6v6YUsTUJmku7B4rcuQ21rf0UTksw2i/2Pdjbd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/melvin.css"/>
   </head>
   <body>
+
     <!-- Menu Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-        <img src="/img/melvin_logo_full.png" class="d-inline-block align-top ml-3" height="35" alt="melvin logo">
+          <img src="/img/melvin_logo_full.png" height="34" alt="melvin logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse show" id="navbarColor01" style="">
+        <div class="navbar-collapse collapse" id="navbarContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -36,16 +41,8 @@
         </div>
       </div>
     </nav>
-    <div class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <img class="d-block" id="melvinBanner" src="/img/melvin_banner.jpg" alt="Hero Banner Image">
-          <div class="carousel-caption d-none d-md-block">
-            <h4 class="text-white">this is me</h4>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    <!-- Projects -->
     <section class="container" id="projects">
       <h4 class="text-center text-muted">Projects</h4>
       <div class="row">
@@ -423,35 +420,42 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact Form -->
     <section class="container" id="contact">
       <h4 class="text-center text-muted">Contact</h4>
       <div class="row justify-content-center">
         <div class="col-sm-5">
-          <div class="alert fade" role="alert" id="contactAlert">
+          <div class="alert fade" role="alert" id="contactAlert" style="display: none;">
           </div>
-          <form id="contactForm">
+          <form id="contactForm" accept-charset="utf-8" action="https://formspree.io/f/mkndwywb" method="POST">
             <div class="form-group">
               <label for="contactName">Name</label>
-              <input type="text" class="form-control" id="contactName" name="name" placeholder="Enter your name">
+              <input type="text" class="form-control" id="contactName" name="name" placeholder="First and Last">
             </div>
             <div class="form-group">
               <label for="contactEmail">Email</label>
-              <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Enter your email address">
+              <input type="email" class="form-control" id="contactEmail" name="email" placeholder="abc@gmail.com">
             </div>
             <div class="form-group">
-              <label for="contactComments">Comments</label>
-              <textarea class="form-control" id="contactComments" rows="3" name="message" placeholder="Have any questions or feedback? Come say hello!"></textarea>
+              <label for="contactPhone">Phone</label>
+              <input type="telephone" class="form-control" id="contactPhone" name="phone" placeholder="(416) 123-4567">
+            </div>
+            <div class="form-group">
+              <label for="contactComments">Message</label>
+              <textarea class="form-control" id="contactComments" rows="3" name="message" placeholder="Questions, comments, or just saying hello?"></textarea>
             </div>
             <button type="submit" class="btn btn-info btn-sm">Submit</button>
           </form>
         </div>
       </div>
     </section>
+
     <!-- Footer -->
     <div class="container">
       <footer class="row justify-content-between">
         <div class="col-4">
-          <p class="text-muted">&copy; Melvin Chien 2020</p>
+          <p class="text-muted">&copy; Melvin Chien 2023</p>
         </div>
         <div class="col-4 text-right">
           <a href="mailto:me@melvin.io" target="_blank">
