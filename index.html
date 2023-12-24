@@ -11,7 +11,6 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.2/lux/bootstrap.min.css" integrity="sha512-zTvuig0lp44Ol8dgsXd7DGM3vSuLu8lIaGIEZ9pvh62u5lXNKMqZzqcBxBqju8pacqCCS2J5hWKrVS4IzJXEyQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css" integrity="sha512-D1liES3uvDpPrgk7vXR/hR/sukGn7EtDWEyvpdLsyalQYq6v6YUsTUJmku7B4rcuQ21rf0UTksw2i/2Pdjbd3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/melvin.css"/>
   </head>
@@ -423,29 +422,43 @@
 
     <!-- Contact Form -->
     <section class="container" id="contact">
-      <h4 class="text-center text-muted">Contact</h4>
       <div class="row justify-content-center">
+        <h4 class="text-center text-muted">Contact</h4>
+        <span class="text-center">
+          <a href="mailto:me@melvin.io" class="icon-link" target="_blank">
+            <i class="bi bi-envelope"></i>
+          </a>
+          <a href="https://github.com/suuoh" class="icon-link" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/melvinchien" class="icon-link" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/suuoh" class="icon-link" target="_blank">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+        </span>
         <div class="col-sm-5">
           <div class="alert fade" role="alert" id="contactAlert" style="display: none;">
           </div>
           <form id="contactForm" accept-charset="utf-8" action="https://formspree.io/f/mkndwywb" method="POST">
-            <div class="form-group">
-              <label for="contactName">Name</label>
-              <input type="text" class="form-control" id="contactName" name="name" placeholder="First and Last">
+            <div class="mb-2">
+              <label for="contactName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="contactName" name="name" required placeholder="First and Last">
             </div>
-            <div class="form-group">
-              <label for="contactEmail">Email</label>
-              <input type="email" class="form-control" id="contactEmail" name="email" placeholder="abc@gmail.com">
+            <div class="mb-2">
+              <label for="contactEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="contactEmail" name="email" required placeholder="abc@gmail.com">
             </div>
-            <div class="form-group">
-              <label for="contactPhone">Phone</label>
+            <div class="mb-2">
+              <label for="contactPhone" class="form-label">Phone <small>(Optional)</small></label>
               <input type="telephone" class="form-control" id="contactPhone" name="phone" placeholder="(416) 123-4567">
             </div>
-            <div class="form-group">
-              <label for="contactComments">Message</label>
-              <textarea class="form-control" id="contactComments" rows="3" name="message" placeholder="Questions, comments, or just saying hello?"></textarea>
+            <div class="mb-2">
+              <label for="contactComments" class="form-label">Message</label>
+              <textarea class="form-control" id="contactComments" rows="3" name="message" required placeholder="Questions, comments, or just saying hello?"></textarea>
             </div>
-            <button type="submit" class="btn btn-info btn-sm">Submit</button>
+            <button type="submit" class="btn btn-info">Submit</button>
           </form>
         </div>
       </div>
@@ -454,26 +467,14 @@
     <!-- Footer -->
     <div class="container">
       <footer class="row justify-content-between">
-        <div class="col-4">
-          <p class="text-muted">&copy; Melvin Chien 2023</p>
-        </div>
-        <div class="col-4 text-right">
-          <a href="mailto:me@melvin.io" target="_blank">
-          <i class="fa fa-envelope text-info"></i>
-          </a>
-          <a href="https://github.com/suuoh" target="_blank">
-          <i class="fa fa-github text-info"></i>
-          </a>
-          <a href="https://linkedin.com/in/melvinchien" target="_blank">
-          <i class="fa fa-linkedin text-info"></i>
-          </a>
-          <a href="https://twitter.com/suuoh" target="_blank">
-          <i class="fa fa-twitter text-info"></i>
-          </a>
+        <div class="col-4 text-start fs-6">
+          <p class="text-muted text-uppercase">&copy; Melvin Chien 2024
+            
+          </p>
         </div>
       </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/melvin.js"></script>
   </body>
