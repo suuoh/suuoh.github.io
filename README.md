@@ -11,5 +11,5 @@ Please see the [Licenses](LICENSES.md) file.
 
 Personal Notes
 --------------
-https://youmightnotneedjquery.com/ 
-https://compressor.io/ 
+https://youmightnotneedjquery.com/  
+https://compressor.io/  
