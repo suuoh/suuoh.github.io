@@ -6,19 +6,3 @@
 .navbar-toggler {
   border: none !important;
 }
-
-.card > .card-img-overlay {
-  opacity: 0;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-  background-color: rgba(240, 240, 240, 0.9);
-}
-
-.card:hover > .card-img-overlay {
-  opacity: 1;
-}
-
-.card:hover > .card-img {
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
-}
