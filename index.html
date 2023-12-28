@@ -84,6 +84,18 @@
               </div>
             </div>
 
+            <!-- Project Card - Quercus Support resources -->
+            <div class="col">
+              <div class="card h-100">
+                <img class="card-img-top" src="/img/project_qsr.png" alt="Quercus Support resources">
+                <div class="card-body">
+                  <p class="card-title h5">Quercus Support resources</p>
+                  <p class="card-text">Search utility for University of Toronto documentation hub.</p>
+                  <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#projectQSR" aria-expanded="false" aria-controls="projectQSR">Learn More</button>
+                </div>
+              </div>
+            </div>
+
             <!-- Project Card - GoFloat Studios -->
             <div class="col">
               <div class="card h-100">
@@ -283,7 +295,70 @@
                 </div>
               </div>
 
-              <!-- TODO: Quercus Support Resources Search -->
+              <!-- Project Details - Quercus Support Resources -->
+              <div id="projectQSR" class="collapse" data-bs-parent="#projectArea">
+
+                <!-- Gallery -->
+                <div class="row mb-3">
+                  <div class="col">
+                    <h2 class="text-secondary-emphasis">Quercus Support Resources</h2>
+                    <div id="galleryQSR" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#galleryQSR" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#galleryQSR" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block img-fluid" src="/img/project_qsr_home.png" alt="Home page of Quercus Support Resources.">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="/img/project_qsr_search.png" alt="Search utility for Quercus Support Resources.">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#galleryQSR" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#galleryQSR" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Description -->
+                <div class="row mb-3">
+                  <div class="col">
+                    <h3>Description</h3>
+                    <p>
+                      <strong>Quercus Support Resources</strong> is a documentation and support hub for the University of Toronto's learning management system, Canvas. The hub contained an extensive library of user guides and support materials with limited navigability and discoverability.
+                    </p>
+                    <p>The search tool index all pages within the hub and provided an efficient and fast method for users to find what they are looking for, without the need for a hosted back end.</p>
+                    <a class="btn btn-info btn-sm" href="https://github.com/suuoh/Quercus-Support-Resources-Search" target="_blank" role="button">Source Code</a>
+                  </div>
+                </div>
+
+                <!-- Features -->
+                <div class="row mb-3">
+                  <div class="col">
+                    <h3>Features</h3>
+                    <ul>
+                      <li>Browser-based, full text search index and functionality</li>
+                      <li>Offline, reliable search index with no backend or live integration dependencies</li>
+                      <li>Integration with Google Analytics</li>
+                    </ul>
+                    <h3>Tools</h3>
+                    <span class="badge bg-dark">HTML5</span>
+                    <span class="badge bg-dark">CSS3</span>
+                    <span class="badge bg-dark">Javascript</span>
+                    <span class="badge bg-light">jQuery</span>
+                    <span class="badge bg-light">Bootstrap</span>
+                    <span class="badge bg-light">Lunr.js</span>
+                    <span class="badge bg-light">Instructure Canvas API</span>
+                  </div>
+                </div>
+              </div>
 
               <!-- Project Details - GoFloat Studios -->
               <div id="projectGoFloat" class="collapse" data-bs-parent="#projectArea">
